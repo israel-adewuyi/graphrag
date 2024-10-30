@@ -16,30 +16,25 @@ def read_transcripts():
     # parse HTML with beautifulsoup
     soup = BeautifulSoup(response.content, 'html.parser')
 
-    # print(soup)
-
     # Find the section containing the transcript
-    transcript_section = soup.find('h2', class_='header-anchor-post', string="Timestamps")
-
-    print(transcript_section)
+    transcript_section = soup.find_all('h2', class_='header-anchor-post')
 
     if transcript_section:
         # Get the next sibling elements after the transcript header
         transcript_content = []
-        next_element = transcript_section.find_next_sibling()
+        next_element = transcript_section[1].find_next_sibling()
 
         while next_element and next_element.name != 'h2':
-            transcript_content.append(next_element.get_text(separator='\n', strip=True))
+            transcript_content.append(next_element.get_text())
             next_element = next_element.find_next_sibling()
 
         # Join the transcript content into a single string
         transcript_text = '\n\n'.join(transcript_content)
-        # print(transcript_text)
     else:
         print("Transcript section not found.")
 
-    # with open('transcript.txt', "w", encoding='utf-8') as file:
-    #     file.write(response.content.decode(encoding))
+    with open('transcript.txt', "w", encoding='utf-8') as file:
+        file.write(transcript_text)
 
 if __name__ == "__main__":
     read_transcripts()
