@@ -6,6 +6,7 @@ import requests
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from config import PODCAST_LINKS
+from prompts import get_name
 from bs4 import BeautifulSoup
 
 def read_transcripts():
@@ -15,6 +16,9 @@ def read_transcripts():
 
     # parse HTML with beautifulsoup
     soup = BeautifulSoup(response.content, 'html.parser')
+
+    # get name of guest
+    guest_name = get_name(str(soup.title))
 
     # Find the section containing the transcript
     transcript_section = soup.find_all('h2', class_='header-anchor-post')
@@ -33,7 +37,7 @@ def read_transcripts():
     else:
         print("Transcript section not found.")
 
-    with open('transcript.txt', "w", encoding='utf-8') as file:
+    with open(f"transcripts/{guest_name}.txt", "w", encoding='utf-8') as file:
         file.write(transcript_text)
 
 if __name__ == "__main__":
