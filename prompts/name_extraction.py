@@ -5,7 +5,7 @@ from groq import Groq
 from dotenv import load_dotenv
 from pydantic import BaseModel, ValidationError
 
-from templates.name_extraction_prompt import TITLE_EXTRACTION_PROMPT
+from .templates.name_extraction_prompt import TITLE_EXTRACTION_PROMPT
 
 # load environment variables from .env files
 load_dotenv()
