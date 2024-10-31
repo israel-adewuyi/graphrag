@@ -1,7 +1,7 @@
 TITLE_EXTRACTION_PROMPT = """
     You are a very helpful AI assistant. You have been provided with the HTML title tag of a website. This website 
     contains trascript of a podcase. In the title tag is the name of the guest on the podcast. Your task is to return
-    a single line, containing the name of the guest and the name only iin JSON format. 
+    a single line, containing the name of the guest and the name only in JSON format. 
 
     #############
     EXAMPLE 1. 
