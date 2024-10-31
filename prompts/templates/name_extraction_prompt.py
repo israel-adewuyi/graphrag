@@ -20,5 +20,5 @@ TITLE_EXTRACTION_PROMPT = """
     EXAMPLE 3.
     <title>Dylan Patel &amp; Jon (Asianometry) – How the Semiconductor Industry Actually Works</title>
     RESPONSE
-    {"guest" : "Dylan Patel", "Jon Asianometry"}
+    {"guest" : "Dylan Patel & Jon Asianometry"}
 """
