@@ -3,5 +3,4 @@
 PODCAST_LINKS = [
     "https://www.dwarkeshpatel.com/p/sholto-douglas-trenton-bricken?open=false#%C2%A7transcript",
     "https://www.dwarkeshpatel.com/p/dario-amodei",
-    "https://www.dwarkeshpatel.com/i/143040987/long-contexts"
 ]
