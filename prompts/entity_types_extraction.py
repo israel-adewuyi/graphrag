@@ -4,7 +4,7 @@ from groq import Groq
 from typing import List
 from dotenv import load_dotenv
 from pydantic import BaseModel, ValidationError
-from templates.entity_types import ENTITY_TYPE_GENERATION_JSON_PROMPT
+from templates.entity_types_prompt import ENTITY_TYPE_GENERATION_JSON_PROMPT
 
 
 # load environment variables from .env files
@@ -18,7 +18,7 @@ class EntityTypes(BaseModel):
     entity_types: List
 
 def get_entity_types(text_chunk):
-    task = "Identity ..."
+    task = "Identity all the main topics of discussion, key people, main ideas and main concepts in the "
 
     system_prompt = ENTITY_TYPE_GENERATION_JSON_PROMPT.format(task=task)
 
@@ -41,7 +41,7 @@ def get_entity_types(text_chunk):
         response = EntityTypes.model_validate_json(chat_completion.choices[0].message.content)
         return response.entity_types
     except ValidationError as e:
-        print("Error occured")
+        print("Error occured in entity_types_extraction.py")
         return e.json()
 
 
