@@ -10,6 +10,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from prompts import get_name
 from bs4 import BeautifulSoup
 from config import PODCAST_LINKS
+from utils import get_token_count
 
 def get_name_from_file(idx: int) -> str:
     url = PODCAST_LINKS[idx]
@@ -69,6 +70,30 @@ def chunk_text(idx: int) -> List:
                 current_block = current_block + line
 
     return CHUNKS
+
+def merge_chunks(idx: int) -> List:
+    CHUNKS = chunk_text(idx)
+
+    NEW_CHUNKS = []
+
+    current_chunk = ""
+    current_size = 0
+    for chunk in CHUNKS:
+        length = get_token_count(chunk)
+
+        if length > 1000:
+            NEW_CHUNKS.append(chunk)
+        elif current_size + length <= 1000:
+            current_chunk = current_chunk + chunk
+            current_size += length
+        elif current_size + length > 1000:
+            NEW_CHUNKS.append(current_chunk)
+            current_chunk = chunk
+            current_size = length
+    if current_chunk:
+        NEW_CHUNKS.append(current_chunk)
+
+    return NEW_CHUNKS
 
 
 if __name__ == "__main__":
