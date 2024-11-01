@@ -6,3 +6,4 @@ config/__pycache__/
 document_processing/__pycache__/
 prompts/__pycache__/
 prompts/templates/__pycache__/
+utils/__pycache__/
