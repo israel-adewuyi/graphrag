@@ -68,14 +68,11 @@ def chunk_text(idx: int) -> List:
             if current_block:
                 current_block = current_block + line
 
-    # print(type(CHUNKS), CHUNKS[:2])
-    print(len(CHUNKS))
-
     return CHUNKS
 
 
 if __name__ == "__main__":
-    # do_something()
+    # testing out the chunking function
     CHUNKS = chunk_text(0)
 
     lengths = []
@@ -85,4 +82,10 @@ if __name__ == "__main__":
 
     assert len(lengths) == len(CHUNKS)
 
+    print(f"There are {len(CHUNKS)} in the document")
     print(f"Average string length is {sum(lengths) / len(lengths)}")
+
+    for chunk in CHUNKS[:10]:
+        print(chunk)
+
+    print(lengths)
