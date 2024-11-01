@@ -28,7 +28,7 @@ def plot_bar_chart(numbers: list, filename: str) -> None:
     # Update layout with better styling
     fig.update_layout(
         title={
-            'text': f'Initial number of token distribution for {filename} transcript',
+            'text': f'Number of token distribution for {filename} transcript',
             'y':0.95,
             'x':0.5,
             'xanchor': 'center',
