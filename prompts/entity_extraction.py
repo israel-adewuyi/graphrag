@@ -6,9 +6,9 @@ from groq import Groq
 from pydantic import BaseModel, ValidationError
 from dotenv import load_dotenv
 from typing import List, Optional
-from templates.entity_extraction_prompt import GRAPH_EXTRACTION_JSON_PROMPT
+from .templates.entity_extraction_prompt import GRAPH_EXTRACTION_JSON_PROMPT
 # TODO: just for testing, should delete
-from entity_types_extraction import get_entity_types
+from .entity_types_extraction import get_entity_types
 
 
 # load environment variables from .env files
@@ -63,13 +63,11 @@ def get_entities(text):
     
     try:
         response = Response.model_validate_json(chat_completion.choices[0].message.content)
+        print(response.entities, response.relationships)
         return response.entities, response.relationships
     except ValidationError as e:
         print("Error in parsing entity and relationship information.")
         return e.json()
-
-    print(type(response), response)
-
 
 if __name__ == "__main__":
     text = """

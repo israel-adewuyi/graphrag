@@ -4,7 +4,7 @@ from groq import Groq
 from typing import List
 from dotenv import load_dotenv
 from pydantic import BaseModel, ValidationError
-from templates.entity_types_prompt import ENTITY_TYPE_GENERATION_JSON_PROMPT
+from .templates.entity_types_prompt import ENTITY_TYPE_GENERATION_JSON_PROMPT
 
 
 # load environment variables from .env files
