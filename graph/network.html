@@ -1,0 +1,349 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "description": "Participates in a discussion about AI, transformers, and neuroscience.", "id": "Dwarkesh Patel", "label": "Dwarkesh Patel", "shape": "dot", "size": 10, "type": "person"}, {"color": "#97c2fc", "description": "Guest on Dwarkesh Patel\u0027s podcast, known for being an important part of Gemini\u0027s success. Works in AI.", "id": "Sholto", "label": "Sholto", "shape": "dot", "size": 10, "type": "person"}, {"color": "#97c2fc", "description": "Guest on Dwarkesh Patel\u0027s podcast, recognized for working on mechanistic interpretability. Works at Anthropic.", "id": "Trenton", "label": "Trenton", "shape": "dot", "size": 10, "type": "person"}, {"color": "#97c2fc", "description": "Has a background in neuroscience, and research interest in attention mechanisms.", "id": "Trenton Bricken", "label": "Trenton Bricken", "shape": "dot", "size": 10, "type": "person"}, {"color": "#97c2fc", "description": "Compares the working memory of the model to the RAM of a computer.", "id": "Sholto Douglas", "label": "Sholto Douglas", "shape": "dot", "size": 10, "type": "person"}, {"color": "#97c2fc", "description": "Ability of AI systems to learn how to learn from examples or context, enabling flexible or adaptive intelligence.", "id": "Meta-Learning", "label": "Meta-Learning", "shape": "dot", "size": 10, "type": "concepts"}, {"color": "#97c2fc", "description": "A region of the brain involved in attention and motor control.", "id": "Cerebellum", "label": "Cerebellum", "shape": "dot", "size": 10, "type": "brain region"}, {"color": "#97c2fc", "description": "Author of the Diplomacy paper, recognized for making important connections in AI research.", "id": "Noam Brown", "label": "Noam Brown", "shape": "dot", "size": 10, "type": "person"}, {"color": "#97c2fc", "description": "AI model, recognized for its success in various tasks, including in-context learning.", "id": "Gemini", "label": "Gemini", "shape": "dot", "size": 10, "type": "technology"}, {"color": "#97c2fc", "description": "Developed a way of thinking about transformers as read-write operations that layers do.", "id": "Anthropic", "label": "Anthropic", "shape": "dot", "size": 10, "type": "model"}, {"color": "#97c2fc", "description": "Method by which AI models learn from context provided to them, rather than only relying on prior training.", "id": "In-context learning", "label": "In-context learning", "shape": "dot", "size": 10, "type": "research method"}, {"color": "#97c2fc", "description": "Method used in machine learning to minimize the error of a model. Sholto describes in-context learning as similar to this method.", "id": "Gradient descent", "label": "Gradient descent", "shape": "dot", "size": 10, "type": "research method"}, {"color": "#97c2fc", "description": "AI model developed to perform a range of tasks, from conversation to coding problems.", "id": "GPT-4", "label": "GPT-4", "shape": "dot", "size": 10, "type": "AI models"}, {"color": "#97c2fc", "description": "Tasks requiring AI systems to engage for extended periods, processing and learning from context, such as text or conversations.", "id": "Long-Context Tasks", "label": "Long-Context Tasks", "shape": "dot", "size": 10, "type": "intelligent tasks"}, {"color": "#97c2fc", "description": "Researcher who was the lead author on the NeurIPS best paper, exploring topics in AI and emergence.", "id": "Rylan Schaeffer", "label": "Rylan Schaeffer", "shape": "dot", "size": 10, "type": "person"}, {"color": "#97c2fc", "description": "Metric for measuring reliability and accuracy of AI systems in complex tasks.", "id": "Log Pass Rates", "label": "Log Pass Rates", "shape": "dot", "size": 10, "type": "concepts"}, {"color": "#97c2fc", "description": "A researcher who has plotted the curve of the cost of attention compared to the cost of large models.", "id": "Sasha Rush", "label": "Sasha Rush", "shape": "dot", "size": 10, "type": "person"}, {"color": "#97c2fc", "description": "A company reportedly working on long context games with attention mechanisms.", "id": "Google", "label": "Google", "shape": "dot", "size": 10, "type": "organizations"}, {"color": "#97c2fc", "description": "A company reportedly working on long context games with attention mechanisms.", "id": "Magic", "label": "Magic", "shape": "dot", "size": 10, "type": "organizations"}, {"color": "#97c2fc", "description": "Large language model for generating human-like text, a predecessor of more advanced models like GPT-3", "id": "GPT-2", "label": "GPT-2", "shape": "dot", "size": 10, "type": "AI models"}, {"color": "#97c2fc", "description": "Advanced large language model for generating human-like text, showed meta-learning behavior in training during its pre-training", "id": "GPT-3", "label": "GPT-3", "shape": "dot", "size": 10, "type": "AI models"}, {"color": "#97c2fc", "description": "Deep learning model for protein structure prediction, has intricate architecture including several transformer modules", "id": "AlphaFold", "label": "AlphaFold", "shape": "dot", "size": 10, "type": "AI models"}, {"color": "#97c2fc", "id": "Meta-learning behavior", "label": "Meta-learning behavior", "shape": "dot", "size": 10}, {"color": "#97c2fc", "description": "Technique that allows for iteratively refining a solution through iterative use of more compute", "id": "Diffusion", "label": "Diffusion", "shape": "dot", "size": 10, "type": "Technologies"}, {"color": "#97c2fc", "description": "Forward pass of a neural network, where inputs are processed through the model without computing gradients or weight updates", "id": "Forward Pass", "label": "Forward Pass", "shape": "dot", "size": 10, "type": "Concepts"}, {"color": "#97c2fc", "description": "Technique for optimizing the amount of computational resources required for machine learning model processing", "id": "Adaptive Compute", "label": "Adaptive Compute", "shape": "dot", "size": 10, "type": "Concepts"}, {"color": "#97c2fc", "id": "Optimized Forward Pass", "label": "Optimized Forward Pass", "shape": "dot", "size": 10}, {"color": "#97c2fc", "description": "Machine learning models for classification, regression or clustering, and processing sequential data like images, speech and text", "id": "Neural Networks", "label": "Neural Networks", "shape": "dot", "size": 10, "type": "Concepts"}, {"color": "#97c2fc", "id": "Forward Pass and Backward Pass", "label": "Forward Pass and Backward Pass", "shape": "dot", "size": 10}, {"color": "#97c2fc", "description": "Classic video games, mentioned as a potential application for in-context learning.", "id": "Atari games", "label": "Atari games", "shape": "dot", "size": 10, "type": "technology"}, {"color": "#97c2fc", "description": "Area of AI research focused on developing models that can learn and generate human language.", "id": "Language modeling", "label": "Language modeling", "shape": "dot", "size": 10, "type": "research method"}, {"color": "#97c2fc", "description": "Annual conference on neural information processing systems, highlighting latest research in AI and machine learning.", "id": "NeurIPS", "label": "NeurIPS", "shape": "dot", "size": 10, "type": "research papers"}, {"color": "#97c2fc", "description": "Class of AI models, compared to GPT-4 in discussions about capabilities and limitations.", "id": "Gemini Ultra", "label": "Gemini Ultra", "shape": "dot", "size": 10, "type": "AI models"}, {"color": "#97c2fc", "description": "Metric or method for evaluating human performance in tasks, used as a comparison for AI capabilities.", "id": "HumanEval", "label": "HumanEval", "shape": "dot", "size": 10, "type": "concepts"}, {"color": "#97c2fc", "description": "A benchmarking tool for evaluating AI performance on complex tasks, such as resolving GitHub issues.", "id": "SWE-bench", "label": "SWE-bench", "shape": "dot", "size": 10, "type": "benchmarks"}, {"color": "#97c2fc", "description": "A scoring system for evaluating AI performance, but limited in its ability to capture long-horizon task performance.", "id": "MMLU scores", "label": "MMLU scores", "shape": "dot", "size": 10, "type": "benchmarks"}, {"color": "#97c2fc", "description": "A technique used in AI models to focus on specific parts of input data when generating outputs.", "id": "Attention Mechanism", "label": "Attention Mechanism", "shape": "dot", "size": 10, "type": "concepts"}, {"color": "#97c2fc", "description": "A type of AI model that uses self-attention mechanisms to process input data.", "id": "Transformers", "label": "Transformers", "shape": "dot", "size": 10, "type": "AI models"}, {"color": "#97c2fc", "description": "Type of machine learning models that involve iteratively refining a solution through iterative use of more compute", "id": "Diffusion Models", "label": "Diffusion Models", "shape": "dot", "size": 10, "type": "Concepts"}, {"color": "#97c2fc", "description": "Backward pass of a neural network, where gradients are computed and weight updates are optimized", "id": "Backward Pass", "label": "Backward Pass", "shape": "dot", "size": 10, "type": "Concepts"}, {"color": "#97c2fc", "description": "Good Old-Fashioned Artificial Intelligence, traditional AI approach based on rule-based systems and knowledge engineering", "id": "GOFAI", "label": "GOFAI", "shape": "dot", "size": 10, "type": "Concepts"}, {"color": "#97c2fc", "description": "Component of human memory, responsible for temporarily holding and manipulating information", "id": "Working Memory", "label": "Working Memory", "shape": "dot", "size": 10, "type": "Concepts"}, {"color": "#97c2fc", "description": "Type of neural network that can select and give output considering the previous outputs", "id": "Recurrent Neural Networks", "label": "Recurrent Neural Networks", "shape": "dot", "size": 10, "type": "AI models"}, {"color": "#97c2fc", "description": "Type of neural network that uses attention to analyze the data", "id": "Transformer models", "label": "Transformer models", "shape": "dot", "size": 10, "type": "AI models"}, {"color": "#97c2fc", "description": "Uses residual streams for information processing.", "id": "Transformer Model", "label": "Transformer Model", "shape": "dot", "size": 10, "type": "model"}]);
+                  edges = new vis.DataSet([{"from": "Dwarkesh Patel", "relationship": "Sholto is a guest on Dwarkesh Patel\u0027s podcast", "strength": 7, "to": "Sholto", "width": 1}, {"from": "Dwarkesh Patel", "relationship": "Trenton is a guest on Dwarkesh Patel\u0027s podcast", "strength": 7, "to": "Trenton", "width": 1}, {"from": "Dwarkesh Patel", "relationship": "Discuss and explain concepts of transformer models and neuroscience", "strength": 8, "to": "Trenton Bricken", "width": 1}, {"from": "Dwarkesh Patel", "relationship": "Co-discussion participant", "strength": 6, "to": "Sholto Douglas", "width": 1}, {"from": "Dwarkesh Patel", "relationship": "Discussing the concept of meta-learning and its importance in AI systems.", "strength": 7, "to": "Meta-Learning", "width": 1}, {"from": "Dwarkesh Patel", "relationship": "Discusses the cerebellum in relation to the transformer model", "strength": 5, "to": "Cerebellum", "width": 1}, {"from": "Noam Brown", "relationship": "Noam Brown recognized Sholto\u0027s contributions to Gemini\u0027s success", "strength": 8, "to": "Sholto", "width": 1}, {"from": "Sholto", "relationship": "Sholto played an important role in Gemini\u0027s success", "strength": 9, "to": "Gemini", "width": 1}, {"from": "Trenton", "relationship": "Trenton works at Anthropic", "strength": 8, "to": "Anthropic", "width": 1}, {"from": "Anthropic", "relationship": "Built upon ideas and concepts developed by Anthropic", "strength": 6, "to": "Trenton Bricken", "width": 1}, {"from": "In-context learning", "relationship": "Sholto describes in-context learning as similar to gradient descent", "strength": 6, "to": "Gradient descent", "width": 1}, {"from": "Trenton Bricken", "relationship": "Discussing the capabilities and limitations of the GPT-4 AI model.", "strength": 6, "to": "GPT-4", "width": 1}, {"from": "Trenton Bricken", "relationship": "Discussing the challenges and implications of long-context tasks for AI systems.", "strength": 7, "to": "Long-Context Tasks", "width": 1}, {"from": "Trenton Bricken", "relationship": "Share ideas and insights about the transformer model", "strength": 7, "to": "Sholto Douglas", "width": 1}, {"from": "Sholto Douglas", "relationship": "Reference to research by Rylan Schaeffer on emergence in AI systems.", "strength": 4, "to": "Rylan Schaeffer", "width": 1}, {"from": "Sholto Douglas", "relationship": "Mentioning log pass rates as a metric for evaluating AI system reliability and accuracy.", "strength": 5, "to": "Log Pass Rates", "width": 1}, {"from": "Sholto Douglas", "relationship": "Provided a plot of the cost of attention compared to the cost of large models, supporting Sholto\u0027s points about attention mechanisms.", "strength": 6, "to": "Sasha Rush", "width": 1}, {"from": "Google", "relationship": "Both companies are reportedly working on long context games with attention mechanisms.", "strength": 4, "to": "Magic", "width": 1}, {"from": "GPT-2", "relationship": "Predecessor", "strength": 8, "to": "GPT-3", "width": 1}, {"from": "GPT-3", "relationship": "Similarities in training methods", "strength": 4, "to": "AlphaFold", "width": 1}, {"from": "GPT-3", "relationship": "Displays this behavior during training", "strength": 8, "to": "Meta-learning behavior", "width": 1}, {"from": "Diffusion", "relationship": "Can iteratively refine solutions through multiple forward passes", "strength": 7, "to": "Forward Pass", "width": 1}, {"from": "Adaptive Compute", "relationship": "Can allow for optimized forward passes through iterative use of more compute", "strength": 6, "to": "Optimized Forward Pass", "width": 1}, {"from": "Neural Networks", "relationship": "These are components of their computational process", "strength": 9, "to": "Forward Pass and Backward Pass", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

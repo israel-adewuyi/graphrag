@@ -29,7 +29,8 @@ def get_text_file(idx: int) -> List:
 
     print(f"Guest name(s) is(are) {guest_name}")
 
-    file_name = f"transcripts/{guest_name}.txt"
+    # file_name = f"transcripts/{guest_name}.txt"
+    file_name = "C:/Users/Israel Adewuyi/Documents/Projects/graphrag/transcripts/Sholto Douglas & Trenton Bricken.txt"
 
     try:
         with open(file_name, "r", encoding='utf-8') as file:

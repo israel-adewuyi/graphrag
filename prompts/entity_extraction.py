@@ -63,7 +63,7 @@ def get_entities(text):
     
     try:
         response = Response.model_validate_json(chat_completion.choices[0].message.content)
-        print(response.entities, response.relationships)
+        # print(response.entities, response.relationships)
         return response.entities, response.relationships
     except ValidationError as e:
         print("Error in parsing entity and relationship information.")
