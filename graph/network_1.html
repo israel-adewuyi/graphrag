@@ -1,0 +1,2434 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <script>
+      function neighbourhoodHighlight(params) {
+        // console.log("in nieghbourhoodhighlight");
+        allNodes = nodes.get({ returnType: "Object" });
+        // originalNodes = JSON.parse(JSON.stringify(allNodes));
+        // if something is selected:
+        if (params.nodes.length > 0) {
+          highlightActive = true;
+          var i, j;
+          var selectedNode = params.nodes[0];
+          var degrees = 2;
+
+          // mark all nodes as hard to read.
+          for (let nodeId in allNodes) {
+            // nodeColors[nodeId] = allNodes[nodeId].color;
+            allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+            if (allNodes[nodeId].hiddenLabel === undefined) {
+              allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+              allNodes[nodeId].label = undefined;
+            }
+          }
+          var connectedNodes = network.getConnectedNodes(selectedNode);
+          var allConnectedNodes = [];
+
+          // get the second degree nodes
+          for (i = 1; i < degrees; i++) {
+            for (j = 0; j < connectedNodes.length; j++) {
+              allConnectedNodes = allConnectedNodes.concat(
+                network.getConnectedNodes(connectedNodes[j])
+              );
+            }
+          }
+
+          // all second degree nodes get a different color and their label back
+          for (i = 0; i < allConnectedNodes.length; i++) {
+            // allNodes[allConnectedNodes[i]].color = "pink";
+            allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+            if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+              allNodes[allConnectedNodes[i]].label =
+                allNodes[allConnectedNodes[i]].hiddenLabel;
+              allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+            }
+          }
+
+          // all first degree nodes get their own color and their label back
+          for (i = 0; i < connectedNodes.length; i++) {
+            // allNodes[connectedNodes[i]].color = undefined;
+            allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+            if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+              allNodes[connectedNodes[i]].label =
+                allNodes[connectedNodes[i]].hiddenLabel;
+              allNodes[connectedNodes[i]].hiddenLabel = undefined;
+            }
+          }
+
+          // the main node gets its own color and its label back.
+          // allNodes[selectedNode].color = undefined;
+          allNodes[selectedNode].color = nodeColors[selectedNode];
+          if (allNodes[selectedNode].hiddenLabel !== undefined) {
+            allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+            allNodes[selectedNode].hiddenLabel = undefined;
+          }
+        } else if (highlightActive === true) {
+          // console.log("highlightActive was true");
+          // reset all nodes
+          for (let nodeId in allNodes) {
+            // allNodes[nodeId].color = "purple";
+            allNodes[nodeId].color = nodeColors[nodeId];
+            // delete allNodes[nodeId].color;
+            if (allNodes[nodeId].hiddenLabel !== undefined) {
+              allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+              allNodes[nodeId].hiddenLabel = undefined;
+            }
+          }
+          highlightActive = false;
+        }
+
+        // transform the object into an array
+        var updateArray = [];
+        if (params.nodes.length > 0) {
+          for (let nodeId in allNodes) {
+            if (allNodes.hasOwnProperty(nodeId)) {
+              // console.log(allNodes[nodeId]);
+              updateArray.push(allNodes[nodeId]);
+            }
+          }
+          nodes.update(updateArray);
+        } else {
+          // console.log("Nothing was selected");
+          for (let nodeId in allNodes) {
+            if (allNodes.hasOwnProperty(nodeId)) {
+              // console.log(allNodes[nodeId]);
+              // allNodes[nodeId].color = {};
+              updateArray.push(allNodes[nodeId]);
+            }
+          }
+          nodes.update(updateArray);
+        }
+      }
+
+      function filterHighlight(params) {
+        allNodes = nodes.get({ returnType: "Object" });
+        // if something is selected:
+        if (params.nodes.length > 0) {
+          filterActive = true;
+          let selectedNodes = params.nodes;
+
+          // hiding all nodes and saving the label
+          for (let nodeId in allNodes) {
+            allNodes[nodeId].hidden = true;
+            if (allNodes[nodeId].savedLabel === undefined) {
+              allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+              allNodes[nodeId].label = undefined;
+            }
+          }
+
+          for (let i = 0; i < selectedNodes.length; i++) {
+            allNodes[selectedNodes[i]].hidden = false;
+            if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+              allNodes[selectedNodes[i]].label =
+                allNodes[selectedNodes[i]].savedLabel;
+              allNodes[selectedNodes[i]].savedLabel = undefined;
+            }
+          }
+        } else if (filterActive === true) {
+          // reset all nodes
+          for (let nodeId in allNodes) {
+            allNodes[nodeId].hidden = false;
+            if (allNodes[nodeId].savedLabel !== undefined) {
+              allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+              allNodes[nodeId].savedLabel = undefined;
+            }
+          }
+          filterActive = false;
+        }
+
+        // transform the object into an array
+        var updateArray = [];
+        if (params.nodes.length > 0) {
+          for (let nodeId in allNodes) {
+            if (allNodes.hasOwnProperty(nodeId)) {
+              updateArray.push(allNodes[nodeId]);
+            }
+          }
+          nodes.update(updateArray);
+        } else {
+          for (let nodeId in allNodes) {
+            if (allNodes.hasOwnProperty(nodeId)) {
+              updateArray.push(allNodes[nodeId]);
+            }
+          }
+          nodes.update(updateArray);
+        }
+      }
+
+      function selectNode(nodes) {
+        network.selectNodes(nodes);
+        neighbourhoodHighlight({ nodes: nodes });
+        return nodes;
+      }
+
+      function selectNodes(nodes) {
+        network.selectNodes(nodes);
+        filterHighlight({ nodes: nodes });
+        return nodes;
+      }
+
+      function highlightFilter(filter) {
+        let selectedNodes = [];
+        let selectedProp = filter["property"];
+        if (filter["item"] === "node") {
+          let allNodes = nodes.get({ returnType: "Object" });
+          for (let nodeId in allNodes) {
+            if (
+              allNodes[nodeId][selectedProp] &&
+              filter["value"].includes(
+                allNodes[nodeId][selectedProp].toString()
+              )
+            ) {
+              selectedNodes.push(nodeId);
+            }
+          }
+        } else if (filter["item"] === "edge") {
+          let allEdges = edges.get({ returnType: "object" });
+          // check if the selected property exists for selected edge and select the nodes connected to the edge
+          for (let edge in allEdges) {
+            if (
+              allEdges[edge][selectedProp] &&
+              filter["value"].includes(allEdges[edge][selectedProp].toString())
+            ) {
+              selectedNodes.push(allEdges[edge]["from"]);
+              selectedNodes.push(allEdges[edge]["to"]);
+            }
+          }
+        }
+        selectNodes(selectedNodes);
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css"
+      integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js"
+      integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <center>
+      <h1></h1>
+    </center>
+
+    <!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+
+    <center>
+      <h1></h1>
+    </center>
+    <style type="text/css">
+      #mynetwork {
+        width: 100%;
+        height: 1000px;
+        background-color: #ffffff;
+        border: 1px solid lightgray;
+        position: relative;
+        float: left;
+      }
+
+      #loadingBar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 600px;
+        background-color: rgba(200, 200, 200, 0.8);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        opacity: 1;
+      }
+
+      #bar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+        margin: auto auto auto auto;
+        border-radius: 11px;
+        border: 2px solid rgba(30, 30, 30, 0.05);
+        background: rgb(0, 173, 246); /* Old browsers */
+        box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.4);
+      }
+
+      #border {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 500px;
+        height: 23px;
+        margin: auto auto auto auto;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+
+      #text {
+        position: absolute;
+        top: 8px;
+        left: 530px;
+        width: 30px;
+        height: 50px;
+        margin: auto auto auto auto;
+        font-size: 22px;
+        color: #000000;
+      }
+
+      div.outerBorder {
+        position: relative;
+        top: 400px;
+        width: 600px;
+        height: 44px;
+        margin: auto auto auto auto;
+        border: 8px solid rgba(0, 0, 0, 0.1);
+        background: rgb(252, 252, 252); /* Old browsers */
+        background: -moz-linear-gradient(
+          top,
+          rgba(252, 252, 252, 1) 0%,
+          rgba(237, 237, 237, 1) 100%
+        ); /* FF3.6+ */
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(0%, rgba(252, 252, 252, 1)),
+          color-stop(100%, rgba(237, 237, 237, 1))
+        ); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(
+          top,
+          rgba(252, 252, 252, 1) 0%,
+          rgba(237, 237, 237, 1) 100%
+        ); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(
+          top,
+          rgba(252, 252, 252, 1) 0%,
+          rgba(237, 237, 237, 1) 100%
+        ); /* Opera 11.10+ */
+        background: -ms-linear-gradient(
+          top,
+          rgba(252, 252, 252, 1) 0%,
+          rgba(237, 237, 237, 1) 100%
+        ); /* IE10+ */
+        background: linear-gradient(
+          to bottom,
+          rgba(252, 252, 252, 1) 0%,
+          rgba(237, 237, 237, 1) 100%
+        ); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+        border-radius: 72px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      #config {
+        float: left;
+        width: 400px;
+        height: 600px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card" style="width: 100%">
+      <div id="mynetwork" class="card-body"></div>
+    </div>
+
+    <div id="loadingBar">
+      <div class="outerBorder">
+        <div id="text">0%</div>
+        <div id="border">
+          <div id="bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="config"></div>
+
+    <script type="text/javascript">
+      // initialize global variables.
+      var edges;
+      var nodes;
+      var allNodes;
+      var allEdges;
+      var nodeColors;
+      var originalNodes;
+      var network;
+      var container;
+      var options, data;
+      var filter = {
+        item: "",
+        property: "",
+        value: [],
+      };
+
+      // This method is responsible for drawing the graph, returns the drawn network
+      function drawGraph() {
+        var container = document.getElementById("mynetwork");
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([
+          {
+            color: "#FF6B6B",
+            id: "Dwarkesh Patel",
+            label: "Dwarkesh Patel",
+            shape: "dot",
+            size: 38.46153846153846,
+            title:
+              "Type: person\nDegree: 16\nDescription: A person discussing the implications of AI agents on problem-solving and decision-making.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Sholto Douglas",
+            label: "Sholto Douglas",
+            shape: "dot",
+            size: 50.0,
+            title:
+              "Type: person\nDegree: 26\nDescription: A person discussing the potential benefits and limitations of AI agents communicating through text versus residual streams, and the trade-offs between agents and adaptive compute.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Trenton Bricken",
+            label: "Trenton Bricken",
+            shape: "dot",
+            size: 40.769230769230774,
+            title:
+              "Type: person\nDegree: 18\nDescription: A person commenting on the limitations of chain-of-thought reasoning for AI safety and the potential benefits of dictionary learning for human interpretable features.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Noam Brown",
+            label: "Noam Brown",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: person\nDegree: 1\nDescription: AI researcher who has written a paper on Diplomacy and has praised Sholto Douglas as being one of the most important people behind Gemini\u0027s success.",
+          },
+          {
+            color: "#FFD700",
+            id: "Gemini",
+            label: "Gemini",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: AI models\nDegree: 1\nDescription: AI model that has achieved success, with Sholto Douglas being one of the most important people behind its success.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Anthropic",
+            label: "Anthropic",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research organization\nDegree: 1\nDescription: Organization involved in research discussion",
+          },
+          {
+            color: "#96CEB4",
+            id: "long context lengths",
+            label: "long context lengths",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research concepts\nDegree: 1\nDescription: Research topic being discussed on the podcast, referring to the ability of AI models to process and understand large amounts of contextual information.",
+          },
+          {
+            color: "#96CEB4",
+            id: "mechanistic interpretability",
+            label: "mechanistic interpretability",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: research concepts\nDegree: 0\nDescription: Research area that Trenton Bricken works on, focusing on understanding the inner workings of AI models.",
+          },
+          {
+            color: "#97c2fc",
+            id: "AI models",
+            label: "AI models",
+            shape: "dot",
+            size: 25.76923076923077,
+            title: "Degree: 5",
+          },
+          {
+            color: "#45B7D1",
+            id: "Gradient Descent",
+            label: "Gradient Descent",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: technical concepts\nDegree: 2\nDescription: Gradient descent happening in the forward pass and attention, related to learning on the fly and meta-learning",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Meta-Learning",
+            label: "Meta-Learning",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: intelligence concepts\nDegree: 2\nDescription: A learning mechanism that enables an AI model to adapt and respond to new contexts and tasks.",
+          },
+          {
+            color: "#FF4500",
+            id: "Long-Context Tasks",
+            label: "Long-Context Tasks",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: technical metrics\nDegree: 1\nDescription: Tasks requiring long context windows, linked to the ability to perform well on them and the ability to do long-horizon tasks",
+          },
+          {
+            color: "#96CEB4",
+            id: "Long-Horizon Tasks",
+            label: "Long-Horizon Tasks",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research concepts\nDegree: 1\nDescription: Tasks requiring engagement with the task for many hours, or even many weeks or months, linked to the emergence of agent capabilities",
+          },
+          {
+            color: "#45B7D1",
+            id: "Agents",
+            label: "Agents",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: AI capabilities\nDegree: 1\nDescription: AI agents haven\u0027t taken off due to reasons related to nines of reliability and the model\u0027s ability to chain tasks successively",
+          },
+          {
+            color: "#8A2BE2",
+            id: "NeurIPS Best Paper",
+            label: "NeurIPS Best Paper",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research papers\nDegree: 1\nDescription: Paper pointing to the emergence of mirage, where people will have a task and you get the right or wrong answer depending on if you\u0027ve sampled the last five tokens correctly",
+          },
+          {
+            color: "#FF4500",
+            id: "HumanEval",
+            label: "HumanEval",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: technical metrics\nDegree: 0\nDescription: Metric used to measure the success rate of agents in completing tasks, involves nines of reliability and log pass rates",
+          },
+          {
+            color: "#FFD700",
+            id: "GPT-4 Class Models",
+            label: "GPT-4 Class Models",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: AI models\nDegree: 1\nDescription: Modelling approach discussed, with Gemini Ultra class models, to potentially get extra nines of reliability required for the emergence of agent capabilities",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Rylan Schaeffer",
+            label: "Rylan Schaeffer",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: person\nDegree: 1\nDescription: Lead author of the NeurIPS best paper, discussing the emergence of mirage",
+          },
+          {
+            color: "#96CEB4",
+            id: "Model Scale",
+            label: "Model Scale",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research concepts\nDegree: 1\nDescription: The increment on model scale potentially leading to the emergence of agent capabilities",
+          },
+          {
+            color: "#4ECDC4",
+            id: "Google",
+            label: "Google",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: business entities\nDegree: 2\nDescription: Large organization mentioned as having 200,000-ish people",
+          },
+          {
+            color: "#4ECDC4",
+            id: "Magic",
+            label: "Magic",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: business entities\nDegree: 1\nDescription: A company that has developed AI models with long context windows.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Sasha Rush",
+            label: "Sasha Rush",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: person\nDegree: 1\nDescription: A researcher who has tweeted about the cost of attention in AI models.",
+          },
+          {
+            color: "#233FFF",
+            id: "SWE-bench",
+            label: "SWE-bench",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: research programs\nDegree: 2\nDescription: A benchmark for evaluating the effectiveness of software engineering tools",
+          },
+          {
+            color: "#FF4500",
+            id: "MMLU scores",
+            label: "MMLU scores",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: technical metrics\nDegree: 1\nDescription: A measure of the performance of AI models.",
+          },
+          {
+            color: "#45B7D1",
+            id: "attention mechanisms",
+            label: "attention mechanisms",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: AI capabilities\nDegree: 2\nDescription: A component of AI models that determines how much context they can process.",
+          },
+          {
+            color: "#45B7D1",
+            id: "quadratic attention costs",
+            label: "quadratic attention costs",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: technical concepts\nDegree: 1\nDescription: The idea that the computational cost of attention mechanisms increases quadratically with the size of the input.",
+          },
+          {
+            color: "#FFD700",
+            id: "transformer models",
+            label: "transformer models",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: AI models\nDegree: 2\nDescription: A type of AI model that uses self-attention mechanisms to process input sequences.",
+          },
+          {
+            color: "#233FFF",
+            id: "multi-layer perceptrons (MLPs)",
+            label: "multi-layer perceptrons (MLPs)",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: neural network components\nDegree: 0\nDescription: A type of neural network component that is used in transformer models.",
+          },
+          {
+            color: "#97c2fc",
+            id: "MLPs",
+            label: "MLPs",
+            shape: "dot",
+            size: 21.153846153846153,
+            title: "Degree: 1",
+          },
+          {
+            color: "#FFD700",
+            id: "GPT-2",
+            label: "GPT-2",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: AI models\nDegree: 1\nDescription: A language model that represents a milestone in AI development and is compared to its successor GPT-3.",
+          },
+          {
+            color: "#FFD700",
+            id: "GPT-3",
+            label: "GPT-3",
+            shape: "dot",
+            size: 23.46153846153846,
+            title:
+              "Type: AI models\nDegree: 3\nDescription: Third open-ended text generation model designed and tested by OpenAI.",
+          },
+          {
+            color: "#233FFF",
+            id: "AlphaFold",
+            label: "AlphaFold",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: neural network components\nDegree: 1\nDescription: A deep learning model that utilizes transformer modules for protein folding.",
+          },
+          {
+            color: "#233FFF",
+            id: "Residual Stream",
+            label: "Residual Stream",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: neural network components\nDegree: 1\nDescription: A component of neural network architecture that enables adaptive compute and iterative refinement.",
+          },
+          {
+            color: "#233FFF",
+            id: "Attention Mechanism",
+            label: "Attention Mechanism",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: neural network components\nDegree: 1\nDescription: A neural network component that enables selective processing and context handling.",
+          },
+          {
+            color: "#FF4500",
+            id: "Context Length",
+            label: "Context Length",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: technical metrics\nDegree: 1\nDescription: A metric measuring the amount of context used by an AI model, influencing its ability to learn and adapt.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Scaling Up",
+            label: "Scaling Up",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: technical concepts\nDegree: 1\nDescription: Increasing the size and computational resources dedicated to AI models for improved performance and capabilities.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Diffusion",
+            label: "Diffusion",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: technical concepts\nDegree: 1\nDescription: An iterative process of adding more compute to enable adaptive refinement in certain AI models.",
+          },
+          {
+            color: "#FF4500",
+            id: "Compute Resources",
+            label: "Compute Resources",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: compute resources\nDegree: 1\nDescription: The resources required to process and train AI models, often measured in computational power or time.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Forward Pass",
+            label: "Forward Pass",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: technical concepts\nDegree: 0\nDescription: A step in the neural network processing pipeline where input data is propagated through the model.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Backward Pass",
+            label: "Backward Pass",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: technical concepts\nDegree: 0\nDescription: A step in the neural network training pipeline where model parameters are updated based on loss and errors.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Working Memory",
+            label: "Working Memory",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: cognitive processes\nDegree: 0\nDescription: A cognitive system responsible for temporarily holding and manipulating information for reasoning and problem-solving.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Model Training",
+            label: "Model Training",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: model training components\nDegree: 0\nDescription: The process of adjusting an AI model\u0027s parameters to optimize its performance on specific tasks and data.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Pre-Training",
+            label: "Pre-Training",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: model training components\nDegree: 0\nDescription: A training phase where a model learns to recognize and understand general concepts and representations.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Adaptive Compute",
+            label: "Adaptive Compute",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: technical concepts\nDegree: 1\nDescription: A system that allocates computational resources dynamically based on the complexity and requirements of a task.",
+          },
+          {
+            color: "#96CEB4",
+            id: "GOFAI",
+            label: "GOFAI",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research concepts\nDegree: 1\nDescription: General term for approaches to artificial intelligence that are based on the use of symbols and rules.",
+          },
+          {
+            color: "#999999",
+            id: "Transformers",
+            label: "Transformers",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: Neural Network Component\nDegree: 2\nDescription: A type of neural network architecture that relies on self-attention mechanisms to process sequences of inputs, such as text or images.",
+          },
+          {
+            color: "#FFD700",
+            id: "Neural networks",
+            label: "Neural networks",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: AI models\nDegree: 2\nDescription: Type of model inspired by the human brain, capable of learning from data.",
+          },
+          {
+            color: "#FFD700",
+            id: "Convolutional neural networks (CNNs)",
+            label: "Convolutional neural networks (CNNs)",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: AI models\nDegree: 1\nDescription: Type of neural network, originally designed to process visual information.",
+          },
+          {
+            color: "#96CEB4",
+            id: "Brain",
+            label: "Brain",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: biological systems\nDegree: 2\nDescription: Highly complex biological system that enables the function of thought and consciousness.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Cerebellum",
+            label: "Cerebellum",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: human brain components\nDegree: 1\nDescription: A structure in the brain, involved in coordinating movement and certain cognitive processes.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Gwern",
+            label: "Gwern",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: person\nDegree: 1\nDescription: A researcher, possibly in neuroscience and AI.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "cerebellum",
+            label: "cerebellum",
+            shape: "dot",
+            size: 24.615384615384613,
+            title:
+              "Type: human brain components\nDegree: 4\nDescription: A part of the brain involved in motor control and other cognitive processes.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "cerebral cortex",
+            label: "cerebral cortex",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: human brain components\nDegree: 0\nDescription: A part of the brain involved in processing sensory information and controlling movement.",
+          },
+          {
+            color: "#FF4500",
+            id: "PET",
+            label: "PET",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: neural imaging techniques\nDegree: 0\nDescription: A type of imaging technique used to study brain activity.",
+          },
+          {
+            color: "#FF4500",
+            id: "fMRI",
+            label: "fMRI",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: neural imaging techniques\nDegree: 0\nDescription: A type of imaging technique used to study brain activity.",
+          },
+          {
+            color: "#96CEB4",
+            id: "next token prediction",
+            label: "next token prediction",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: evaluation tasks\nDegree: 0\nDescription: A task used in natural language processing to predict the next word in a sequence.",
+          },
+          {
+            color: "#233FFF",
+            id: "autism",
+            label: "autism",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: medical conditions\nDegree: 1\nDescription: A neurodevelopmental disorder characterized by difficulties in social interaction and communication.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Pentti Kanerva",
+            label: "Pentti Kanerva",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: person\nDegree: 1\nDescription: A researcher who developed the associative memory algorithm.",
+          },
+          {
+            color: "#45B7D1",
+            id: "associative memory algorithm",
+            label: "associative memory algorithm",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: technical concepts\nDegree: 1\nDescription: An algorithm developed by Pentti Kanerva to store and retrieve memories.",
+          },
+          {
+            color: "#96CEB4",
+            id: "Drosophila mushroom body",
+            label: "Drosophila mushroom body",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: biological systems\nDegree: 1\nDescription: A part of the brain in fruit flies involved in learning and memory.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Softmax",
+            label: "Softmax",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: technical concepts\nDegree: 0\nDescription: A mathematical function used in machine learning to normalize output values.",
+          },
+          {
+            color: "#FFD700",
+            id: "transformers",
+            label: "transformers",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: AI models\nDegree: 1\nDescription: A type of neural network architecture used in natural language processing.",
+          },
+          {
+            color: "#45B7D1",
+            id: "attention operation",
+            label: "attention operation",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: technical concepts\nDegree: 1\nDescription: A process used in transformers to focus on specific parts of the input data.",
+          },
+          {
+            color: "#45B7D1",
+            id: "hierarchy of associative memories",
+            label: "hierarchy of associative memories",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: technical concepts\nDegree: 2\nDescription: A hierarchical structure of memories used for pattern matching.",
+          },
+          {
+            color: "#45B7D1",
+            id: "MLP layer",
+            label: "MLP layer",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: technical concepts\nDegree: 1\nDescription: A type of neural network layer used in machine learning.",
+          },
+          {
+            color: "#FFD700",
+            id: "neural networks",
+            label: "neural networks",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: AI models\nDegree: 0\nDescription: A type of machine learning model used for pattern recognition and classification.",
+          },
+          {
+            color: "#97c2fc",
+            id: "pattern matching",
+            label: "pattern matching",
+            shape: "dot",
+            size: 21.153846153846153,
+            title: "Degree: 1",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Demis",
+            label: "Demis",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: person\nDegree: 2\nDescription: Person mentioned in the discussion on the podcast, likely a researcher or scientist in the AI field and possibly associated with OpenAI.",
+          },
+          {
+            color: "#FFD700",
+            id: "Sherlock Holmes",
+            label: "Sherlock Holmes",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: biological analogy\nDegree: 2\nDescription: A fictional character who was used as an example to discuss the potential capabilities of AI models.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Sir Arthur Conan Doyle",
+            label: "Sir Arthur Conan Doyle",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: person\nDegree: 0\nDescription: Author of the Sherlock Holmes novels.",
+          },
+          {
+            color: "#FFD700",
+            id: "LLM",
+            label: "LLM",
+            shape: "dot",
+            size: 24.615384615384613,
+            title:
+              "Type: AI models\nDegree: 4\nDescription: A large language model, a type of artificial intelligence model",
+          },
+          {
+            color: "#96CEB4",
+            id: "human brain",
+            label: "human brain",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: biological systems\nDegree: 2\nDescription: The organ of the human body responsible for memory and cognition.",
+          },
+          {
+            color: "#233FFF",
+            id: "neural network components",
+            label: "neural network components",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: neural network components\nDegree: 1\nDescription: Components of the human brain that are analogous to artificial neural network components.",
+          },
+          {
+            color: "#45B7D1",
+            id: "deductive reasoning",
+            label: "deductive reasoning",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: cognitive processes\nDegree: 1\nDescription: A process of reasoning where a conclusion is drawn based on the premises.",
+          },
+          {
+            color: "#45B7D1",
+            id: "pattern recognition",
+            label: "pattern recognition",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: cognitive processes\nDegree: 1\nDescription: A process of perception where a certain pattern is identified.",
+          },
+          {
+            color: "#8A2BE2",
+            id: "Gemini 1.5",
+            label: "Gemini 1.5",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research papers\nDegree: 1\nDescription: A research paper that discussed the use of long-context evaluation for AI models.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Paul Graham",
+            label: "Paul Graham",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: person\nDegree: 1\nDescription: An author whose essays were used as a test case for the long-context evaluation of AI models.",
+          },
+          {
+            color: "#FFD700",
+            id: "Claude",
+            label: "Claude",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: AI models\nDegree: 2\nDescription: AI model discussed as having the potential to automate tasks and assist with research, but with limitations in current capabilities.",
+          },
+          {
+            color: "#4ECDC4",
+            id: "NVIDIA",
+            label: "NVIDIA",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: business entities\nDegree: 1\nDescription: Company mentioned as a representative of the increasing compute power in AI development.",
+          },
+          {
+            color: "#FF4500",
+            id: "compute",
+            label: "compute",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: compute resources\nDegree: 2\nDescription: Resource discussed as a constraint in AI research, with the potential to speed up research.",
+          },
+          {
+            color: "#233FFF",
+            id: "layer norm",
+            label: "layer norm",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: neural network components\nDegree: 1\nDescription: Technique discussed in the context of interpretability research, particularly in understanding the behavior of AI models.",
+          },
+          {
+            color: "#45B7D1",
+            id: "logit effects",
+            label: "logit effects",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: technical concepts\nDegree: 0\nDescription: Concept discussed in the context of interpretability research, particularly in understanding the behavior of AI models.",
+          },
+          {
+            color: "#45B7D1",
+            id: "context window",
+            label: "context window",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: technical concepts\nDegree: 0\nDescription: Concept discussed in the context of AI models and their limitations in handling context.",
+          },
+          {
+            color: "#FFD700",
+            id: "Twitter",
+            label: "Twitter",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: information representation\nDegree: 1\nDescription: Platform mentioned as a source of discussion and misinformation about AI research and its implications.",
+          },
+          {
+            color: "#97c2fc",
+            id: "interpretability",
+            label: "interpretability",
+            shape: "dot",
+            size: 21.153846153846153,
+            title: "Degree: 1",
+          },
+          {
+            color: "#97c2fc",
+            id: "alignments",
+            label: "alignments",
+            shape: "dot",
+            size: 21.153846153846153,
+            title: "Degree: 1",
+          },
+          {
+            color: "#FF6B6B",
+            id: "John Carmack",
+            label: "John Carmack",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: person\nDegree: 1\nDescription: John Carmack is a notable figure in AI development who is quoted for suggesting that writing AI code could be plausible with only 10,000 lines of code.",
+          },
+          {
+            color: "#45B7D1",
+            id: "React",
+            label: "React",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: AI capabilities\nDegree: 0\nDescription: React is a front-end library for building complex user interfaces, but is used here for comparison to highlight the difference between programming tasks for typical software development and those for AI system development.",
+          },
+          {
+            color: "#96CEB4",
+            id: "intelligence explosion",
+            label: "intelligence explosion",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: research concepts\nDegree: 0\nDescription: The term \u0027intelligence explosion\u0027 refers to the hypothetical event in which an artificial intelligence system surpasses human intelligence and rapidly enhances itself to extremely high levels, possibly leading to tremendous changes in human civilization.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "recursive self-improvement",
+            label: "recursive self-improvement",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: intelligence concepts\nDegree: 0\nDescription: Recursive self-improvement refers to the process by which an AI system modifies its own architecture or code to become more intelligent, leading to further improvements and a potential cycle of exponential growth in intelligence.",
+          },
+          {
+            color: "#FFD700",
+            id: "pre-training process",
+            label: "pre-training process",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: research processes\nDegree: 0\nDescription: The pre-training process is an initial step in training AI models using a large corpus of data without specific task objectives, but rather to acquire general knowledge that can be fine-tuned later for specific tasks.",
+          },
+          {
+            color: "#FF4500",
+            id: "GPUs",
+            label: "GPUs",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: compute resources\nDegree: 0\nDescription: GPUs, or Graphics Processing Units, are specialized electronic circuits designed to quickly manipulate and alter memory to accelerate the creation of images on a display device. They are widely used in AI research and development.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Carl Shulman",
+            label: "Carl Shulman",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: person\nDegree: 2\nDescription: Researcher and individual who is known for talking about the framing involving AI and the increase in orders of magnitude in the near term.",
+          },
+          {
+            color: "#FFD700",
+            id: "GPT-4",
+            label: "GPT-4",
+            shape: "dot",
+            size: 26.923076923076923,
+            title:
+              "Type: AI models\nDegree: 6\nDescription: A language model used as an example to illustrate the versatility and generality of modern AI models.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Alec Radford",
+            label: "Alec Radford",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: person\nDegree: 2\nDescription: Researcher mentioned as having a Copilot for Jupyter notebook experiments",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Chris Olah",
+            label: "Chris Olah",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: AI researchers\nDegree: 2\nDescription: Lead of the interpretability team at OpenAI, mentioned in the discussion as the leader of the team working on understanding what happens inside AI models.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "OpenAI",
+            label: "OpenAI",
+            shape: "dot",
+            size: 23.46153846153846,
+            title:
+              "Type: research organization\nDegree: 3\nDescription: Organization involved in AI research and development, mentioned in the discussion as the workplace of some of the participants.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Grad student",
+            label: "Grad student",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: research fields\nDegree: 0\nDescription: Field of research and study mentioned in the discussion as a previous position of some participants.",
+          },
+          {
+            color: "#96CEB4",
+            id: "Scaling up AI models",
+            label: "Scaling up AI models",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: research concepts\nDegree: 0\nDescription: Concept mentioned in the discussion as the process of increasing the size and complexity of AI models to improve their performance.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Jupyter notebook",
+            label: "Jupyter notebook",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: technical concepts\nDegree: 0\nDescription: Tool mentioned in the discussion as a platform used by Alec Radford for AI model development.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Gemini team",
+            label: "Gemini team",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: research organization\nDegree: 2\nDescription: Team mentioned as needing to hire talented engineers for interpretability",
+          },
+          {
+            color: "#FF4500",
+            id: "H100",
+            label: "H100",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: compute resources\nDegree: 0\nDescription: Hardware mentioned as being used for running experiments",
+          },
+          {
+            color: "#FF4500",
+            id: "TPUs",
+            label: "TPUs",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: compute resources\nDegree: 1\nDescription: Hardware mentioned as preferred for running experiments",
+          },
+          {
+            color: "#FFD700",
+            id: "Copilot",
+            label: "Copilot",
+            shape: "dot",
+            size: 23.46153846153846,
+            title:
+              "Type: AI models\nDegree: 3\nDescription: A tool that assists and simplifies the work of software developers",
+          },
+          {
+            color: "#96CEB4",
+            id: "Greedy evolutionary optimization",
+            label: "Greedy evolutionary optimization",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research concepts\nDegree: 1\nDescription: Concept mentioned as being used in machine learning research",
+          },
+          {
+            color: "#FF4500",
+            id: "Cycle time",
+            label: "Cycle time",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: technical metrics\nDegree: 0\nDescription: Metric mentioned as separating effective researchers from less effective ones",
+          },
+          {
+            color: "#45B7D1",
+            id: "Machine learning",
+            label: "Machine learning",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: research fields\nDegree: 2\nDescription: Field of research discussed in the conversation",
+          },
+          {
+            color: "#45B7D1",
+            id: "Optimization theory",
+            label: "Optimization theory",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: research fields\nDegree: 0\nDescription: Field of research mentioned as being used in conjunction with reinforcement learning",
+          },
+          {
+            color: "#45B7D1",
+            id: "Reinforcement learning",
+            label: "Reinforcement learning",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: research fields\nDegree: 0\nDescription: Field of research mentioned as being used in machine learning",
+          },
+          {
+            color: "#96CEB4",
+            id: "Interpretability",
+            label: "Interpretability",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research concepts\nDegree: 1\nDescription: Concept mentioned as being important for the Gemini team",
+          },
+          {
+            color: "#97c2fc",
+            id: "Compute resources",
+            label: "Compute resources",
+            shape: "dot",
+            size: 21.153846153846153,
+            title: "Degree: 1",
+          },
+          {
+            color: "#4ECDC4",
+            id: "GCP",
+            label: "GCP",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: business entities\nDegree: 1\nDescription: Google Cloud Platform, a suite of cloud computing services",
+          },
+          {
+            color: "#FF4500",
+            id: "Compute",
+            label: "Compute",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: compute resources\nDegree: 1\nDescription: A resource used to perform computations and run experiments",
+          },
+          {
+            color: "#45B7D1",
+            id: "Inference",
+            label: "Inference",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: model training components\nDegree: 1\nDescription: A component of the machine learning workflow, where a trained model makes predictions",
+          },
+          {
+            color: "#45B7D1",
+            id: "Research",
+            label: "Research",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research fields\nDegree: 1\nDescription: A field of study and investigation",
+          },
+          {
+            color: "#45B7D1",
+            id: "Synthetic data",
+            label: "Synthetic data",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: technical concepts\nDegree: 1\nDescription: Artificially created data designed to mimic or replicate real-world data.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Grant Sanderson",
+            label: "Grant Sanderson",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: person\nDegree: 1\nDescription: A person who was mentioned in a conversation with Dwarkesh Patel and was debating about the potential impact of AI on jobs.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Ilya",
+            label: "Ilya",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: person\nDegree: 1\nDescription: An expert who has a perspective on achieving super intelligence via perfectly modeling human textual output.",
+          },
+          {
+            color: "#FFD700",
+            id: "GPT-5",
+            label: "GPT-5",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: AI models\nDegree: 2\nDescription: The next generation of the popular AI model GPT, speculated to be the result of more people contributing to the field.",
+          },
+          {
+            color: "#FF6B6B",
+            id: "DeepMind",
+            label: "DeepMind",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research organization\nDegree: 1\nDescription: A research organization that carried out research for geometry to verify the reasoning of its AI model.",
+          },
+          {
+            color: "#96CEB4",
+            id: "ICML",
+            label: "ICML",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: event\nDegree: 1\nDescription: A conference (International Conference on Machine Learning) that brings together experts in the field, increasing the chances of breakthroughs.",
+          },
+          {
+            color: "#8A2BE2",
+            id: "arXiv papers",
+            label: "arXiv papers",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research papers\nDegree: 1\nDescription: A collection of papers on a variety of topics, requiring reasoning to understand and model the content.",
+          },
+          {
+            color: "#8A2BE2",
+            id: "Wikipedia",
+            label: "Wikipedia",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research papers\nDegree: 1\nDescription: An online encyclopaedia that requires reasoning to understand and model its content.",
+          },
+          {
+            color: "#96CEB4",
+            id: "Math Olympiad",
+            label: "Math Olympiad",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: evaluation tasks\nDegree: 1\nDescription: A math competition that was mentioned as a goal for AI models.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Geometry",
+            label: "Geometry",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: research fields\nDegree: 2\nDescription: A field of study that was mentioned as being easily formalizable and verifiable.",
+          },
+          {
+            color: "#96CEB4",
+            id: "Evolutionary Process",
+            label: "Evolutionary Process",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research concepts\nDegree: 1\nDescription: A concept that was mentioned as being similar to the process of empirical ML.",
+          },
+          {
+            color: "#97c2fc",
+            id: "Empirical ML",
+            label: "Empirical ML",
+            shape: "dot",
+            size: 21.153846153846153,
+            title: "Degree: 1",
+          },
+          {
+            color: "#96CEB4",
+            id: "LSAT",
+            label: "LSAT",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: evaluation tasks\nDegree: 0\nDescription: Standardized test administered by the Law School Admission Council (LSAC) to allow law schools to assess whether a candidate has the critical thinking skills and knowledge necessary to excel in law school.",
+          },
+          {
+            color: "#999999",
+            id: "Penicillin",
+            label: "Penicillin",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: biological concepts\nDegree: 1\nDescription: Type of antibiotic that works by stopping the growth of cells.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Diffusion models",
+            label: "Diffusion models",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: technical concepts\nDegree: 0\nDescription: Methods used to discover patterns in complex and uncertain data.",
+          },
+          {
+            color: "#999999",
+            id: "Overton window",
+            label: "Overton window",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: concept\nDegree: 0\nDescription: A term referring to the range of policies or ideas that the public considers acceptable.",
+          },
+          {
+            color: "#999999",
+            id: "Superposition",
+            label: "Superposition",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: concept\nDegree: 1\nDescription: A theoretical concept related to the ability of a model to represent multiple states simultaneously.",
+          },
+          {
+            color: "#999999",
+            id: "Sample efficiency",
+            label: "Sample efficiency",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: ai capability\nDegree: 0\nDescription: The ability of an AI model to learn from a smaller amount of data.",
+          },
+          {
+            color: "#FF4500",
+            id: "Computer",
+            label: "Computer",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: compute resources\nDegree: 1\nDescription: The resources required for training large language models.",
+          },
+          {
+            color: "#999999",
+            id: "Human brain",
+            label: "Human brain",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: biological system\nDegree: 1\nDescription: A complex system that serves as a benchmark for AI model development.",
+          },
+          {
+            color: "#97c2fc",
+            id: "Sam",
+            label: "Sam",
+            shape: "dot",
+            size: 21.153846153846153,
+            title: "Degree: 1",
+          },
+          {
+            color: "#8A2BE2",
+            id: "Toy Models of Superposition",
+            label: "Toy Models of Superposition",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research papers\nDegree: 1\nDescription: Fundamental result about compression in large models",
+          },
+          {
+            color: "#FFD700",
+            id: "GPT-4 Turbo",
+            label: "GPT-4 Turbo",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: AI models\nDegree: 1\nDescription: Smaller model, likely distilled from GPT-4",
+          },
+          {
+            color: "#8A2BE2",
+            id: "Towards Monosemanticity",
+            label: "Towards Monosemanticity",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research papers\nDegree: 1\nDescription: Paper on undoing compression in models",
+          },
+          {
+            color: "#999999",
+            id: "Knowledge Distillation",
+            label: "Knowledge Distillation",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: Model Training Component\nDegree: 2\nDescription: A process that allows a smaller model to learn from a larger, pre-trained model by mimicking its outputs, resulting in more efficient and effective training.",
+          },
+          {
+            color: "#999999",
+            id: "Chain-of-Thought",
+            label: "Chain-of-Thought",
+            shape: "dot",
+            size: 22.307692307692307,
+            title:
+              "Type: AI Capability\nDegree: 2\nDescription: A property of certain AI models that enables them to generate a sequence of intermediate reasoning steps, allowing for more transparent and explainable decision-making processes.",
+          },
+          {
+            color: "#45B7D1",
+            id: "Chain-of-thought",
+            label: "Chain-of-thought",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: cognitive processes\nDegree: 1\nDescription: Strategy where the model decides its answer, then comes up with a reason for the answer that\u0027s not actually relevant",
+          },
+          {
+            color: "#45B7D1",
+            id: "Teacher forcing",
+            label: "Teacher forcing",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: model training components\nDegree: 0\nDescription: Training strategy for sequence prediction models where the model is told the correct output at each step",
+          },
+          {
+            color: "#FFD700",
+            id: "Open source models",
+            label: "Open source models",
+            shape: "dot",
+            size: 20.0,
+            title:
+              "Type: AI models\nDegree: 0\nDescription: Models that are openly available and transparent about how they make decisions",
+          },
+          {
+            color: "#8A2BE2",
+            id: "Anthropic\u0027s recent sleeper agents paper",
+            label: "Anthropic\u0027s recent sleeper agents paper",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research papers\nDegree: 1\nDescription: Paper discussing the \u0027sleeper agent\u0027 problem, in which a model is trained to produce malicious output when triggered",
+          },
+          {
+            color: "#FF6B6B",
+            id: "Miles Turpin",
+            label: "Miles Turpin",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: person\nDegree: 1\nDescription: Researcher who has done work on model interpretability",
+          },
+          {
+            color: "#97c2fc",
+            id: "Paper on model interpretability",
+            label: "Paper on model interpretability",
+            shape: "dot",
+            size: 21.153846153846153,
+            title: "Degree: 1",
+          },
+          {
+            color: "#FFD700",
+            id: "DALL-E",
+            label: "DALL-E",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: AI models\nDegree: 1\nDescription: A deep learning model that generates pictures based on text prompts, used as an example to illustrate the limitations of text-based communication between AI agents.",
+          },
+          {
+            color: "#96CEB4",
+            id: "Hayekian problem of specialization",
+            label: "Hayekian problem of specialization",
+            shape: "dot",
+            size: 21.153846153846153,
+            title:
+              "Type: research concepts\nDegree: 1\nDescription: A concept that refers to the division of knowledge and tasks among individuals or systems, discussed in the context of the potential of AI models to ingest and process large amounts of information.",
+          },
+        ]);
+        edges = new vis.DataSet([
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: Sholto Douglas discusses the potential benefits and limitations of AI agents communicating through text versus residual streams with Dwarkesh Patel.\nStrength: 9",
+            to: "Sholto Douglas",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: Trenton Bricken responds to Dwarkesh Patel\u0027s comments on the limitations of chain-of-thought reasoning for AI safety.\nStrength: 8",
+            to: "Trenton Bricken",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: Discussed meta-learning in context of long-context tasks\nStrength: 8",
+            to: "Meta-Learning",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: Colleague or acquaintance, as Dwarkesh Patel discusses Demis\u0027 paper.\nStrength: 6",
+            to: "Demis",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title: "Relationship: Discusses research paper\nStrength: 8",
+            to: "Gemini 1.5",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title: "Relationship: Mentions author\u0027s essays\nStrength: 6",
+            to: "Paul Graham",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: Dwarkesh Patel is referencing Carl Shulman\u0027s previous statements about the role of hardware improvements and inference improvements in potential intelligence explosions.\nStrength: 6",
+            to: "Carl Shulman",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: Discussing the potential bottleneck of compute resources in research with Sholto Douglas\nStrength: 8",
+            to: "Compute resources",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: debating about the potential impact of AI on jobs\nStrength: 7",
+            to: "Grant Sanderson",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: speculating about the next generation of AI models\nStrength: 8",
+            to: "GPT-5",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: Discussed the improvements of the model in comparison to later versions.\nStrength: 8",
+            to: "GPT-3",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: GPT-4 is used by Dwarkesh Patel as an example to illustrate the versatility and generality of modern AI models.\nStrength: 4",
+            to: "GPT-4",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: Discussed the role of the general type of artificial intelligence in a future explosion in AI advancements.\nStrength: 7",
+            to: "GOFAI",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: comparing the human brain to AI models in terms of synapse count\nStrength: 7",
+            to: "Human brain",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: Dwarkesh Patel is asking questions and moderating the discussion around the concept of chain-of-thought in AI models.\nStrength: 8",
+            to: "Chain-of-Thought",
+          },
+          {
+            from: "Dwarkesh Patel",
+            title:
+              "Relationship: Dwarkesh Patel mentions the Hayekian problem of specialization in the context of the potential of AI models to ingest and process large amounts of information.\nStrength: 6",
+            to: "Hayekian problem of specialization",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Sholto Douglas contributed to the success of Gemini, an AI model.\nStrength: 9",
+            to: "Gemini",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Noam Brown has praised Sholto Douglas as being one of the most important people behind Gemini\u0027s success.\nStrength: 8",
+            to: "Noam Brown",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Discussed the emergence of agent capabilities\nStrength: 8",
+            to: "Agents",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Works with in field of AI research\nStrength: 8",
+            to: "Trenton Bricken",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Developing AI models with long context windows.\nStrength: 5",
+            to: "Google",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Developing AI models with long context windows.\nStrength: 5",
+            to: "Magic",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Tweeting about the cost of attention in AI models.\nStrength: 4",
+            to: "Sasha Rush",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: A benchmark for evaluating the performance of AI models.\nStrength: 6",
+            to: "SWE-bench",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: A measure of the performance of AI models.\nStrength: 6",
+            to: "MMLU scores",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: discusses the importance of compute in AI development\nStrength: 8",
+            to: "compute",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Sholto Douglas is referencing a quote from John Carmack regarding the potential simplicity of writing AI code.\nStrength: 6",
+            to: "John Carmack",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Sholto Douglas mentioned Demis in the discussion as someone who talked about scaling up AI models.\nStrength: 6",
+            to: "Demis",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Sholto Douglas mentioned GPT-4 as an example of a recent AI model developed by OpenAI.\nStrength: 5",
+            to: "GPT-4",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Discussing the importance of prioritization and simplicity in machine learning research\nStrength: 8",
+            to: "Machine learning",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Preferred hardware for running experiments\nStrength: 6",
+            to: "TPUs",
+          },
+          {
+            from: "Sholto Douglas",
+            title: "Relationship: Research context\nStrength: 6",
+            to: "GCP",
+          },
+          {
+            from: "Sholto Douglas",
+            title: "Relationship: Researcher\nStrength: 9",
+            to: "Research",
+          },
+          {
+            from: "Sholto Douglas",
+            title: "Relationship: Tool user\nStrength: 7",
+            to: "Copilot",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: sharing a perspective on achieving super intelligence\nStrength: 8",
+            to: "Ilya",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Shared the same perspective on the idea that the use of increasingly large model sizes may become unfeasible due to costs.\nStrength: 7",
+            to: "Carl Shulman",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Believes that the large jump in performance between GPT-3.5 and GPT-4 is an indicator of future growth prospects for AI models.\nStrength: 6",
+            to: "GPT-3",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: referencing a person (likely Sam Altman) who is trying to raise a large amount of money\nStrength: 3",
+            to: "Sam",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Sholto Douglas is discussing the concept of knowledge distillation in the context of training large language models.\nStrength: 8",
+            to: "Knowledge Distillation",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: Researchers strategy for improving model interpretability\nStrength: 7",
+            to: "Chain-of-thought",
+          },
+          {
+            from: "Sholto Douglas",
+            title:
+              "Relationship: DALL-E is used by Sholto Douglas as an example to illustrate the limitations of text-based communication between AI agents.\nStrength: 3",
+            to: "DALL-E",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: Trenton Bricken works at Anthropic, which is involved in relevant research\nStrength: 7",
+            to: "Anthropic",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: Discussed the concept of gradient descent and learning on the fly\nStrength: 8",
+            to: "Gradient Descent",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: Trenton Bricken is an expert in neuroscience, comparing brain functions to transformer models.\nStrength: 6",
+            to: "Brain",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: Trenton Bricken discussed the cerebellum as a part of the brain involved in motor control and other cognitive processes.\nStrength: 8",
+            to: "cerebellum",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: discusses the potential of Claude in automating tasks\nStrength: 9",
+            to: "Claude",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: discusses the importance of interpretability in AI research\nStrength: 10",
+            to: "interpretability",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: Trenton Bricken works under Chris Olah on the interpretability team at OpenAI.\nStrength: 7",
+            to: "Chris Olah",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: Mentioning the use of greedy evolutionary optimization in machine learning research\nStrength: 7",
+            to: "Greedy evolutionary optimization",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: Discussing the empirical nature of machine learning research\nStrength: 8",
+            to: "Machine learning",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: Mentioned as an example of a scientific discovery that was made by chance.\nStrength: 6",
+            to: "Penicillin",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: discussing the capabilities and limitations of the model\nStrength: 8",
+            to: "GPT-4",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: explaining the concept as a hypothesis that can improve AI model performance\nStrength: 6",
+            to: "Superposition",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: Trenton Bricken mentioned the research paper \u0027Toy Models of Superposition\u0027 as relevant to his research\nStrength: 8",
+            to: "Toy Models of Superposition",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: Trenton Bricken mentioned the research paper \u0027Towards Monosemanticity\u0027 as relevant to his research\nStrength: 8",
+            to: "Towards Monosemanticity",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: Trenton Bricken is referencing the internal workings of transformer models, specifically the attention mechanism.\nStrength: 7",
+            to: "Transformers",
+          },
+          {
+            from: "Trenton Bricken",
+            title:
+              "Relationship: References paper on \u0027sleeper agent\u0027 problem\nStrength: 5",
+            to: "Anthropic\u0027s recent sleeper agents paper",
+          },
+          {
+            from: "long context lengths",
+            title:
+              "Relationship: Long context lengths is a research topic that has implications for the development of AI models.\nStrength: 9",
+            to: "AI models",
+          },
+          {
+            from: "AI models",
+            title:
+              "Relationship: requiring reasoning to understand and model the content\nStrength: 8",
+            to: "arXiv papers",
+          },
+          {
+            from: "AI models",
+            title:
+              "Relationship: requiring reasoning to understand and model the content\nStrength: 8",
+            to: "Wikipedia",
+          },
+          {
+            from: "AI models",
+            title: "Relationship: being a goal for AI models\nStrength: 7",
+            to: "Math Olympiad",
+          },
+          {
+            from: "AI models",
+            title:
+              "Relationship: being a field that is easily formalizable and verifiable\nStrength: 8",
+            to: "Geometry",
+          },
+          {
+            from: "Gradient Descent",
+            title:
+              "Relationship: Related concepts in the context of AI safety\nStrength: 5",
+            to: "Meta-Learning",
+          },
+          {
+            from: "Long-Context Tasks",
+            title:
+              "Relationship: Linked to the ability to perform well on them and the ability to do long-horizon tasks\nStrength: 6",
+            to: "Long-Horizon Tasks",
+          },
+          {
+            from: "NeurIPS Best Paper",
+            title:
+              "Relationship: Paper discussing the emergence of mirage\nStrength: 8",
+            to: "Rylan Schaeffer",
+          },
+          {
+            from: "GPT-4 Class Models",
+            title:
+              "Relationship: Discussed the model scale\u0027s impact on agent capabilities\nStrength: 7",
+            to: "Model Scale",
+          },
+          {
+            from: "Google",
+            title:
+              "Relationship: Mentioned as a large organization with 200,000-ish people\nStrength: 5",
+            to: "Gemini team",
+          },
+          {
+            from: "SWE-bench",
+            title: "Relationship: Benchmark\nStrength: 7",
+            to: "LLM",
+          },
+          {
+            from: "attention mechanisms",
+            title:
+              "Relationship: A component of transformer models.\nStrength: 9",
+            to: "transformer models",
+          },
+          {
+            from: "attention mechanisms",
+            title:
+              "Relationship: Describing the computational cost of attention mechanisms.\nStrength: 8",
+            to: "quadratic attention costs",
+          },
+          {
+            from: "transformer models",
+            title:
+              "Relationship: A component of transformer models.\nStrength: 9",
+            to: "MLPs",
+          },
+          {
+            from: "GPT-2",
+            title:
+              "Relationship: Exhibits the incremental improvement in context handling and meta-learning capabilities\nStrength: 7",
+            to: "GPT-3",
+          },
+          {
+            from: "AlphaFold",
+            title:
+              "Relationship: Demonstrates the iterative refinement process in deep learning models\nStrength: 6",
+            to: "Residual Stream",
+          },
+          {
+            from: "Attention Mechanism",
+            title:
+              "Relationship: Enables selective processing and context handling in neural networks\nStrength: 7",
+            to: "Context Length",
+          },
+          {
+            from: "Scaling Up",
+            title:
+              "Relationship: Requires an increase in computational resources to enable larger and more complex models\nStrength: 8",
+            to: "Compute Resources",
+          },
+          {
+            from: "Diffusion",
+            title:
+              "Relationship: Enables iterative refinement and adaptive compute in certain AI models\nStrength: 7",
+            to: "Adaptive Compute",
+          },
+          {
+            from: "Transformers",
+            title:
+              "Relationship: Transformers are a type of neural network, using a different approach to process information.\nStrength: 8",
+            to: "Neural networks",
+          },
+          {
+            from: "Neural networks",
+            title:
+              "Relationship: Convolutional neural networks (CNNs) are a type of neural network, specifically designed for image processing.\nStrength: 9",
+            to: "Convolutional neural networks (CNNs)",
+          },
+          {
+            from: "Brain",
+            title:
+              "Relationship: The cerebellum is a component of the brain, involved in movement and certain cognitive processes.\nStrength: 9",
+            to: "Cerebellum",
+          },
+          {
+            from: "Gwern",
+            title:
+              "Relationship: Gwern pointed out that the cerebellum has more neurons in humans and is more metabolically expensive.\nStrength: 7",
+            to: "cerebellum",
+          },
+          {
+            from: "cerebellum",
+            title:
+              "Relationship: Damage to the cerebellum is associated with an increased risk of autism.\nStrength: 9",
+            to: "autism",
+          },
+          {
+            from: "cerebellum",
+            title:
+              "Relationship: The Drosophila mushroom body has a similar cerebellar architecture to the human cerebellum.\nStrength: 8",
+            to: "Drosophila mushroom body",
+          },
+          {
+            from: "Pentti Kanerva",
+            title:
+              "Relationship: Pentti Kanerva developed the associative memory algorithm.\nStrength: 10",
+            to: "associative memory algorithm",
+          },
+          {
+            from: "transformers",
+            title:
+              "Relationship: Transformers use the attention operation to focus on specific parts of the input data.\nStrength: 9",
+            to: "attention operation",
+          },
+          {
+            from: "hierarchy of associative memories",
+            title:
+              "Relationship: A hierarchy of associative memories can be used for pattern matching.\nStrength: 8",
+            to: "pattern matching",
+          },
+          {
+            from: "hierarchy of associative memories",
+            title:
+              "Relationship: The MLP layer can be used to represent a hierarchy of associative memories.\nStrength: 7",
+            to: "MLP layer",
+          },
+          {
+            from: "Sherlock Holmes",
+            title:
+              "Relationship: Uses deductive reasoning to solve mysteries.\nStrength: 9",
+            to: "deductive reasoning",
+          },
+          {
+            from: "Sherlock Holmes",
+            title:
+              "Relationship: Trenton Bricken mentions that an LLM could potentially write a mystery novel that could be used for a Sherlock Holmes-like evaluation task.\nStrength: 5",
+            to: "LLM",
+          },
+          {
+            from: "LLM",
+            title: "Relationship: AI model functionality\nStrength: 8",
+            to: "Copilot",
+          },
+          {
+            from: "LLM",
+            title: "Relationship: Dataset type\nStrength: 8",
+            to: "Synthetic data",
+          },
+          {
+            from: "human brain",
+            title:
+              "Relationship: Pattern recognition occurs in human brains.\nStrength: 9",
+            to: "pattern recognition",
+          },
+          {
+            from: "human brain",
+            title:
+              "Relationship: Inspired by human brain\u0027s neural networks.\nStrength: 8",
+            to: "neural network components",
+          },
+          {
+            from: "Claude",
+            title:
+              "Relationship: discussed in the context of research on Claude\nStrength: 8",
+            to: "layer norm",
+          },
+          {
+            from: "NVIDIA",
+            title:
+              "Relationship: mentioned as a representative of the increasing compute power in AI development\nStrength: 6",
+            to: "compute",
+          },
+          {
+            from: "Twitter",
+            title:
+              "Relationship: mentioned as a source of misinformation about AI research and its implications\nStrength: 4",
+            to: "alignments",
+          },
+          {
+            from: "GPT-4",
+            title:
+              "Relationship: GPT-4 is a recent AI model developed by OpenAI, as mentioned in the discussion.\nStrength: 8",
+            to: "OpenAI",
+          },
+          {
+            from: "GPT-4",
+            title:
+              "Relationship: requiring a large amount of computational resources for training\nStrength: 9",
+            to: "Computer",
+          },
+          {
+            from: "GPT-4",
+            title:
+              "Relationship: GPT-4 Turbo is possibly a distilled version of GPT-4\nStrength: 4",
+            to: "GPT-4 Turbo",
+          },
+          {
+            from: "Alec Radford",
+            title:
+              "Relationship: Alec Radford did pioneering work at OpenAI, as mentioned in the discussion.\nStrength: 7",
+            to: "OpenAI",
+          },
+          {
+            from: "Alec Radford",
+            title:
+              "Relationship: Mentioned as having a Copilot for Jupyter notebook experiments\nStrength: 6",
+            to: "Copilot",
+          },
+          {
+            from: "Chris Olah",
+            title:
+              "Relationship: Chris Olah is the lead of the interpretability team at OpenAI, as mentioned in the discussion.\nStrength: 7",
+            to: "OpenAI",
+          },
+          {
+            from: "Gemini team",
+            title:
+              "Relationship: Mentioned as needing to hire talented engineers for interpretability\nStrength: 8",
+            to: "Interpretability",
+          },
+          {
+            from: "Compute",
+            title: "Relationship: Resource allocation\nStrength: 8",
+            to: "Inference",
+          },
+          {
+            from: "GPT-5",
+            title:
+              "Relationship: increasing the chances of breakthroughs in the field\nStrength: 7",
+            to: "ICML",
+          },
+          {
+            from: "DeepMind",
+            title:
+              "Relationship: carrying out research to verify the reasoning of its AI model\nStrength: 9",
+            to: "Geometry",
+          },
+          {
+            from: "Evolutionary Process",
+            title: "Relationship: being a similar concept\nStrength: 8",
+            to: "Empirical ML",
+          },
+          {
+            from: "Knowledge Distillation",
+            title:
+              "Relationship: The concepts of knowledge distillation and chain-of-thought are being discussed together, implying a potential connection or relationship between the two.\nStrength: 6",
+            to: "Chain-of-Thought",
+          },
+          {
+            from: "Miles Turpin",
+            title:
+              "Relationship: Contributes to field of model interpretability research\nStrength: 6",
+            to: "Paper on model interpretability",
+          },
+        ]);
+
+        nodeColors = {};
+        allNodes = nodes.get({ returnType: "Object" });
+        for (nodeId in allNodes) {
+          nodeColors[nodeId] = allNodes[nodeId].color;
+        }
+        allEdges = edges.get({ returnType: "Object" });
+        // adding nodes and edges to the graph
+        data = { nodes: nodes, edges: edges };
+
+        var options = {
+          configure: {
+            enabled: true,
+            filter: ["physics"],
+          },
+          edges: {
+            color: {
+              inherit: true,
+            },
+            smooth: {
+              enabled: true,
+              type: "dynamic",
+            },
+          },
+          interaction: {
+            dragNodes: true,
+            hideEdgesOnDrag: false,
+            hideNodesOnDrag: false,
+          },
+          physics: {
+            enabled: true,
+            stabilization: {
+              enabled: true,
+              fit: true,
+              iterations: 1000,
+              onlyDynamicEdges: false,
+              updateInterval: 50,
+            },
+          },
+        };
+
+        // if this network requires displaying the configure window,
+        // put it in its div
+        options.configure["container"] = document.getElementById("config");
+
+        network = new vis.Network(container, data, options);
+
+        network.on("stabilizationProgress", function (params) {
+          document.getElementById("loadingBar").removeAttribute("style");
+          var maxWidth = 496;
+          var minWidth = 20;
+          var widthFactor = params.iterations / params.total;
+          var width = Math.max(minWidth, maxWidth * widthFactor);
+          document.getElementById("bar").style.width = width + "px";
+          document.getElementById("text").innerHTML =
+            Math.round(widthFactor * 100) + "%";
+        });
+        network.once("stabilizationIterationsDone", function () {
+          document.getElementById("text").innerHTML = "100%";
+          document.getElementById("bar").style.width = "496px";
+          document.getElementById("loadingBar").style.opacity = 0;
+          // really clean the dom element
+          setTimeout(function () {
+            document.getElementById("loadingBar").style.display = "none";
+          }, 500);
+        });
+
+        return network;
+      }
+      drawGraph();
+    </script>
+  </body>
+</html>
