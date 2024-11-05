@@ -4,19 +4,13 @@ import networkx as nx
 from typing import List, Optional
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
-from transformers import pipeline, DistilBertTokenizer, DistilBertForQuestionAnswering
 
 from cdlib import algorithms
+from config import COLOR_MAP
 from prompts import get_entities
 from pyvis.network import Network
 from prompts import get_community_summary
 from document_processing import merge_chunks
-
-"""
-    4. Test the communty summaries +  all of the above in graphrag
-    4. Include plotting of graph and writing to some external file
-    5. Think about redundancy, esp with LLM calls.
-"""
 
 class Graphrag:
     # base graph
@@ -31,40 +25,48 @@ class Graphrag:
     vector_db: FAISS
     embeddings: HuggingFaceEmbeddings 
 
-    def __init__(self) -> None:
-        # TODO: Iterate through all the docs, call merge chunks and save to text_chunks
-        self.text_chunks = merge_chunks(0)
+    def __init__(self, local: bool = False) -> None:
+        if not local:
+            # TODO: Iterate through all the docs, call merge chunks and save to text_chunks
+            self.text_chunks = merge_chunks(0)
 
-        self.create_graph()
+            self.create_graph()
 
-        self.detect_communities()
+            self.detect_communities()
 
-        self.community_factual_findings = []
+            self.visualize_graph()
 
-        self.get_community_summaries()
+            self.community_factual_findings = []
 
-        self.vectorize_and_store()
+            self.get_community_summaries()
+
+            self.vectorize_and_store()
+        else:
+            print("Loading from local this time around")
+            self.load_index_from_local()
 
     def create_graph(self) -> None:
         Graph = nx.Graph()
 
-        for idx, chunk in enumerate(self.text_chunks[:2]):
+        for idx, chunk in enumerate(self.text_chunks[:15]):
             print(f"Processing chunk {idx}")
-            entities, relationships = get_entities(chunk)
+            try:
+                entities, relationships = get_entities(chunk)
 
-            for entity in entities:
-                Graph.add_node(entity.name, 
-                               type=entity.type, 
-                               description=entity.description)
-            for relationship in relationships:
-                Graph.add_edge(relationship.source, 
-                               relationship.target, 
-                               relationship=relationship.relationship, 
-                               strength=relationship.relationship_strength)
-            time.sleep(30)
+                for entity in entities:
+                    Graph.add_node(entity.name, 
+                                type=entity.type, 
+                                description=entity.description)
+                for relationship in relationships:
+                    Graph.add_edge(relationship.source, 
+                                relationship.target, 
+                                relationship=relationship.relationship, 
+                                strength=relationship.relationship_strength)
+                time.sleep(30)
+            except Exception as e:
+                print(f"I cannot process chunk at index {idx}")
 
         self.Graph = Graph
-
 
     def detect_communities(self) -> None:
         communities = []
@@ -87,13 +89,12 @@ class Graphrag:
         self.community_nodes = communities
 
     def visualize_graph(self) -> None:
-        color_map = None
-        # Calculate node sizes based on degree (number of connections)
+        color_map = COLOR_MAP
         # Get the degree of each node
         degrees = dict(self.Graph.degree())
         # Scale the sizes - you can adjust these numbers
-        min_size = 20
-        max_size = 50
+        min_size = 10
+        max_size = 100
         min_degree = min(degrees.values())
         max_degree = max(degrees.values())
 
@@ -141,7 +142,7 @@ class Graphrag:
         # Save and show the network
         net.show("network.html")
 
-    def get_community_summaries(self):
+    def get_community_summaries(self) -> None:
         assert self.community_summary is None, "Graph summaries filled already"
 
         for community_idx in range(len(self.community_nodes)):
@@ -170,6 +171,12 @@ class Graphrag:
             nodes_context.append(info)
 
         return nodes_context
+    
+    def load_index_from_local(self) -> None:
+        self.embeddings = HuggingFaceEmbeddings(model_name='bert-base-uncased')
+        self.vector_db = FAISS.load_local("faiss_index", 
+                                          embeddings=self.embeddings,
+                                          allow_dangerous_deserialization=True)
 
     def get_edge_info(self, idx: int) -> List:
         edges_context = []
@@ -195,7 +202,7 @@ class Graphrag:
 
     def query_similarity(self, query: str) -> List[str]:
         # Perform similarity search in the vector database
-        docs = self.vector_db.similarity_search_with_relevance_scores(query, k=5)
+        docs = self.vector_db.similarity_search(query, k=5)
 
         # Return the results ordered by similarity metric
         return docs

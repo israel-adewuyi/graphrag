@@ -7,8 +7,12 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from graphrag import Graphrag
 
 if __name__ == "__main__":
-    gr = Graphrag()
+    gr = Graphrag(True)
 
-    print(gr.query_similarity("Who is Trenton?"))
+    docs = gr.query_similarity("Are there any gists on AlphaFold?")
+    # print(gr.query_similarity("Where does Trenton work?"))
+
+    for doc in docs:
+        print(doc.page_content)
     
     # print(gr.Graph.nodes())
