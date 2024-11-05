@@ -47,7 +47,7 @@ def query_LLM(query: str):
                 "content": query,
             }
         ],
-        model="gemma2-9b-it",
+        model="llama-3.1-70b-versatile",
         response_format={"type": "json_object"}
     )
 
