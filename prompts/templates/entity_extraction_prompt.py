@@ -1,6 +1,6 @@
 GRAPH_EXTRACTION_JSON_PROMPT = """
 -Goal-
-Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
+Given a text document that is potentially relevant to the field of AI generally and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
 
 -Steps-
 1. Identify all entities. For each identified entity, extract the following information:
