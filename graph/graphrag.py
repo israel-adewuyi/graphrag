@@ -2,6 +2,9 @@ import time
 import networkx as nx
 
 from typing import List, Optional
+from langchain_community.vectorstores import FAISS
+from langchain_huggingface import HuggingFaceEmbeddings
+from transformers import pipeline, DistilBertTokenizer, DistilBertForQuestionAnswering
 
 from cdlib import algorithms
 from prompts import get_entities
@@ -25,8 +28,8 @@ class Graphrag:
     community_factual_findings: List[str] = None
 
     # vector database
-    # vector_db: FAISS
-    # embeddings: HuggingFaceEmbeddings 
+    vector_db: FAISS
+    embeddings: HuggingFaceEmbeddings 
 
     def __init__(self) -> None:
         # TODO: Iterate through all the docs, call merge chunks and save to text_chunks
@@ -40,7 +43,7 @@ class Graphrag:
 
         self.get_community_summaries()
 
-        # self.vectorize_and_store()
+        self.vectorize_and_store()
 
     def create_graph(self) -> None:
         Graph = nx.Graph()
@@ -118,7 +121,7 @@ class Graphrag:
                 net.add_node(node, 
                             color=color,
                             size=size,
-                            title=f"Type: {node_type}\nDegree: {degrees[node]}\nDescription: {G.nodes[node]['description']}")
+                            title=f"Type: {node_type}\nDegree: {degrees[node]}\nDescription: {self.Graph.nodes[node]['description']}")
             except Exception as e:
                 net.add_node(node, 
                             size=size,
@@ -149,10 +152,11 @@ class Graphrag:
 
             for finding in community_report.findings:
                 self.community_factual_findings.append(finding.explanation)
-
-        print("These are community summaries")
-        # print(community_report.model_dump_json(indent=3))
-        print(self.community_factual_findings)
+    
+        print("--- Completed community summary generation")
+        # print("These are community summaries")
+        # # print(community_report.model_dump_json(indent=3))
+        # print(self.community_factual_findings)
 
     def get_node_info(self, idx: int) -> List:
         nodes_context = []
@@ -161,7 +165,8 @@ class Graphrag:
         sub_graph = self.Graph.subgraph(sub_nodes)
 
         for node in sub_graph.nodes():
-            info = f"{node},{sub_graph.nodes()[node]['description']}"
+            node_description = sub_graph.nodes()[node].get('description', "no description provided, use your ideas")
+            info = f"{node},{node_description}"
             nodes_context.append(info)
 
         return nodes_context
@@ -174,6 +179,24 @@ class Graphrag:
 
         for edge in sub_graph.edges():
             info = f"{edge[0]},{edge[1]},{sub_graph.edges()[edge]['relationship']}"
-            print(info)
+            edges_context.append(info)
 
         return edges_context
+
+    def vectorize_and_store(self) -> None:
+        # Initialize the embeddings and vector database
+        # self.embeddings = HuggingFaceEmbeddings(model_name="distilbert-base-uncased")
+        self.embeddings = HuggingFaceEmbeddings(model_name='bert-base-uncased')
+        self.vector_db = FAISS.from_texts(self.community_factual_findings, self.embeddings)
+
+        print(type(self.vector_db))
+        self.vector_db.save_local("faiss_index")
+        print('--- Completed vectorization')
+
+    def query_similarity(self, query: str) -> List[str]:
+        # Perform similarity search in the vector database
+        docs = self.vector_db.similarity_search_with_relevance_scores(query, k=5)
+
+        # Return the results ordered by similarity metric
+        return docs
+        # return [doc.page_content for doc in docs]

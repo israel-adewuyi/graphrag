@@ -8,5 +8,7 @@ from graphrag import Graphrag
 
 if __name__ == "__main__":
     gr = Graphrag()
+
+    print(gr.query_similarity("Who is Trenton?"))
     
     # print(gr.Graph.nodes())
