@@ -9,6 +9,7 @@ from typing import List, Optional
 from .templates.entity_extraction_prompt import GRAPH_EXTRACTION_JSON_PROMPT
 # TODO: just for testing, should delete
 from .entity_types_extraction import get_entity_types
+from config import ENTITIES
 
 
 # load environment variables from .env files
@@ -42,9 +43,10 @@ class Response(BaseModel):
     relationships: List[Relationship]
 
 def get_entities(text):
-    entity_types = get_entity_types(text)
+    # entity_types = get_entity_types(text)
+    entity_types = ENTITIES
 
-    print(f"The entities extracted from the text are : {entity_types}")
+    # print(f"The entities extracted from the text are : {entity_types}")
     system_prompt = GRAPH_EXTRACTION_JSON_PROMPT.format(entity_types=entity_types)
     chat_completion = client.chat.completions.create(
         messages=[
@@ -57,7 +59,8 @@ def get_entities(text):
                 "content": text,
             }
         ],
-        model="llama-3.1-70b-versatile",
+        # model="llama-3.1-70b-versatile",
+        model="llama-3.2-90b-text-preview",
         response_format={"type": "json_object"}
     )
     
