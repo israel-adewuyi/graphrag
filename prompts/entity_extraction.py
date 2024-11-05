@@ -30,7 +30,7 @@ client = Groq()
 class Entity(BaseModel):
     name: str
     type: str
-    description: Optional[str] = None
+    description: str
 
 class Relationship(BaseModel):
     source: str
@@ -59,14 +59,14 @@ def get_entities(text):
                 "content": text,
             }
         ],
-        # model="llama-3.1-70b-versatile",
-        model="llama-3.2-90b-text-preview",
+        model="gemma2-9b-it",
+        # model="llama-3.2-90b-text-preview",
         response_format={"type": "json_object"}
     )
     
     try:
         response = Response.model_validate_json(chat_completion.choices[0].message.content)
-        print(response.entities, response.relationships)
+        # print(response.entities, response.relationships)
         return response.entities, response.relationships
     except ValidationError as e:
         print("Error in parsing entity and relationship information.")
