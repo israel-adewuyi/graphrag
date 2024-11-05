@@ -8,13 +8,13 @@ Write a comprehensive assessment report of a community taking on the role of a k
 The report should include the following sections:
 - TITLE: community's name that represents its key entities - title should be short but specific. When possible, include representative named entities in the title.
 - SUMMARY: An executive summary of the community's overall structure, how its entities are related to each other, and significant points associated with its entities.
-- DETAILED FINDINGS: A list of 5-20 key insights about the community. Each insight should have a short summary followed by multiple paragraphs of explanatory text grounded according to the grounding rules below. Be comprehensive. Include entities where possible in the explanatory text.
+- DETAILED FINDINGS: A list of 5-20 key insights about the community. Each insight should be multiple paragraphs of explanatory text grounded according to the grounding rules below. Be comprehensive. Include entities where possible in the explanatory text.
 
 Return output as a well-formed JSON-formatted string with the following format. Don't use any unnecessary escape sequences. The output should be a single JSON object that can be parsed by json.loads.
     {{
         "title": "<report_title>",
         "summary": "<executive_summary>",
-        "findings": "[{{"summary":"<insight_1_summary>", "explanation": "<insight_1_explanation"}}, {{"summary":"<insight_2_summary>", "explanation": "<insight_2_explanation"}}]"
+        "findings": "[{{"explanation": "<insight_1_explanation"}}, {{"explanation": "<insight_2_explanation"}}]"
     }}
 
 # Grounding Rules
@@ -44,24 +44,20 @@ Output:
 of which are associated with the rally event.",
     "findings": [
         {{
-            "summary": "Abila City Park as the central location",
             "explanation": "Abila City Park is the central entity in this community, serving as the location for the POK rally. This park is the common link between all other
 entities, suggesting its significance in the community. The park's association with the rally could potentially lead to issues such as public disorder or conflict, depending on the
 nature of the rally and the reactions it provokes."
         }},
         {{
-            "summary": "POK's role in the community",
             "explanation": "POK is another key entity in this community, being the organizer of the rally at Abila City Park. The nature of POK and its rally could be a potential
 source of threat, depending on their objectives and the reactions they provoke. The relationship between POK and the park is crucial in understanding the dynamics of this community."
         }},
         {{
-            "summary": "POKRALLY as a significant event",
             "explanation": "The POKRALLY is a significant event taking place at Abila City Park. This event is a key factor in the community's dynamics and could be a potential
 source of threat, depending on the nature of the rally and the reactions it provokes. The relationship between the rally and the park is crucial in understanding the dynamics of this
 community."
         }},
         {{
-            "summary": "Role of Central Bulletin",
             "explanation": "Central Bulletin is reporting on the POK rally taking place in Abila City Park. This suggests that the event has attracted media attention, which could
 amplify its impact on the community. The role of Central Bulletin could be significant in shaping public perception of the event and the entities involved."
         }}
