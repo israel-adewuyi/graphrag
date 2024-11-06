@@ -7,12 +7,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from graphrag import Graphrag
 
 if __name__ == "__main__":
-    gr = Graphrag(True)
+    gr = Graphrag(False)
 
-    docs = gr.query_similarity("Are there any gists on AlphaFold?")
+    docs = gr.query_similarity("What was discussed about Maths Olympiad ?")
     # print(gr.query_similarity("Where does Trenton work?"))
 
-    for doc in docs:
-        print(doc.page_content)
-    
-    # print(gr.Graph.nodes())
+    print(f"Here is response {docs}")

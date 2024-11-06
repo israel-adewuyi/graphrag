@@ -7,7 +7,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 
 from cdlib import algorithms
 from config import COLOR_MAP
-from prompts import get_entities
+from prompts import get_entities, get_global_response
 from pyvis.network import Network
 from prompts import get_community_summary
 from document_processing import merge_chunks
@@ -48,7 +48,7 @@ class Graphrag:
     def create_graph(self) -> None:
         Graph = nx.Graph()
 
-        for idx, chunk in enumerate(self.text_chunks[:15]):
+        for idx, chunk in enumerate(self.text_chunks):
             print(f"Processing chunk {idx}")
             try:
                 entities, relationships = get_entities(chunk)
@@ -82,8 +82,8 @@ class Graphrag:
                         communities.append(list(community))
                 except Exception as e:
                     print(f"Error processing community {index}: {e}")
-            else:
-                communities.append(list(subgraph.nodes))
+            # else:
+            #     communities.append(list(subgraph.nodes))
             index += 1
         # print("Communities from detect_communities:", communities)
         self.community_nodes = communities
@@ -145,19 +145,19 @@ class Graphrag:
     def get_community_summaries(self) -> None:
         assert self.community_summary is None, "Graph summaries filled already"
 
-        for community_idx in range(len(self.community_nodes)):
-            nodes_info = self.get_node_info(community_idx)
-            edges_info = self.get_edge_info(community_idx)
+        with open("findings.txt", 'w', encoding='utf-8') as file:
+            for community_idx in range(len(self.community_nodes)):
+                nodes_info = self.get_node_info(community_idx)
+                edges_info = self.get_edge_info(community_idx)
 
-            community_report = get_community_summary(nodes_info, edges_info)
+                community_report = get_community_summary(nodes_info, edges_info)
 
-            for finding in community_report.findings:
-                self.community_factual_findings.append(finding.explanation)
+                for finding in community_report.findings:
+                    file.write(f"{finding.explanation}\n\n")
+                    self.community_factual_findings.append(finding.explanation)
     
         print("--- Completed community summary generation")
-        # print("These are community summaries")
-        # # print(community_report.model_dump_json(indent=3))
-        # print(self.community_factual_findings)
+
 
     def get_node_info(self, idx: int) -> List:
         nodes_context = []
@@ -200,10 +200,14 @@ class Graphrag:
         self.vector_db.save_local("faiss_index")
         print('--- Completed vectorization')
 
-    def query_similarity(self, query: str) -> List[str]:
+    def query_similarity(self, query: str) -> str:
         # Perform similarity search in the vector database
         docs = self.vector_db.similarity_search(query, k=5)
 
+        print("---I have the docs")
         # Return the results ordered by similarity metric
-        return docs
-        # return [doc.page_content for doc in docs]
+        return self.answer_query(query=query, supporting_docs=docs)
+
+    def answer_query(self, query: str, supporting_docs: List[str]) -> str:
+        print("--- Trying to answer queries")
+        return get_global_response(query=query, supporting_docs=supporting_docs)
