@@ -11,6 +11,12 @@ from .templates.entity_extraction_prompt import GRAPH_EXTRACTION_JSON_PROMPT
 from .entity_types_extraction import get_entity_types
 from config import ENTITIES
 
+from tenacity import (
+    retry,
+    stop_after_attempt,
+    wait_random_exponential
+)
+
 
 # load environment variables from .env files
 load_dotenv()
@@ -42,6 +48,7 @@ class Response(BaseModel):
     entities: List[Entity]
     relationships: List[Relationship]
 
+@retry(wait=wait_random_exponential(min=10, max=60), stop=stop_after_attempt(6))
 def get_entities(text):
     # entity_types = get_entity_types(text)
     entity_types = ENTITIES
@@ -59,7 +66,7 @@ def get_entities(text):
                 "content": text,
             }
         ],
-        model="llama-3.1-70b-versatile",
+        model="llama-3.1-8b-instant",
         # model="llama-3.2-90b-text-preview",
         response_format={"type": "json_object"}
     )
@@ -69,8 +76,8 @@ def get_entities(text):
         # print(response.entities, response.relationships)
         return response.entities, response.relationships
     except ValidationError as e:
-        print("Error in parsing entity and relationship information.")
-        return e.json()
+        print("Error in parsing entity and relationship information. Retrying now ....")
+        raise
 
 if __name__ == "__main__":
     text = """

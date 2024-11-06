@@ -7,6 +7,12 @@ from pydantic import BaseModel, ValidationError
 
 from .templates.name_extraction_prompt import TITLE_EXTRACTION_PROMPT
 
+from tenacity import (
+    retry,
+    stop_after_attempt,
+    wait_random_exponential
+)
+
 # load environment variables from .env files
 load_dotenv()
 
@@ -18,6 +24,7 @@ client = Groq()
 class GuestName(BaseModel):
     guest: str
 
+@retry(wait=wait_random_exponential(min=10, max=60), stop=stop_after_attempt(6))
 def get_name(title_tag: str) -> str:
     assert isinstance(title_tag, str), f"title_tag is of type {type(title_tag)}"
 
@@ -40,7 +47,8 @@ def get_name(title_tag: str) -> str:
         response = GuestName.model_validate_json(chat_completion.choices[0].message.content)
         return response.guest
     except ValidationError as e:
-        return e.json()
+        print("An error occured in name extraction ... Retrying")
+        raise
 
 
 if __name__ == "__main__":
