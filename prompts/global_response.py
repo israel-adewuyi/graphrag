@@ -13,16 +13,16 @@ groq_api_key = os.getenv("GROQ_API_KEY")
 client = Groq()
 
 def get_global_response(query: str, supporting_docs: List[str]) -> str:
-    promt = GLOBAL_RESPONSE_PROMPT.format(query=query, supporting_docs=supporting_docs)
+    prompt = GLOBAL_RESPONSE_PROMPT.format(query=query, supporting_docs=supporting_docs)
 
     chat_completion = client.chat.completions.create(
         messages=[
             {
                 "role": "user",
-                "content": promt,
+                "content": prompt,
             }
         ],
-        model="llama-3.1-8b-instant",
+        model="llama-3.2-90b-text-preview",
     )
 
     return chat_completion.choices[0].message.content
