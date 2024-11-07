@@ -11,7 +11,7 @@ Format each entity output as a JSON entry with the following format:
 
 {{"name": <entity name>, "type": <type>, "description": <entity description>}}
 
-2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
+2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other. For all the entities mentioned, you should include their relationships with other entities as much as posible.
 For each pair of related entities, extract the following information:
 - source_entity: name of the source entity, as identified in step 1
 - target_entity: name of the target entity, as identified in step 1
@@ -20,15 +20,8 @@ For each pair of related entities, extract the following information:
 Format each relationship as a JSON entry with the following format:
 
 {{"source": <source_entity>, "target": <target_entity>, "relationship": <relationship_description>, "relationship_strength": <relationship_strength>}}
-
+Every entity should be related to at least one other entity. The idea is to build a knowledge graph from this information.
+If there are people/persons in the list of entities, pay attention to the things (other entities) they said/did/worked on.
+SOME NOTES
+1. Individuals like Trenton should be returned as Trenton Bricken, Sholto as Sholto Douglas,  Dwarkesh as Dwarkesh Patel.
 """ 
-# -Examples-
-# ######################
-# {examples}
-
-# -Real Data-
-# ######################
-# entity_types: {entity_types}
-# text: {{input_text}}
-# ######################
-# output:"""

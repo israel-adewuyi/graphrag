@@ -18,7 +18,7 @@ Return output as a well-formed JSON-formatted string with the following format. 
     }}
 
 # Grounding Rules
-Each paragraph should contain multiple sentences of explanation and concrete examples with specific named entities. All paragraphs must have these references at the start and end. Use "NONE" if there are no related roles or records.
+Each paragraph should contain multiple sentences of explanation and concrete examples with specific named entities.
 
 # Example Input
 -----------
