@@ -2,7 +2,10 @@ import streamlit as st
 import requests
 import threading
 import uvicorn
-from main import app  # Import FastAPI app
+from main import app
+
+from queryllm import process_queries
+from visualize import page1
 
 # Function to run FastAPI in the background
 def run_fastapi():
@@ -11,29 +14,13 @@ def run_fastapi():
 # Start FastAPI in a separate thread
 threading.Thread(target=run_fastapi, daemon=True).start()
 
-# Define the FastAPI endpoint URL
-FASTAPI_URL = "http://127.0.0.1:8000/query_similarity"
 
-# Streamlit app title
-st.title("Graphrag Query Interface")
+# Sidebar for navigation
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Navigation", ["Ask a question", "Visualize Graph",])
 
-# Input form for the query
-query = st.text_input("Enter your query:")
-
-if st.button("Submit"):
-    if query:
-        # Prepare the request payload
-        payload = {"query": query}
-
-        # Make a POST request to the FastAPI endpoint
-        response = requests.post(FASTAPI_URL, json=payload)
-
-        if response.status_code == 200:
-            # Parse the response JSON
-            results = response.json().get("results", [])
-            st.subheader("Response:")
-            st.write(results)
-        else:
-            st.error(f"Error: {response.status_code} - {response.text}")
-    else:
-        st.warning("Please enter a query.")
+# Display the selected page
+if page == "Ask a question":
+    process_queries()
+elif page == "Visualize Graph":
+    page1()

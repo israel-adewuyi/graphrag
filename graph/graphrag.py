@@ -1,16 +1,19 @@
 import time
+import faiss
 import networkx as nx
 
+from uuid import uuid4
 from typing import List, Optional
+from langchain_core.documents import Document
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.docstore.in_memory import InMemoryDocstore
 
 from cdlib import algorithms
 from config import COLOR_MAP
-from prompts import get_entities, get_global_response
 from pyvis.network import Network
-from prompts import get_community_summary
 from document_processing import merge_chunks
+from prompts import get_entities, get_global_response, get_community_summary
 
 class Graphrag:
     # base graph
@@ -92,9 +95,9 @@ class Graphrag:
         color_map = COLOR_MAP
         # Get the degree of each node
         degrees = dict(self.Graph.degree())
-        # Scale the sizes - you can adjust these numbers
+        # Scale the sizes
         min_size = 10
-        max_size = 100
+        max_size = 60
         min_degree = min(degrees.values())
         max_degree = max(degrees.values())
 
@@ -108,11 +111,11 @@ class Graphrag:
                 node_type = self.Graph.nodes[node]['type']
             except Exception as e:
                 pass
-            # Get color from mapping, default to grey if type not found
+            
             color = color_map.get(node_type, '#999999')
             
             # Calculate scaled node size
-            if max_degree > min_degree:  # Prevent division by zero
+            if max_degree > min_degree: 
                 size = min_size + (max_size - min_size) * (degrees[node] - min_degree) / (max_degree - min_degree)
             else:
                 size = min_size
@@ -128,18 +131,13 @@ class Graphrag:
                             size=size,
                             title=f"Degree: {degrees[node]}")
 
-        # Add edges to Pyvis network
+        # Add edges
         for edge in self.Graph.edges():
             source, target = edge
             edge_data = self.Graph.edges[edge]
             net.add_edge(source, target, 
                         title=f"Relationship: {edge_data['relationship']}\nStrength: {edge_data['strength']}")
 
-        # Configure other visualization options
-        net.toggle_physics(True)
-        net.show_buttons(filter_=['physics'])
-
-        # Save and show the network
         net.show("network.html")
 
     def get_community_summaries(self) -> None:
@@ -158,7 +156,6 @@ class Graphrag:
     
         print("--- Completed community summary generation")
 
-
     def get_node_info(self, idx: int) -> List:
         nodes_context = []
 
@@ -173,7 +170,7 @@ class Graphrag:
         return nodes_context
     
     def load_index_from_local(self) -> None:
-        self.embeddings = HuggingFaceEmbeddings(model_name='bert-base-uncased')
+        self.embeddings = HuggingFaceEmbeddings(model_name='sentence-transformers/all-mpnet-base-v2')
         self.vector_db = FAISS.load_local("faiss_index", 
                                           embeddings=self.embeddings,
                                           allow_dangerous_deserialization=True)
@@ -190,24 +187,44 @@ class Graphrag:
 
         return edges_context
 
-    def vectorize_and_store(self) -> None:
-        # Initialize the embeddings and vector database
-        # self.embeddings = HuggingFaceEmbeddings(model_name="distilbert-base-uncased")
-        self.embeddings = HuggingFaceEmbeddings(model_name='bert-base-uncased')
-        self.vector_db = FAISS.from_texts(self.community_factual_findings, self.embeddings)
+    def get_vector_store_documents(self):
+        assert self.community_factual_findings is not None, "There are no community findings"
 
-        print(type(self.vector_db))
+        documents = [Document(page_content=content) for content in self.community_factual_findings]
+
+        uuids = [str(uuid4()) for _ in range(len(documents))]
+
+        return documents, uuids
+    
+    def vectorize_and_store(self) -> None:
+        self.embeddings = HuggingFaceEmbeddings(model_name='sentence-transformers/all-mpnet-base-v2')
+
+        index = faiss.IndexFlatIP(len(self.embeddings.embed_query("hello world")))
+
+        self.vector_db = FAISS(
+            embedding_function=self.embeddings,
+            index=index,
+            docstore=InMemoryDocstore(),
+            index_to_docstore_id={},
+            normalize_L2=True
+        )
+        
+        documents, ids = self.get_vector_store_documents()
+
+        self.vector_db.add_documents(documents=documents, ids=ids)
+
         self.vector_db.save_local("faiss_index")
         print('--- Completed vectorization')
 
     def query_similarity(self, query: str) -> str:
-        # Perform similarity search in the vector database
-        docs = self.vector_db.similarity_search(query, k=5)
+        docs1 = self.vector_db.similarity_search_with_score(query, k=10)
 
-        print("---I have the docs")
-        # Return the results ordered by similarity metric
-        return self.answer_query(query=query, supporting_docs=docs)
+        supporting_docs = [(item[0].page_content, item[1]) for item in docs1]
+
+        # for item in supporting_docs:
+        #     print(item, end='\n')
+
+        return self.answer_query(query=query, supporting_docs=supporting_docs)
 
     def answer_query(self, query: str, supporting_docs: List[str]) -> str:
-        print("--- Trying to answer queries")
         return get_global_response(query=query, supporting_docs=supporting_docs)
