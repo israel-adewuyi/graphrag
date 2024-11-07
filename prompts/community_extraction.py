@@ -13,9 +13,8 @@ from tenacity import (
     wait_random_exponential
 )
 
-# load environment variables from .env files
 load_dotenv()
-# get groq api key
+
 groq_api_key = os.getenv("GROQ_API_KEY")
 
 client = Groq()
@@ -38,7 +37,6 @@ def get_community_summary(entity_info: List[str], relationship_info: List[str]):
 
     try:
         community = Report.model_validate_json(response.choices[0].message.content)
-        # print(community.model_dump_json(indent=5), type(community))
         return community
     except ValidationError as e:
         print("An error occured in community summary extraction ... Retrying")
@@ -61,6 +59,7 @@ def query_LLM(query: str):
 
 
 if __name__ == "__main__":
+    # Testing out the get_community_summary function
     nodes = ['Trenton,Researcher at Anthropic Lab', 'Dictionary Learning,A technique for solving superposition in LLMs']
     edges = ['Trenton, Dictionary learning,An approach Trenton worked on']
 

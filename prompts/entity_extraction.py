@@ -50,10 +50,8 @@ class Response(BaseModel):
 
 @retry(wait=wait_random_exponential(min=10, max=60), stop=stop_after_attempt(6))
 def get_entities(text):
-    # entity_types = get_entity_types(text)
     entity_types = ENTITIES
 
-    # print(f"The entities extracted from the text are : {entity_types}")
     system_prompt = GRAPH_EXTRACTION_JSON_PROMPT.format(entity_types=entity_types)
     chat_completion = client.chat.completions.create(
         messages=[
@@ -67,7 +65,6 @@ def get_entities(text):
             }
         ],
         model="llama-3.2-90b-text-preview",
-        # model="llama-3.2-90b-text-preview",
         response_format={"type": "json_object"}
     )
     
