@@ -3,9 +3,9 @@ import streamlit as st
 # import streamlit.components.html as html
 import streamlit.components.v1 as components
 
-def page1():
-    st.title("Page 1")
-    st.write("This is the content of Page 1.")
+def visualize_graph():
+    st.title("Knowledge Graph")
+    # st.write("This is the content of Page 1.")
     # Read the HTML content from the file
     with open('network.html', 'r') as file:
         html_content = file.read()
