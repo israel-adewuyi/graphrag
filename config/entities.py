@@ -3,7 +3,6 @@ ENTITIES = [
     'AI models',
     'datasets',
     'events',
-    'AI researchers',
     'AI capabilities',
     'research papers',
     'technical metrics',

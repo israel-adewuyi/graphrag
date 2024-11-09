@@ -2,8 +2,7 @@ COLOR_MAP = {
     'person': '#FF6B6B',                # coral red
     'AI models': '#6A5ACD',             # slate blue
     'datasets': '#FFB347',              # amber orange
-    'events': '#77DD77',                # pastel green
-    'AI researchers': '#FF69B4',        # hot pink
+    'events': '#77DD77',                # pastel green        # hot pink
     'AI capabilities': '#4682B4',       # steel blue
     'research papers': '#D2691E',       # chocolate brown
     'technical metrics': '#40E0D0',     # turquoise
