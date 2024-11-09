@@ -13,7 +13,7 @@ from cdlib import algorithms
 from config import COLOR_MAP
 from pyvis.network import Network
 from document_processing import merge_chunks
-from prompts import get_entities, get_global_response, get_community_summary
+from prompts import get_entities, get_global_response, get_community_summary, glean_text
 
 class Graphrag:
     # base graph
@@ -27,6 +27,10 @@ class Graphrag:
     # vector database
     vector_db: FAISS
     embeddings: HuggingFaceEmbeddings 
+
+    # stats
+    relationships_no_gleaning: int = 0
+    relationships_with_gleaning: int = 0
 
     def __init__(self, local: bool = False) -> None:
         if not local:
@@ -56,20 +60,42 @@ class Graphrag:
             try:
                 entities, relationships = get_entities(chunk)
 
+                self.relationships_no_gleaning += len(relationships)
+
+                entities_gleaned, relationships_gleaned = glean_text(entities, relationships)
+
+                self.relationships_with_gleaning += len(relationships_gleaned)
+                
+                print(f"For index {idx}, {len(relationships_gleaned)} relationships were gleaned.")
+
                 for entity in entities:
                     Graph.add_node(entity.name, 
                                 type=entity.type, 
                                 description=entity.description)
+                
                 for relationship in relationships:
                     Graph.add_edge(relationship.source, 
                                 relationship.target, 
-                                relationship=relationship.relationship, 
-                                strength=relationship.relationship_strength)
+                                relationship=relationship.relationship)
+                
+                for relationship in relationships_gleaned:
+                    Graph.add_edge(relationship.source, 
+                                relationship.target, 
+                                relationship=relationship.relationship)
+                
+                for entity in entities_gleaned:
+                    Graph.add_node(entity.name, 
+                                type=entity.type, 
+                                description=entity.description)
                 time.sleep(30)
             except Exception as e:
                 print(f"I cannot process chunk at index {idx}")
 
+        print(f"No gleaning - {self.relationships_no_gleaning}, gleaned = {self.relationships_with_gleaning}")
         self.Graph = Graph
+
+    def glean(self, entities: List, relationships: List) -> List:
+        pass
 
     def detect_communities(self) -> None:
         communities = []
@@ -136,7 +162,7 @@ class Graphrag:
             source, target = edge
             edge_data = self.Graph.edges[edge]
             net.add_edge(source, target, 
-                        title=f"Relationship: {edge_data['relationship']}\nStrength: {edge_data['strength']}")
+                        title=f"Relationship: {edge_data['relationship']}")
 
         net.show("network.html")
 
@@ -210,6 +236,8 @@ class Graphrag:
         )
         
         documents, ids = self.get_vector_store_documents()
+
+        print(f"length of document list is {len(documents)}")
 
         self.vector_db.add_documents(documents=documents, ids=ids)
 
