@@ -42,7 +42,6 @@ class Relationship(BaseModel):
     source: str
     target: str
     relationship: str
-    relationship_strength: int
 
 class Response(BaseModel):
     entities: List[Entity]

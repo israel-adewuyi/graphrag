@@ -1,3 +1,4 @@
+# Reference - https://github.com/microsoft/graphrag/blob/main/graphrag/prompt_tune/prompt/entity_types.py
 ENTITY_TYPE_GENERATION_JSON_PROMPT = """
 The goal is to study the connections and relations between the entity types and their features in order to understand all available information from the text.
 The user's task is to {task}.

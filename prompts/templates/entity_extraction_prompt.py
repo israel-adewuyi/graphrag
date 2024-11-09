@@ -1,3 +1,4 @@
+# Reference - https://github.com/microsoft/graphrag/blob/main/graphrag/prompt_tune/template/entity_extraction.py
 GRAPH_EXTRACTION_JSON_PROMPT = """
 -Goal-
 Given a text document that is potentially relevant to the field of AI generally and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
@@ -16,10 +17,9 @@ For each pair of related entities, extract the following information:
 - source_entity: name of the source entity, as identified in step 1
 - target_entity: name of the target entity, as identified in step 1
 - relationship_description: explanation as to why you think the source entity and the target entity are related to each other
-- relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
 Format each relationship as a JSON entry with the following format:
 
-{{"source": <source_entity>, "target": <target_entity>, "relationship": <relationship_description>, "relationship_strength": <relationship_strength>}}
+{{"source": <source_entity>, "target": <target_entity>, "relationship": <relationship_description>}}
 Every entity should be related to at least one other entity. The idea is to build a knowledge graph from this information.
 If there are people/persons in the list of entities, pay attention to the things (other entities) they said/did/worked on.
 SOME NOTES

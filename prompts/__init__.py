@@ -3,6 +3,7 @@ from .entity_extraction import get_entities
 from .entity_types_extraction import get_entity_types
 from .community_extraction import get_community_summary
 from .global_response import get_global_response
+from .gleaning import glean_text
 
 __all__ = [
     "get_name",
@@ -10,4 +11,5 @@ __all__ = [
     "get_entity_types"
     "get_community_summary"
     "get_global_response"
+    "glean_text"
 ]

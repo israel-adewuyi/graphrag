@@ -33,7 +33,7 @@ def get_entity_types(text_chunk):
                 "content": text_chunk,
             }
         ],
-        model="llama-3.1-70b-versatile",
+        model="llama-3.2-90b-text-preview",
         response_format={"type": "json_object"}
     )
 
