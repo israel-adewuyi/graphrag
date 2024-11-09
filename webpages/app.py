@@ -37,13 +37,9 @@ st.markdown(
 r"""
 <img src="https://raw.githubusercontent.com/callummcdougall/computational-thread-art/master/example_images/misc/prereqs.png" width="600">
             
-# Highlighted Podcasts
+# Highlighted Podcast(s)
 <div style="display: flex; justify-content: center; ">
 <iframe width="700" height="304" src="https://www.youtube.com/embed/UTuuTTnjxMQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<br>
-<div style="display: flex; justify-content: center; ">
-<iframe width="700" height="304" src="https://www.youtube.com/embed/Nlkk3glap_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 """, unsafe_allow_html=True)
