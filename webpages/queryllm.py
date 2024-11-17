@@ -7,7 +7,7 @@ def process_queries():
     FASTAPI_URL = "http://127.0.0.1:8000/query_similarity"
 
     # Streamlit app title
-    st.title("Graphrag Query Interface")
+    st.title("The Palantir")
 
     # Input form for the query
     query = st.chat_input("Enter your query:")
