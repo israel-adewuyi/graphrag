@@ -1,0 +1,808 @@
+Dwarkesh Patel
+
+Today, I have the great honor of interviewing Bryan Caplan again for the third time. Bryan, thanks so much for coming on the podcast. 
+
+Bryan Caplan
+
+I've got the great honor of being interviewed by you, Dwarkesh. You're one of my favorite people in the world!
+
+Don’t Be a Feminist
+
+Dwarkesh Patel
+
+It's a greater pleasure every time (for me at least). So let's talk about your book, Don't Be a Feminist. Is there any margin of representation of women in leadership roles at which you think there should be introduced bias to make sure more women get in, even if the original ratio is not because of bias?
+
+Bryan Caplan
+
+No, I believe in meritocracy. I think it is a good system. It is one that almost everyone sees the intuitive appeal of, and it works. Just looking at a group and saying, “We need to get more members of Group X,” is the wrong way to approach it. Rather, you need to be focusing on, “Let's try to figure out the best way of getting the top quality people here.”
+
+Dwarkesh Patel
+
+If there's an astounding ratio of men in certain positions, could that potentially have an impact on the company's ability to do business well? Perhaps the company could just care about increasing the ratio for that reason alone. 
+
+Bryan Caplan
+
+Right. I mean, one can imagine that! I think in our culture, it really goes the other way. People are more likely to be trying to get rid of men, despite the fact that the men are delivering value. If you really pushed me into starting to think, “Suppose you're running a bar, would you have ladies’ night?” well yeah, I would have ladies’ night in a bar because that actually works, and it's good business! However, if what you're doing is trying to actually get correct answers to things, if you're trying to go and make something run effectively, and if you're just trying to make progress and you're trying to learn new things, the thing to focus on is what actually leads to knowledge and not focusing on just trying to get demographic representation. 
+
+I think what we've seen is once you go down that route, it is a slippery slope. So besides defending meritocracy on its merits, I would actually also say that the slippery slope argument is not one that should be dismissed lightly. There's a lot of evidence that it does actually fit the facts. When you make an exception of that kind, it really does lead you to bad places. 
+
+Dwarkesh Patel
+
+Okay. But changing topics a bit, I wonder if this gives you greater sympathy for immigration restrictionists because their argument is similar, that there's no natural shelling point for your keyhole solutions where you let tens of millions of people in, but you don't give them welfare or voting rights. There's a slippery slope when you let them in because, eventually, the civil rights argument is going to extend to them. There'll be adverse consequences that these keyhole solutions can't solve for.
+
+Bryan Caplan
+
+First of all, I would say maybe. That is one of the best arguments against keyhole solutions. I'm also guessing that a lot of your listeners have no idea what keyhole solutions are, Dwarkesh, so maybe we want to back up and explain that. 
+
+Dwarkesh Patel
+
+Go for it. Sure.
+
+Bryan Caplan
+
+So I have a totally unrelated book called Open Borders, the Science and Ethics of Immigration. One of the chapters goes over ways of dealing with complaints about immigration that fall short of stopping people from actually excluding or kicking out people that are already there. So just to back up a little bit further, most of the book talks about complaints about immigration–– saying that they're either totally wrong or overstated. But then I have another chapter saying, “Alright, fine, maybe you don't agree with that, but isn't there another way that we could deal with this?” So, for example, if you're worried about immigrants voting poorly, you could say, “Fine, we won't extend voting rights to immigrants or make them wait for a longer time period.” That's one where I would just say that the focal point of citizen versus noncitizen is one of the strongest ones. So I think that it actually is one that has a lot of stability. 
+
+This line of, “Well, you're not a citizen, therefore…” really does have a lot of intuitive appeal. Although, yes, I do think that keyhole solutions would probably not work multi-generationally, so to go and say this is a keyhole solution where you're not a citizen, your kids are not citizens, and their kids after them are not citizens, that's one that I think would be hard to maintain. However, again, at the same time, the problems people are worried about, if they ever were severe, are also getting diluted over time. So I wouldn't worry about it so much. That is one of the very best objections to keyhole solutions that I know of.
+
+Dwarkesh Patel
+
+Okay, so going back to feminism. Over time, doesn’t feminism naturally become true? One of the things you can say is that the way that society is unfair to men includes how they fight in wars or do difficult and dangerous jobs, but society, over time, becomes more peaceful (or at least has in our timeline), and the difficult jobs get automated. At the same time, the gains for people who are at the very peak of any discipline keep going up fairly, but the implication still is that if men are overrepresented there, even for biological reasons, then the relative gains that they get go up, right? So over time, feminism just becomes more true, not because society necessarily discriminated against women, but just because of the trends in technology. 
+
+Bryan Caplan
+
+Once again, I feel like we should just back up a little bit. What is feminism anyway, because if we don't know what that is, then it's very hard to talk about whether it's becoming more true over time. In my book, I begin with some popular dictionary definitions that just say feminism is the theory that women should  be political, social, economic, and cultural equals of men. I say that this is a terrible definition, which violates normal usage. Why? Well, we actually have public opinion data on, first of all, whether people are or are not feminists, and second of all, what they believe about the political, social, economic, and cultural equality of women. And guess what? An overwhelming majority of people that say they are not feminists still agree with the equality of women in all those mentions, which really makes you realize that really can't be the definition of feminism. That would be like saying feminism is the theory that the sky is blue.
+
+Well, feminists do believe the sky is blue, but that isn't what distinguishes feminists from other people. So what distinguishes them? What I say is that the really distinguishing view of feminism is that society treats women less fairly than men. The view is that society treats women less fairly than men or treats men more fairly than women. This definition fits actual usage. It would be very strange for someone to say, “I'm a feminist, but I think that men get terrible treatment in our society, and women are treated like goddesses.” Then you say, “Well, then you're not really a feminist, are you?” That doesn't make sense. On the other hand, for someone to say, “I am not a feminist, but God, we treat women so terribly, we're awful.” That, again, just would not fit. So I'm not saying this is the one true definition, but rather that it is much closer to what people actually mean by feminism than what dictionaries say. So to be fair, every now and then, there'll be a better definition. I think the Wikipedia definition in the second sentence adds that it also has the view that women are treated very unfairly. 
+
+Dwarkesh Patel
+
+Is another way of defining feminism just that we should raise the status of women? That's slightly different from the fairness issue because if you think of a feminist historian, maybe their contention is not that women were treated unfairly in the past. Maybe they just want to raise the status of women in the past who are underrepresented. If you think of somebody today who wants to, let's say, raise the status of Asians in our society, and they want to acknowledge the great things that Asians are doing in our society, then maybe their contention is not even that Asians are treated unfairly. They just want to raise their status. So what would you think of that definition?
+
+Bryan Caplan
+
+So first of all, it could be, but I don't think so. Here's what I think. There could be a few people like that, but that's not what the word means in normal use. If someone were to say, “Women are treated absolutely fantastically, way better than men, and I want it to get even higher.” You say, hmm. Well, that's not what I think. Somebody might say, “Well, I can still be a feminist and think that,” okay, but that's not what the word actually means. It's not the typical view of people who call themselves feminists. The typical view is precisely that women are treated very unfairly. They want to raise that and alleviate that in a way that's almost by definition. If you think that someone's being treated unfairly, then to say, “I think they're being really unfair, but I think it’s great that it's unfair.” It's almost self-contradictory. 
+
+Dwarkesh Patel
+
+I guess I was making a slightly different point, which is not even that these people don’t want to raise the status (the actual living standards of women) in some way. It's just that they want to raise the rhetorical status.
+
+Bryan Caplan
+
+Yes, but again, if someone were to say, “I think that women are treated absolutely fantastically in society, way better than men, who we treat like dogs. But I also want women's status to be even higher than it already is.” That would be something where you could argue that “Well, that person may still be a feminist, but that is not what the word means.” Because hardly anyone who calls themselves a feminist believes that weird thing that you're talking about. 
+
+Dwarkesh Patel
+
+Let me make an analogy. Let's say you or I are libertarians, right? And then we think we should raise the status of billionaires. Now, it's not like we think society mistreats billionaires. They're pretty fine, but we think their status should be even higher.
+
+Bryan Caplan
+
+Yeah, I mean, this just goes to the definition. In order to find out whether a definition is correct, you just have to think, “Well, how is the word commonly used?” Logically speaking, it's possible to have a different view or two things that are compatible. The whole idea of a definition is that, ideally, you're trying to find necessary and sufficient conditions such that everybody who satisfies the conditions falls under the category and that everybody who doesn't satisfy the conditions doesn't. In ordinary language, of course, it's notoriously hard to really do that. Defining a table is actually quite difficult in a necessary and sufficient-condition sense, but we can still say, “Well, a table is not by definition something that people sit on, right?” Someone could say, “Well, I suppose you could sit on a table, but that's not the definition in ordinary use in any language of which I'm aware.”
+
+But why don't we actually go back to your real question. Which was..
+
+Dwarkesh Patel
+
+Overall, the left tail of society is being compressed, and the right tail is being expanded. Does feminism become more true over time?
+
+Bryan Caplan
+
+The answer is that we really need to look at all of the main measures to get an idea of this. With some of the ones that you're talking about, it does make more sense. As jobs become less physically dangerous, then at least you might say that things are less unfair to men. Although in the book, what I say is that even that is a bit more superficially complicated, at least on the surface. The immediate reaction is that society's less fair to men because they do the most dangerous jobs. Although I also say, “Yeah, but they get monetary compensation for that.” So, all things considered, you probably shouldn't think of it as unfair. It's something where it's reasonable to say, “Hey, wait a second, how come men are the ones that are enduring 90 percent of the workplace deaths” and say, “Well, because they're getting 90 percent of the combat pay.” Broadly construed it’s not mostly actual for combat. 
+
+So anyway, that's one area where you should be careful. But I can see the possibility there. I do have a section in the book where I go over what's happening over time. What I'll say is, well, one big thing that's happened over time is that people have become very hyper-concerned with the mistreatment of women, which means that feminism is becoming less true as a result because when people are really hyper-concerned that they might be unfair to someone, they are even less likely to be unfair to them. So I think that's one thing where society where feminisms become less true over time. Another area that I talk about and which I think really does tip the scales, although again, you really need to go through the book because I do try to work through a lot of different margins…
+
+I think the one that really does settle it against feminism in today's age is precisely the level of false feminist accusations about unfairness. When we go over all the objective measures, then you say, well, it's close to a wash in terms of which gender is treated more or less fairly overall. But then you realize, “Yes, but there's one gender that has to endure a whole lot of grossly exaggerated hyperbolic accusations and unfairness and another gender that gets to make those accusations.” The gender that has to endure the unfair accusations is men, and the gender that gets to make them is women. Obviously, not all women make them, and not all men receive them. But still, if we're talking about the average fairness of the treatment of men and women or society, I say that this climate of false accusation and intimidation is what really tips it. It didn't have to be this way, Dwarkesh! [laughs] We could have just had conditions change without a whole lot of flinging of wildly inaccurate accusations, but that's not the world we're in. 
+
+Dwarkesh Patel
+
+When would you say was the flipping point? Was there a particular decade that you thought “unbalanced things are equal now?”
+
+Bryan Caplan
+
+Yeah. So one of the things I say in the book is that there are a bunch of ways where you can say that women were treated less fairly in earlier decades, but there are aspects that are probably more important overall where women are treated worse now. The main one is paternal support for children. In 1940, the odds that you could count on the biological father of your children to help you to raise them was maybe 90%. Now it's probably more like 60%, 70%. So that's one of the main ways that I say that women probably are treated less fairly than men. And the unfairness has gotten worse over time. 
+
+Again, just understand this is not the kind of book that most people are used to where someone argues like a lawyer and they just say, look, I've got 20 arguments for why I'm right. And everyone who disagrees with me is stupid and doesn't have a leg to stand on. This is the kind of book that I liked to write where I really say, let's just calm down and just go through every issue separately, weigh each one on its merits. There are a bunch of points where someone could say, “Why do you concede that? That makes your argument weaker.” Well, I concede it because it's true! Then in the end, I have my overall judgment. I will just say that there are a number of books that are written in this terrible modern style of lawyerly reasoning, where you basically have a thesis that you just try to defend in every possible way. I don't write books like that. I try to write books that are honest and self-reflective, and where if there's some weakness in what I'm saying, I don't just acknowledge it if someone points it out; I try to be the first person to reveal it so that people feel like they can trust me. 
+
+It's my own conscience. I don't feel right when I say something not really quite right. I feel like I should’ve always said the other thing. So I try to just write with candor. 
+
+Dwarkesh Patel
+
+Now, would you say that feminism in the United States is overcorrected but that it's still true in the global sense? In the way that, on average, across the world, women are treated more unfairly than men. Because if that's the case, then if the US is at the center of global feminism, then, of course, they're going to overcorrect here, but overall they're making the world a better place. 
+
+Bryan Caplan
+
+So that is a much better argument. I would say that if we think about most areas of Europe, then I think that it's very similar to what's going on in the US. In the book, I do go over this especially. I start with Saudi Arabia, where it's really obvious what's going on and how poorly women are treated. But then I go over to India and China and just think about plausible rates of female infanticide. I think it is very likely that overall the treatment of women in India and China is more unfair than that of men. In Saudi Arabia, I'm almost sure that it is. In terms of “Is the US providing a useful corrective for the world while messing up things in the US?” It's possible. I think the problem is that it does discredit a lot of the reasonable points because the US just doesn’t focus on the really big issues. The amount of time that American feminists spend on female infanticide in China and India… I don’t think it would even be 1% of the rhetoric. It's just not something that they care about.
+
+So I would say that there's more harm being done by the sheer distraction of putting so much emphasis upon small, exaggerated, or reverse problems that bother feminists in the first world while ignoring and indirectly causing people to forget or neglect actual serious problems in some other countries. 
+
+Positively shifting the Overton Window
+
+Western Feminism Ignores Infanticide
+
+Dwarkesh Patel
+
+But let me apply the argument you make in Open Borders that you can effect change by shifting the Overton window. So advocating for open borders just shifts immigration policy slightly towards the open end. Can American feminists make the same point that through making the crazy arguments they make in America, they're making Saudi Arabia more liberal for women? 
+
+Bryan Caplan
+
+I would say that when the arguments are crazy, then it's not clear that shifting the Overton window actually happens. That may be where you discredit the other view. In particular, I think what I say in that part of the book is that people generally confuse being radical with being unfriendly. And most of the harm that is done to radical causes is due to the unfriendliness rather than the radicalism. So in that case, I would say that feminism has a definite friendliness problem. It is not a movement that goes out of its way to go and make other people feel like they are respected, where even if you disagree with me, I want to be your friend and listen to what you have to say, and maybe we could go and come to some understanding. I think it is a movement where the main emotional tenure of the elites is, “We are totally right, and anyone who disagrees had better watch out.” So I think that there is a discrediting of it. 
+
+The other thing is just that I think there's too much cultural separation between the feminist movement as we know it and places like China and India, where I just don't see the attitude of being really angry about exaggerated or false complaints about unfair treatment of women in the United States is going to do anything for infanticide in India. Correct me if I'm wrong, Dwarkesh. Do you see much influence of Western feminism on infanticide in India?
+
+Dwarkesh Patel
+
+I don’t know, but maybe yes. More generally, one of the common arguments that libertarians make about India and its elites is, “Oh, all of India's elites go study in Oxford or something, and they learn about the regulations the West is adopting that make no sense for a country with $2,000 GDP per capita.” I feel like some of the things could be true of feminism where all these Indian elites go to American universities and UK universities where they learn about radical feminism, and they go back, and they adopt some of these things.
+
+Bryan Caplan
+
+Yes, although you might remember what Alex Tabarrok says about these very things. You can go to India and have people pushing paper straws on you, and yet the streets are still totally covered in trash. In fact, the pushing of the paper straws probably actually distracts people from the much more serious problem of the horrible trash, right? Again, I don't know enough about India to speak with any confidence here, but if you go and learn radical feminism in Western universities, come back to India and start complaining about how we need to have more female CEOs in a country where you have millions of female infanticides per year, I think it probably is like the paper straws problem where you are so focused on a trivial problem that maybe is not only a problem, is not even a problem at all. At the same time, that anger really blinds you to an actual, really serious problem that's going on. But you know India better than me, I could be wrong. 
+
+Why The Universe Hates Women
+
+Dwarkesh Patel
+
+I believe rape within a marriage is still legal in India and is still not recognized. Maybe it was just recently changed. Let's say this is an interview, and a feminist says, “Oh my gosh, okay Bryan, maybe you're right that society as a whole doesn't mistreat women, but maybe the cosmos mistreats women.” So women are forced to have children. All of these things combined make women's lives worse on average than men's lives. It's not because society mistreats them, but in some sense, there's still unfairness geared toward women. What do you make of this argument?
+
+Bryan Caplan
+
+So unfairness, where there's no human being that does it, seems like a very strange idea to me. Just from the get-go, well, so who was unfair to you? “The universe is unfair.” Then I mean, the correct term there is unfortunate, not unfair. So that aside, I would say it's a really interesting question. Who actually has better lives just as a matter of biological endowments, men or women? I mean, in terms of demonstrated preference, I think the overwhelming result is that most people just want to remain in whatever gender they're born in. So this is not actually transgenderism. This is like a genie wish. If you could change your gender just with a wish, costlessly, perfectly, I think a very large majority of people would still want to stay with whatever gender they have because it's part of their identity. It's some kind of endowment effect, status quo bias, or whatever. But then if you say, “Okay, yeah, right, fine. Like you, like you just want to stay whatever you were because that's your identity, but if you could put that aside, what would you want to be?” It's a tough question. 
+
+You can say, “Well, women have a harder personality to deal with because of higher neuroticism, and they've also got higher agreeableness.” But that gives them some other advantages in terms of getting along with other people. For example, men's disagreeableness makes it hard for men to just bite their tongues and shut up when someone's saying something they don't like. I think that is easier for women to do. You may have noticed that having to shut up and bite your tongue while someone around you says something stupid you don't like is actually a big part of life. That is one thing. Now, in terms of things that I feel that I would get out of being a woman, just being able to have as many kids as I wanted would matter a lot to me. So I only have four kids right now. If it were totally up to me, I would have had more kids. I think, as a woman, it would have been easy to do. [laughs] So again, you know, there is the issue. How are you going to find a guy that wants to have a lot of kids? 
+
+This is one where I've looked at the data on family size and what determines it. While both men and women seem to have a say on family size, it just looks like women's traits have a much larger effect. Men are more likely to say, “OK, fine, whatever. We'll do what you want to do on family size.” Whereas women seem to have much more pronounced preferences, which they then tend to get. I think that if I were a woman, I could have had more kids, and it would have been easier for me to do it. That would be something that matters to me. It's not something that matters to everybody, but that's something there. Again, there is just the nice fact of people caring about your suffering. In the book, I do talk about the ethos of women and children first, which is very pronounced. It’s a modern society where we can simultaneously have something like “women and children first”, but then also have a lot of rhetoric about how people don't care about women. It's like, “Hmm, that’s not right.”
+
+Dwarkesh Patel
+
+What do you think of this theory that maybe society cares a lot more about women suffering, but it sympathizes a lot more with men's success? If you think of a default character in a movie or a novel, at least for me, then the default is a man. Then maybe there's some victim that defaults as a woman. But I'd rather be the sympathy of some sort of success than get it for suffering.
+
+Bryan Caplan
+
+I mean, do you need sympathy for success? Or do you want admiration? I mean, I guess what I would say is that everybody's got suffering, and only a small share of people have any notable success. If all that you knew was you're going to be a man or woman, I would say, “Well, gee, if I'm a woman, then people will sympathize with my suffering, which is almost definitely coming because that's the human condition.” Whereas to have admiration for your success is something where it just affects a much smaller number of people. I know that hanging out in Austin among hyper-successful people may be biasing your sample a bit, but I do think it's believable that men get more unmitigated admiration for their success. Of course, there are also differences in the mating opportunities that you get for being a successful man versus a successful woman. So that is there too, but again, this is something that really is only relevant for a very small share of the population.
+
+But then the argument is, “Well, that small share of the population matters so much in terms of the story we tell ourselves about our civilization or just in terms of who controls more resources overall.” So if being a woman billionaire is harder, maybe for biological reasons, maybe for the reasons of our society, you can say, “Well, that only affects a small percentage of women in society.” But on the other hand, billionaires matter a lot.
+
+In terms of what life is like for most people, the main way they matter is that billionaires just provide awesome stuff. In terms of the stories that people tell, it's true that if you go and look at most classic movies or novels, the main characters are male. Even in cartoons, actually, the main characters traditionally have been male. But on the other hand, that’s just fiction. In terms of daily life. I'd rather have people be really concerned about me in real life but have my perspective underrepresented stories than the other way around. 
+
+Dwarkesh Patel
+
+So what do you make of the argument that employers hold defects in women's personalities much more against them than they hold defects in men's personalities? I think Tyler cited some of this research in his new book on talent that being too agreeable or being too aggressive harms women more than it harms men. 
+
+Bryan Caplan
+
+I would say that it's complicated in terms of willingness to fire. I think employers are much more willing to fire men. For defects and for insubordination. Another thing on the list is a small one, but I think that it is indicative of a broader trend. For people working at workplaces with dress codes, men are much more likely to be dinged on dress code violations than women because for men, there's a definite thing men are supposed to do. If you're not doing it, you are in violation. For women, on the other hand, it's like, “Well, gee, I mean, it seems kind of like that's not what you should be wearing, but I don't want to be the person that says anything about it. And who knows? Who am I to judge what a woman ought to be wearing on the job?”  But a man, on the other hand, needs to be wearing a suit in 110-degree weather. What was the high this summer over in Austin? [laughter] 
+
+Dwarkesh Patel
+
+Why do you think that women have gotten less happy since the sixties in America?
+
+Bryan Caplan
+
+Right. So the main thing I know about this is Stevenson and Wolfer's research on this. The main thing to remember is the magnitude. If I remember correctly, they find that in the sixties, women had about a two percentage point advantage relative to men in terms of their odds of saying they're very happy. 25% of men said they were very happy, then 27% of women in the sixties said that they were very happy. Whereas now, it seems like women have a two percentage point deficit relative to men. So now, if 25% of men say they're very happy, then 23% of women say they're very happy. It's always important in these papers to look at those magnitudes because the media coverage is going to say, “Oh, women are miserable now.” It's not that women are miserable now! We're talking about a two-percentage point difference. It's a data set large enough for this to actually be meaningful, but we do want to keep it in perspective in terms of what's really going on. 
+
+The paper probably actually goes over a bunch of stories and says the obvious ones are all wrong. That would be what Justin Wolfersustin especially would normally do. I think he's usually right that simple stories about something like this are wrong. In terms of what I would pursue if I read through the paper and reminded myself of what they found and then said, “Okay, well, what will work?” I think I would, on one end, focus on single moms because they’ll become much more common, and their lives really are hard. A rise in single motherhood is coming. I would guess that’s one important part of it. Then, I would also be wondering how much of it is actual feminism telling women that they should be unhappy because the world is unfair and that causes unhappiness. Again, I'm not saying that these are right. It's plausible to me. The main thing I would say about feminism causing unhappiness in the adherents is that it probably doesn't matter most for most self-identified feminists because most people just are not that intellectual and they don't think about their ideas very often. So it's one thing to say, look, if you believe you're going to hell, you'll be unhappy. It's like, well, if you believe it once a year, does it make you unhappy? If you remember, “Oh yeah, once a year, I think I'm going to hell.” The rest of the time, you don't think it.
+
+On the other hand, the person who is always thinking, “I'm going to hell, I'm going to hell,”  probably will be unhappy. So I think feminism is very likely to reduce the happiness of people who are feminist elites and take it really seriously, where they're talking about it all the time. That is likely to cause unhappiness. I'd be amazed if it didn't. But on the other hand, for the vast majority of people who say, “Yeah, I am a feminist. Moving on…” I don't think it's too likely to be messing up their lives. 
+
+Dwarkesh Patel
+
+That raises an interesting possibility. This is not my theory, but let's run with this. So feminism has actually gotten more true over time, but it's precisely because of feminism.  Maybe it's made elite women more unhappy. As you said earlier, the amount of single mothers has gone up. Maybe part of that is the reason, and part of that is because of feminist trends in terms of family formation. Maybe women prefer to be at home caring for children on average more, but then feminism encourages them to have careers, which makes them less happy. So if you add all these things up, plus mentorship, which men are less likely to give because of #metoo. So add all these things up, maybe they're the result of feminism, but they still make feminism more right. Would you agree with that?
+
+Bryan Caplan
+
+Yeah. If we go back to this definition of feminism and this theory that our society treats women less fairly than men, then if the story is that women have made a lot of false accusations against men and then men have responded by changing their behavior, that would seem to be a strange example of saying the society is treating women less fairly than men. It would seem to be a case that society is treating men unfairly, and this is having some negative side effects for women as well. But it's one where if you really were trying to draw the line… Well actually, here's actually one of the weaknesses of the definition that I proposed. So foot binding in China. From my understanding, the main drivers of foot binding in China were women. So women are binding feet, and they're also telling their daughters they have to have their feet bound. Men seemed to care less, actually, it was more of an intra-female abuse. This is one where you could say that in China, women are treated less fairly than men, even though the perpetrators are women. I think that does actually make sense. I would just say that the definition that we use in our society isn't really calibrated to deal with that kind of thing. 
+
+When it comes to what the right way to describe it would be, it just gets a bit confusing. It's useful just to say, all right, well, if women are mistreating women and that's what's making women's lives hard, how do we count that? I think I would just say that we don't have any really good way of counting it, and might be useful to just come up with a new word to describe this kind of thing. 
+
+Women's Tears Have Too Much Power
+
+Dwarkesh Patel
+
+What do you make of Hanania’s argument that women's tears win in the marketplace of ideas? 
+
+Bryan Caplan
+
+Yeah. So we might want to back up a little bit and explain what the argument is. So Richard Hanania on his substack has a very famous essay where he points out that in fiction, when there is a mob of angry college students, it's very demographically diverse. But when you look at actual footage, it seems like women are highly overrepresented. He generalizes this by saying that a lot of what's going on in terms of cancel culture and related problems is that women are the main ones that get angry about these things, and people don't know what to do about it. So he, if I remember correctly, says that a man can, in a way, actually enjoy an argument with another man. Even if you lose or even if it's a physical fight, he says, you can sort of feel invigorated by it. We got through this. We resolved something. Whereas no guy feels this way about an argument with his wife. “What do I need to do in order for this argument to end as soon as possible” would be a more normal reaction. This sort of generalizes to the majority of social arguments, specifically ones that involve someone being offended or angry, or hurt. He says a lot of what's going on is that it is mainly women that are presenting these complaints and that it's hard to deal with it because men don't want to argue with angry women. It just makes them feel bad. It's sort of a no-win situation. So anyway, that is Hanania's argument. Overall, it seemed pretty plausible to me. I haven't thought about it that much more, but it's one that does seem to make a fair bit of sense in terms of just what I'm writing about feminism. 
+
+You know, one really striking thing is just how one-sided this conversation is. It is a conversation where women have complaints, and men mostly just listen in silence. Ofcourse, men will sometimes complain amongst each other when women aren't around. It's not a real dialogue where women have complaints about men, and then men are very eager to say, “Oh, but I have something I would like to say in rebuttal to that.” A lot of it is what he calls “women's tears.” It's sadness, but mingled with or supported by intimidation: “If you don't give me what I want, if you don't pretend that you agree with me, I will be very angry, and I will be fairly sad.” So you should be afraid. I think a lot of what's probably going on with the rhetorical dominance of feminism, is that people are just afraid to argue against it because, in a way, it does sort of violate the women and children first ethos. If women complain about something, you aren't supposed to go and say, “I disagree. Your complaints are unjustified.” You're supposed to say, “Look, what can I do to make it better?” 
+
+Dwarkesh Patel
+
+But that seems like a good description of race issues and class issues as well. 
+
+Bryan Caplan
+
+I mean, the main difference there is that there are a lot of people who have a lot more firsthand experience of intergender relations, and they spend a lot more time in intergender relations than they spend in all of the other ones. So I mean, the dynamic is probably pretty similar, but in terms of the really negative firsthand experience that men have, Hanania probably is right about that. Then that generalizes to bigger issues. 
+
+Dwarkesh Patel
+
+You have an essay about endogenous sexism. Could this just not be the cause of society being unfair to a woman? We start off with men being in power, they get sexist just because they're around other men and they like them more. So then, the starting position matters a lot, even if men aren't trying to be sexist. 
+
+Bryan Caplan
+
+So let me just back up and explain the argument. The argument says to imagine that in reality, men and women are equally good in absolutely every way, but people are more likely to have close friends with their own gender, (which is totally true). So if I remember the essay, I think that for close male friends, the male-to-female ratio was 6:1, and for women, it was 4:1. So most people's close friends are of the same gender. When you meet these people, and they're your close friends, you know them really well. Furthermore, because you have handpicked them, you're going to think well of them. So then the question is, “What about people of the opposite gender? What will your interaction with them be like?” What I point out is that a lot of the opposite gender you hang out with will be the spouses and partners of your friends. 
+
+On average, you're going to think worse of them because you didn't pick them. Basically, there are two filters there: I like you because you're my friend, and I put up with your partner because that person is your partner. So this means that the women that men are around are going to be the partners of their friends. They're not going to like them less and think less of them than they think of their friends. On the other hand, the partners of women's friends will be men, and women will get to know them and say, “Wow, they're not that great. They're at least kind of disappointing relative to my same-gender friends.” So anyway, this is an argument about how the illusion of your own gender being superior could arise. 
+
+Now, as to whether this is actually the right story, I leave that open. This was just more of a thought experiment to understand what could happen here. Could this actually explain the unfair treatment of women in society? Especially if we start off with men being the gatekeepers for most of the business world? It's totally plausible that it could. That's why we really want to go to the data and see what we actually find. In the data I know of, the evidence of women earning less money than men while doing the same job is quite low. So there's very little gender disparity in earnings once you make the obvious statistical adjustments for being in the same occupation. Again, the main area that probably actually has gotten worse for women is mentoring. Mentoring is partly based on friendship. I like this person. I like working with them. So I will go and help them to go and acquire more human capital on the job. This is one that feminism has visibly messed up, and many feminists will, in a strange way, admit that they have done it while not taking responsibility for the harm. I've got an essay on that in the book as well.
+
+Looking at the evidence, it is totally standard now for male managers to admit that they are reluctant to mentor female employees because they're so worried. When I go and track down a bunch of feminist reactions to this, they basically just say, “I can't believe how horrible these guys are.” But it’s like, look, you're asking them for a favor to get mentorship. They're scared. If someone's scared, do you really want to yell at them more and offer more mostly empty threats? It's really hard to scare someone into doing something this informal, so you really do need to win them over. 
+
+Dwarkesh Patel
+
+Tactically, that might be correct, but it seems to just be a matter of “Is their argument justified?” I can see why they'd be frustrated. Obviously, you want to point out when there's a sexual harassment allegation, and that may have the effect of less mentorship. 
+
+Bryan Caplan
+
+Well, is it obvious that you want to point that out? Part of what I’m saying is that there are different perceptions here. There are differences of opinion. If you want to get along with people, a lot of it is saying, “How does it seem from the other person's point of view?” Obviously, do not assume that the most hypersensitive person is correct. So much of the problem with mentorship comes down to hypersensitivity. I've got another piece in the book where I talk about misunderstandings and how we have so much lost sight of this very possibility. When there's a conflict between two people, who's right and who's wrong? 
+
+Ofcourse, it could be that one person is the conscious malefactor and the other person is an obvious victim that no one could deny. That does happen sometimes. But much more often in the real world, there's a misunderstanding where each person, because of the imperfection of the human mind, has the inability to go and get inside another person's head. To each person, it seems like they're in the right and the other person is in the wrong, and one of the most helpful ways for people to get along with each other is to realize that this is the norm. 
+
+Most conflicts are caused by misunderstandings, not by deliberate wrongdoing. This is the way the people who keep their friends keep their friends. If any time there's a conflict with a friend, you assume that you're right and your friend is in the wrong, and you demand an immediate abject apology, you're going to be losing friends left and right. It is a foolish person who does that. Friendship is more important than any particular issue. This is not only my personal view, it is the advice that I give to everyone listening. Keep your friends, bend over backward in order to keep your friends, and realize that most conflicts are caused by misunderstandings. It's not the other person is going out of their way to hurt you. They probably don't see it that way. If you just insist, “I'm right, I demand a full apology and admission of your wrongdoing,” you're probably going to be losing friends, and that’s a bad idea. The same thing I think is going on in workplaces where there is an ideology saying that we should take the side of the most hypersensitive person. This is not a good approach for human beings to get along with each other.
+
+Dwarkesh Patel
+
+Yeah. That's very wise. What do you make the argument that a lot of these professions that are dominated by men are not intrinsically things that must appeal to men, but the way that they are taught or advertised is very conducive to what males find interesting? So take computer science, for example; there are claims that you could teach that or economics in a way that focuses on the implications on people from those practices rather than just focusing on the abstractions or the “thing-focused stuff.” So the argument is these things shouldn't be inherently interesting to men. It's just in the way they are taught. 
+
+Bryan Caplan
+
+The word inherently is so overused. It's one where you say, "Well, are you saying that inherently X?” Then someone says, “Well, not inherently X, just you'd have to bend over backward and move heaven and earth for it not to be. So I guess it's not really inherent.” That is a lot of what is worth pointing out. So if you're going to put the standard to that level, then it's going to be hard to find differences. You could say, “There's absolutely no way under the sun to go and teach math in a less male way.” On the other hand, maybe we should ask, “Is it reasonable to expect the whole world to revolve around making every subject equally appealing to men and women?” That's an unreasonable demand. If there's a subject like math that is male-dominated, the reasonable thing is to say, “Well, if you want to get in on that, you're going to need to go and become simpatico with the mindset of the people that are already there and then push the margin.” You can say that it’s “so unfair that male ways of doing math are dominant.” Or maybe you could say that it's unfair for someone who's just shown up to demand that an entire discipline change its way of doing things to make you feel better about it. Obviously, there are large areas that are very female-dominated, and there's no pressure on women to go and change the way that flower arranging is done, or cooking in order to make it more welcoming to men.
+
+So this is one where if you had a really high bar for how things are fair, then unless the rigorous conditions are met, you're going to see a lot of unfairness in the world. Although even then, as long as you have an equally high bar for both men and women, I don't think it's going to make feminism any more true by my definition. I also just say, I think these really high bars are unreasonable. If a friend had these bars of standards saying, “Look, why is it that when we meet for food, we have to go and meet at standard hours of breakfast, lunch, and dinner? I actually like meeting in the middle of the night. Why can’t we have half of the time be my way?” You respond, “Well yeah, but you're only one person, so why should I change?” It depends upon what subfield you're in as well. There are actually groups of people really like hanging out in the middle of the night, so if you ask, “Why is it we always have to meet in the middle of the night? Why can't we do it my way?” You are entering into a subculture that works this way. You could demand that we totally change our way of being to accommodate you, but it just seems like an unreasonable imposition on the people who are already here. 
+
+Now, when you sort of go through the list of different things that people think of as making something a male or a not-male field, sometimes people will treat things like acting like there's an objectively correct answer as a male trait. If that's a male trait, then we need to keep that trait because that is vital to really any field where there are right and wrong answers. I mean, that's an area where I am very tempted rhetorically to say, “It's just so sexist to say that it's male to think that things are right and wrong. I think that is a trait of both genders”. In a way, I end the essay stating, “Yes, these are not male; not only do they not make a male monopoly, but they are also not uniquely male virtues. They are virtues that can and should be enjoyed by all human beings.” At the same time, you could ask whether virtues are equally represented by both genders and well, that's an empirical question. We have to look at that. 
+
+Bryan Performs Standup Comedy!
+
+Dwarkesh Patel
+
+We're shifting subjects. You recently performed at the Comedy Cellar. How was that experience? 
+
+Bryan Caplan
+
+Yeah, that was super fun and a big challenge! I am a professional public speaker. Standup comedy is professional public speaking. I was curious about how much transfer of learning there would be. How many of the things that I know as a regular public speaker can I take with me to do standup comedy? I'm also just a big fan of standup comedy– if you know me personally, I just find life constantly funny. 
+
+Dwarkesh Patel
+
+Yes, I can confirm that. You're a very pleasant person to be around. 
+
+Bryan Caplan
+
+Life is funny to me. I like pointing out funny things. I like using my imagination. A lot of comedy is just imagination and saying, look, “Imagine that was the opposite way. What would that be like?” Well, actually, just to back up again: during COVID, I did just create a wiki of comedy ideas just on the idea that maybe one day I'll go and do standup comedy. Comedy Cellar actually has a podcast, kind of like Joe Rogan, where comedians go and talk about serious issues. I was invited to that, and as a result, I was able to talk my way into getting to perform on the actual live stage of the biggest comedy club in New York. The main thing I could say about my performance is that it was me and nine professional comedians, and I don't think I was obviously the worst person. So that felt pretty good.
+
+Dwarkesh Patel
+
+It was a pretty good performance.
+
+Bryan Caplan
+
+I felt good about it! There were some main differences that I realized between the kind of public speaking I was used to doing and what I actually did there. One is the importance of memorizing the script. It just looks a lot worse if you're reading off a note. Normally I have some basic notes, and then I ad-lib. I don't memorize. The only time I have a script is if I have a very time-constrained debate, then I’d normally write an opening statement, but otherwise, I don't. The thing with comedy is it depends so heavily upon exact word choice. You could go and put the same sentence into Google Translate and then back-translate it and get another sentence that is synonymous but isn't funny at all. That was something that I was very mindful of. Then obviously, there are things like timing and being able to read an audience (which I'm more used to). That was what was so hard during COVID–– not being able to look at the faces of a live audience. I can see their eyes, but I can't tell their emotions or reactions to their eyes. I don't know whether I should talk more or less about something. I don't know whether they're angry or annoyed or curious or bored. So these are all things that I would normally be adjusting my talk for in normal public speaking. But with comedy, it's a bit hard to do. 
+
+What successful comedians actually do is they try it in a bunch of different ways, and then they remember which ways work and which ones don't. Then they just keep tweaking it, so finally, when they do the Netflix special, they have basically done A/B testing on a hundred different audiences, and then it sounds great–– but the first time? Not that funny. 
+
+Dwarkesh Patel
+
+It didn't occur to me until you mentioned it, but it makes a lot of sense that there are transfers of learning there in both disciplines. There are a lot of hypotheticals, non-extra events, and putting things in strange situations to see what the result is…
+
+Bryan Caplan
+
+A lot of it is just not having stage fright. So I probably had just a tiny bit of stage fright at the Comedy Cellar, which normally I would have basically zero, but there it was a little bit different because it's like, “Am I going to forget something?” I actually have a joke in the set about how nothing is scarier than staying silent while thousands of people stare at you. So that was a self-referential joke that I worked in there.
+
+Dwarkesh Patel
+
+I can't remember if it was Robin Hanson who said this, but didn't he have a theory about how the reason we have stage fright is because somehow, you're showing dominance or status, and you don't want to do that if you're not actually the most confident. 
+
+Bryan Caplan
+
+You're making a bid for status. In the ancestral environment, we're in small groups of 20-40 people. If you go and want to speak, you're saying, “I'm one of the most important people in this band here.” If you're not, or if there are a lot of people voicing that that guy is not important, then who knows? They might shove you off the cliff the next time they get a chance. So yeah, watch out. 
+
+Affirmative Action is Philanthropic Propaganda
+
+Dwarkesh Patel
+
+I wonder if this explains the cringe emotion. When somebody makes a bid for status, and it's not deserved. Okay, I want to talk about discrimination. So as you know, there's a Supreme court case about Harvard and affirmative action. You might also know that a lot of companies have filed a brief in favor of Harvard, saying that affirmative action is necessary for them to hire diverse work for ourselves, including Apple, Lyft, General Motors. So what is the explanation for corporations wanting to extend affirmative action? Or are they just saying this, but they don't want it? 
+
+Bryan Caplan
+
+If those individual corporations could press a button that would immunize them from all employment lawsuits, I think they would press it. When you look at their behavior, they don't just give in whenever they get sued. They have a normal team of lawyers that try to minimize the damage to the company and pay as little as possible to make the problem go away. So I think really what's going on is public relations. They are trying to be on that team. As to whether it's public relations vis a vis their consumers or public relations vis a vis other people in the executive boardroom is an interesting question. I think these days, it probably is more of the latter. Although even under Reagan, there were a bunch of major corporations that did make a similar statement saying that they wanted affirmative action to continue. I think that the real story is that they want to get the status of saying, “we are really in favor of this. We love this stuff.” But at the same time, if it just went away, they wouldn't voluntarily adopt a policy where they give you a right to go and sue them for mistreatment.
+
+I think there would still be a lot of propaganda. I mean, here's the general thing. You think about this as a species of corporate philanthropy sticking your neck out in favor of a broad social cause. Some people disagree and say that it's self-interest. They say, “Look, the odds that even Apple is going to change the Supreme Court's mind is super low.” So I don't think it's that. Basically, what they're doing is a kind of philanthropy. What's the deal with corporate philanthropy? The deal with corporate philanthropy is you are trying to go and, first of all, make the public like you, but also, you're trying to look good and jockey for influence within your own company. One really striking thing about corporate philanthropy is when you look closer, normally, they spend way more resources marketing the philanthropy and letting everyone know, “Oh, we did all this philanthropy!” Then they actually spend on philanthropy. 
+
+So I had a friend who was a marketing person in charge of publicizing her company's philanthropy. They gave away about a thousand dollars a year to the Girl Scouts, and she had a hundred thousand dollars salary telling everyone about how great they were for giving this money to the Girl Scouts. So I think that's the real story. Get maximally cynical. I think without denying the fact that there are true believers now in corporate boardrooms who are pushing it past the point of profitability. The cost of philanthropy is just the production budget of the TV commercial. A rounding error. The donations are a rounding error, and then they go, “Hey, everyone, look at us. We're so freaking philanthropic!” 
+
+Peer effects as the Only Real Education
+
+Dwarkesh Patel
+
+Okay. So this question is one that Tyler actually suggested I ask you. So in The Myth of the Rational Voter, you say that education makes you more pro-free market. Now, this may have changed in the meantime, but let's just say that's still true. If you're not really learning anything, why is education making you more free market? 
+
+Bryan Caplan
+
+It's particularly striking that even people who don't seem to take any economics classes are involved. I think that the best story is about peer effects. When you go to college, you're around other peers who though not pro-market, are less anti-market than the general population. The thing about peer effects is that they really are a double-edged sword from a social point of view. Think about this. Right now, if you are one of the 1% of non-Mormons that goes to Brigham Young University, what do you think the odds are that you'll convert to Mormonism? 
+
+Dwarkesh Patel
+
+Higher than normal. 
+
+Bryan Caplan
+
+Yeah. I don't know the numbers, but I think it's pretty high. But suppose that Brigham Young let in all the non-Mormons. What would Brigham Young do for conversion to Mormonism? Probably very little. Furthermore, you realize, “Huh, well, what if those Mormons at Brigham Young were dispersed among a bunch of other schools where they were that were a minority?” Seems quite plausible. They'd be making a lot more converts over there. So if you achieve your peer effects by segregation (which is literally what college does, it takes one part of society and segregates it from another part of society physically when you're in school, and then there's social segregation caused by the fact that people want to hang out with other people in their own social circles, your own education levels, etc.), in that case, in terms of whether or not education actually makes society overall pro-free market, I think it's totally unclear because, basically, when people go to college, they make each other more pro-free market. At the same time, they remove the possibility of influencing people of other social classes who don't go to college, who probably then influence each other and make each other less free market. I think that's the most plausible story.
+
+Dwarkesh Patel
+
+What about the argument that the people who go to elite universities are people who are going to control things? If you can engineer a situation in which the peer effects in some particular direction are very strong at Harvard (maybe because the upper class is very liberal or woke), they make the underclass even more woke, and then it’s a reinforcing cycle after every generation of people who come into college. Then that still matters a lot, even though presumably somebody becomes more right-wing once they don’t go to Harvard because there are no peers there. But it doesn't matter. They're not going to be an elite, or it doesn't matter as much. 
+
+Bryan Caplan
+
+It could be, although what we've seen is that we now just have very big gaps between elite opinion and mass opinion. Of course, it is a democracy. If you want to run for office, that is a reason to go and say, “Yeah, what is the actual common view here? Not just the view that is common among elites.” However, I will say that this is a topic that deserves a lot more study. Now the other thing to question is, “Wouldn't there be peer effects even without college?” If elites didn't go to college and instead they went and did elite apprenticeships at top corporations instead, I think you'd still wind up getting a very similar elite subculture. I think that this kind of social segregation is very natural in every human society. Of course, you can see it under communism very strongly where it's like, “I don't want my kid going and playing with a kid whose parents aren't in the communist party.” So every society has this kind of thing. 
+
+Now, if you push the dynamics enough…. let's put it this way. If you were the prophet of the Mormon religion, what would be the very best thing for you to do to maximize the spread of Mormonism? It is not at all clear to me that trying to get all Mormons to go bring them young is a good strategy.
+
+Dwarkesh Patel
+
+I wonder if there are nonlinear dynamics to this. 
+
+Bryan Caplan
+
+Yeah. Well, there's gotta be, right? But as soon as you're talking about nonlinear dynamics, those are truly hard to understand. So I would just say to keep a much more open mind about this, and if anyone is listening and wants to do research on this, that sounds cool, I'll read it. 
+
+Dwarkesh Patel
+
+Right. I remember you saying that one of the things you're trying to do with your books is influence the common view of elite opinion. So in that sense, there are elite subcultures in every society, but they're not the same elite subcultures, and therefore you might care very much about which particular subculture it is. 
+
+Bryan Caplan
+
+Notice that that's one where I'm taking it as a given that we have the current segregation, and  I'm going to try to go and take advantage of it. But if it were a question of if I could change the dial of what kind of segregation we have, then it's much less clear. 
+
+The Idiocy of Student Loan Forgiveness 
+
+Dwarkesh Patel
+
+Student loan forgiveness. What is your reaction? 
+
+Bryan Caplan
+
+Oh, give me a freaking break. This is one subject where I think it's very hard to find almost any economist, no matter how left-wing and progressive, who really wants to stick their necks out and defend this garbage. Look, it's a regressive transfer. Why then? Why is it that someone who is left-wing or progressive would go and favor it? Maybe it’s because people who have a lot of education and colleges are on our team, and we just want to go and help our team. Obviously, the forgiveness really means, “We're going to go and transfer the cost of this debt from the elites that actually ran up the bill to the general population.” Which includes, of course, a whole lot of people who did not go to college and did not get whatever premium that you got out of it. So there's that. In terms of efficiency, since the people have already gotten the education, you're not even “increasing the amount of education” if you really think that's good. The only margin that is really increasing education is how it's making people think, “Well, maybe there'll be another round of debt forgiveness later on, so I'll rack up more debt. The actual true price of education is less than it seems to be.” Although even there, you have to say, “Huh, well, but could people knowing this and the great willingness to borrow actually wind up increasing the ban for college and raising tuition further?” There's good evidence for that. Not 100%, but still a substantial degree.
+
+Again, just to back up–– that can be my catchphrase [laughter]. So I have a book called The Case Against Education, and my view is much more extreme than that of almost any normal economist who opposes student loan debt forgiveness. I think that the real problem with education is that we have way too much of it. Most of it is very socially wasteful. What we're doing with student loan forgiveness is we're basically going and transferring money to people who wasted a lot of social resources. The story that you are on the slippery slope to free college for all is, in a way, the best argument in favor of it. If you thought that free college for all was a good idea, then this puts us on that slippery slope. 
+
+It’s terrible because the real problem with education is that we just spend way too many years in school. It is generally not socially useful. The main reason why it's going on is that it’s a way of stamping people's foreheads, saying that they are better than their competitors, and to not throw their application in the trash. The more education we get, the more you need to not have your application thrown in the trash. Credential inflation. Since we're talking a lot about inflation these days, the central organizing idea of what's so wasteful about education in my book is credential inflation. When everyone has a college degree, nobody does, right? This analogy is very good. Can you make a country rich just by giving everybody a trillion dollars? You cannot. All that happens is you wind up raising prices, and you cause a lot of harm in the process. I say the same thing is going on with the multiplication of credentials.
+
+Dwarkesh Patel
+
+Let me ask you about that. Because I think for the last 10 years, the proportion of Americans who are getting college degrees hasn’t gone up, right? Doesn't the signaling theory imply that it should be going up as a credential gets diluted?
+
+Bryan Caplan
+
+So actually, if it doesn't go up, then it's not getting diluted. But here's the actual story and what's been going on during the last 10 years… I have a bunch of bets on this, actually, and I just won the first one. When you see that the share that's going to college is going down, that's counting community college, right? It's community college that has fallen a bit, which makes sense because the signal sent by community college is barely better than nothing, right? Except in a few disciplines like nursing, and a few occupations similar to that. But for four-year college attendance, it's actually continuing to rise. The bets that I have are all along the lines of “Attendance in traditional four-year brick and mortar colleges will fall no more than 10%.” I have a whole series of these bets, each with 10-year maturities. So I just won the first one, and I think I'm just going to win a whole bunch of other ones. 
+
+Dwarkesh Patel
+
+Does your undefeated bet record make you more hesitant to take bets? Because getting the first loss and seeing 52-1 will just be a huge [Bryan interrupts]
+
+Bryan Caplan
+
+Yeah, I would be lying if I said it didn't change my emotions. I do have a record of 23 wins for 23 bets that have resolved. It is fun to be able to go and say that. To say I've got 29 out of 30 bets won wouldn't sound as good. At the same time, I still am totally willing to make bets. The thing about bets is that it's not like they just come fall into your lap. You really have to aggressively seek them out because hardly anyone wants to bet. At this point, you might think that some people would want to bet me just basically saying, “Well, if I beat him, I'll be the guy that beat him. And if I lose, then who's ever heard of me anyway? Who cares?” But even that doesn't really do very much. The bet that I'm likely to lose is a global warming bet with the standup economist, Yoram Bauman. So that's one where he gave me three to one odds initially. So I was expecting to lose. He very much enjoys running annual victory laps on Twitter without ever mentioning, “Yeah, well, you did give me odds because I wasn't saying that I was convinced. I was saying that I thought that other people were overconfident”. But that's his right to go and run his victory laps. 
+
+Dwarkesh Patel
+
+You're like a UFC fighter who hasn't lost. I don't know if you know Khabib Nurmagomedov? He retired before he lost a single fight, I believe. I think he said his reason was, “Oh, my mother doesn't want me to fight anymore.” [laughs] But one wonders. Are you hopeful that right-wing governments are seeing education polarization and loan forgiveness as a transfer of wealth toward left-wing elites? Are you hopeful that they’ll implement education austerity?
+
+Bryan Caplan
+
+Barely. Just to back up, the big policy reform that I push in The Case Against Education is education austerity, which means spending less on education and making education less accessible. Making it less accessible, if I am correct, will be socially desirable, because it will basically mean that credential inflation will be reversed, and people will be able to get the jobs they were going to get anyway while spending fewer years of their lives in school learning stuff that is not very useful. The main reason that I'm skeptical about this is that even in states where the state government is very right-wing, it seems that the prestige of state university systems is sufficiently high that politicians generally don't want to challenge it. 
+
+In Texas, we both were hanging out around the University of Texas campus, and the state capitol is just a 20-minute walk away. It seems like the governor of Texas does not want to have a throwdown with the president of the University of Texas and say, “Hey, we're sick of this stuff.” Why not? Probably because the governor of Texas thinks that UT, with its great football team, is really popular and that he can't beat them. It’d be hard for him to say, “We're going to pass a bill saying that all the athletics of UT are fully funded, but we are going to go and get rid of the following departments.” It's hard to go and make that happen. The president of UT could probably get the football coach to say, “We stand arm in arm, shoulder to shoulder with our fat studies department,” or whatever. So that is the concern.
+
+Florida is a little bit different. It does seem like DeSantis is trying to go and at least make some symbolic efforts against overwhelming left-wing bias at the University of Florida. But as far as I know, he isn’t doing anything about their budgets, which I think they really care about. You can pass all the laws you want, but if you don't actually mess with their money, then I don't think they're going to care that much. The main change that I could plausibly see is defunding the least popular departments while saying we're going to keep the total budget of the school the same. So say, “In the state budget, we are slashing the budgets of the English department, women's studies department, ethnic studies department, sociology,” basically any subject that a normal voter would laugh at when you set when you pronounce the name of the department, maybe they could get away with that. In a way, it just seems too strategic and requires just too much attention from politicians to make them realize this. But, that's the easiest thing to see. 
+
+Dwarkesh Patel
+
+This could include making them cosign the loan for student loans that they had to pay out of their endowments, right?
+
+Bryan Caplan
+
+Right. Again, that's one that's just so easy to admit to, demagogue, and say, “Oh, so what about this poor student who couldn't do it? Now no school wants to accept him because they don't want to be responsible for it.” If you go and read Lyndon Johnson's original speech in favor of student loans, it just takes the social desirability bias dial and turns it up to the absolute deafening maximum. I can't remember Lyndon Johnson's accent, but let's give him this accent. “I believe that in America, no student should ever be denied full access to the maximum opportunities of education merely because they were born in a family that was too poor to afford it. There is no price too high, no sacrifice too great.” Oh, God. That's the kind of weaponized nuclear rhetoric that politicians will deploy to defend this stuff.  Yeah, it's really what I'm up against. That stuff that is good doesn't sound good. I was turning Lyndon Johnson into Bill Clinton. I just realized they're the same Texan––
+
+Why Society is Becoming Mentally Ill
+
+Dwarkesh Patel
+
+Yeah, I might be giving that speech from the bathroom every day, I don't even know if you’ve heard the story [laughs]. Why do you think young people are getting more anxious and have a higher incidence of neuroticism overall?
+
+Bryan Caplan
+
+My first pass on this is always that it's an artifact of measurement to the medicalization of society. It's basically just measurement. By modern measures, there was no neuroticism, and there were no psychiatric problems 200 years ago because there were no psychiatrists. If you went back 200 years ago and measured it, you say, “Well, the number of people in psychiatry offices is zero, so it doesn't exist here.” Then we go and expand it. We really went out of our way to make access super easy, to have a big center on every campus, to de-stigmatize, and at the same time to stigmatize the traditional subsidies for psychiatry like religion. Traditionally, when you have a problem, you go and talk to your priest. If you stigmatize that, that results in something like, “Well, I can't talk to a priest. They're scumbags now, I can't talk to them. So who can I talk to? I can go to the counseling center. I can do that.” However, there are some measures where the level of neuroticism is not just measuring people going to a psychiatrist's office. We actually see this in suicide rates. Although there… I have a piece where I go over the last 60 or 70 years of suicide rates. It's really complicated, Dwarkesh. 
+
+Dwarkesh Patel
+
+Oh, really? 
+
+Bryan Caplan
+
+Yeah. So basically, suicide rates were falling from 1970-2000 and then have had a big rebound since then. If I remember, I think suicide rates now are pretty similar to what they were in the fifties. I'd have to go back and double-check those numbers, but that's what I remember. You’d have to have a really complicated theory, or you could just have a bunch of ad hoc theories. Maybe it was World War II and the trauma of that while also being married to a veteran with trauma that could mess women up and make them kill themselves. Then that changed, and then something else happened. 
+
+So the Jonathan Haidt case of keeping kids from playing outside by infantilizing them or making them really anxious doesn't fit with anything from the fifties. You could argue, “Well, in the fifties, they were really good in terms of unsupervised play, but they were really bad in terms of something else.” I mean, when people talk about this stuff, what really strikes me is that I felt like I learned more from just going and looking at the time series as far back as it goes than from every person that pontificated about what's really going on. Just to realize the numbers are complicated; no obvious story fits. It would be really ideologically convenient for me to say feminism is leading women to kill themselves. But the numbers don't work. So that's wrong. 
+
+Immigration & the Ultra-long Term
+
+Dwarkesh Patel
+
+How persistent are the harms of immigration restriction? If the world is getting wealthier by itself anyways, does it really matter if it'll take a few more decades than it would have? You could transfer them here now, or you could just wait for economic growth to do its thing there.
+
+Bryan Caplan
+
+Does it really matter if we miss a hundred trillion dollars during the time that people are poorer than they're probably ever going to be again? Yeah, I think it really does matter, I’ll go with that. Just to back up, in Open Borders, I go over what I consider to be the most powerful argument in favor of immigration. It all just comes down to this. We know for a fact, undeniably, that if you go and take a very poor worker from a poor country and move them to a rich country, almost overnight, their pay multiplies many times. This is something that you cannot deny while looking at the facts. So the question is, why can we make a Haitian suddenly earn 20 times as much money just by moving into Miami? He hasn't even learned English yet, but he's still making 20 times as much money as he was back in Haiti. 
+
+The textbook economic explanation is we pay immigrants more in rich countries because their productivity is so much more than it was back home. Productivity is much higher in rich countries for everyone. Most of the reason why Haitians are poor is not that there's anything wrong with individual Haitians. Most of the reason is that there's something really wrong with Haiti. If we were to go and get deposited in Port de Prince, Dwarkesh, we'd be struggling to get out in existence as well. What's messed up is Haiti, not Haitians primarily. Now, this is basically undeniable. The part that is debatable is: is this scalable? 
+
+We can make one Haitian vastly better off just by going and moving them to the U.S., and it pays for itself because he's more productive. Could we go and move a million Haitians? Yeah. Ten million? This is where people might start saying that maybe it's not really scalable. In the book, a lot of the argument is that, really, it's totally scalable, and this is just a massive missed opportunity where we really could go and rescue hundreds of millions of people, billions of people, from poverty in a short amount of time. We can essentially just fast forward from right now to this future that you're talking about. How valuable is this? Well, if you're someone who thinks on million-year timescales, then not so valuable. If you're someone who thinks on the timescale of dramatically improving the lives of billions of people over the next hundred years, then yeah, it's fantastic. On top of this, it’s worth pointing out that it’s almost certain that right now, we are missing some of the greatest human talents. They’re trapped in some poor village in India or China, and we'll never find out what their accomplishment is. If you think that we are one day going to beat death, it is quite likely that the guy that could have beaten death 5 or 10 years earlier is in some poor village in India or China. So by not allowing immigration, that person is not going to get to beat death. If we're going to beat death, we'll beat it eventually. But just to shave 5 or 10 years off of that, this matters a lot to me. Those 5 or 10 years really make a difference. If the technology just freezes people at the age they're at, I want to get frozen really quick because I'm going downhill. 
+
+Dwarkesh, even for you, 5 or 10 years, it's a big difference. If you are an ultra-long-termist, then I guess that you could say Open Borders is not that big of a deal. But in terms of doable policy changes that will lead to the increase of human wealth of hundreds of trillions of dollars in this century, then it's the best I know of.
+
+Why Cowen’s Talent Scouting Strategy is Ludicrous
+
+Dwarkesh Patel
+
+Speaking of talent, Tyler Cowen and Daniel Gross have a new book about it. One of the implications the book makes is that if talent spotting is something that you can do pretty reliably with a 1500-word essay and a Zoom call, then doesn't that imply that college is not necessarily that much about signaling because you don't need four years of cognitively demanding pointless work? There's clearly a more convenient way to just get that signal for identifying talent. 
+
+Bryan Caplan
+
+This goes back to a very long-running argument from Tyler. Tyler has a lot of objections to my book, The Case against Education, but his central one comes down to this: “Look, Bryan, I hire people; you don't.” It’s basically, “I hire people, you don't, and I will just tell you as a fact that I know after a couple of months whether a worker is good or not, and therefore signaling really cannot be very important. End of story.”  Pulling rank. This is the argument that Tyler has right now. There are a few different responses to this. The one that is most pleasant and most flattering is to say, “All right, well look, Tyler, you are one employer in a million. You're fantastic. You have incredible capabilities. You can do this, but you're just one person. You're not involved in hiring most people, and most employers are nowhere near as good at you as spotting talent, so you're still wrong.” That is sthe easiest thing to say. In terms of more fundamental arguments, I would say that the idea that you can spot talent with a Zoom call and a 1500-word essay is ludicrous. The essay can be forged, obviously. You could put them in a testing center, and even then, if a dream job hangs in the balance, people will figure out a way to cheat on that. Then in terms of the Zoom call…. Yeah, no. I have been hiring artists who are admittedly nefarious and unreliable. What I found is that even work product is not that good of a predictor because someone who really wants to get a job can do five great pages in a timely manner, but then they keep you waiting for years for what you really want out of them. So it's just not that easy. Not even close. 
+
+I think the better argument is not saying that we can find talent with the Zoom call and the essay, but rather we can find talent by hiring people and watching them for a couple of months. That makes more sense. The problem with that is that it is incredibly expensive to go and hire people and watch them for a couple of months. You get a stack of applications, hundreds of people think, and what you are doing there is trying to figure out ways to say no as quickly as possible and narrow it down. You might do this knowing full well that there are three awesome people you've just thrown away. Because “Yeah, well, I threw 3 awesome people away, and I also threw away 294 terrible people, and I don't have any way of finding those other people.” So I call this the diamonds in the rough problem, and I say that this is a lot of the reason why signaling matters so much; it's a way of getting out of the undifferentiated mass of people who may be good (who knows?), and into this better pool. Now, I do also say that another big error in Tyler's “I just watched him for a couple of months story” is that there is very strong evidence that, for multiple reasons, hardly any employer does the strategy of hire, watch, and then fire if you're disappointing. The simplest reason is maybe you're at the 45th percentile of expectations, so then it's like, “Well, he's kind of disappointing, but it's not worth going back to the drawing board again.” There are also a lot of social and emotional problems with firing people. People do not like firing, and then on top of it, of course, there are legal problems, which should not be discounted. 
+
+Dwarkesh Patel
+
+Isn't this just what an internship is, though?
+
+Bryan Caplan
+
+Well, remember, when you apply for an internship, does everybody get the internship? 
+
+Dwarkesh Patel
+
+True, but you can have a lower bar for the internship, so then it's like a call option on being able to hire them. 
+
+Bryan Caplan
+
+Yes. A lot of what people are signaling is not just intelligence, it's not even work ethic; it's just sheer conformity. Here's the issue: you might ask, why can't I just take my Harvard acceptance letter and get hired by Goldman Sachs and say, “Hey, look, Harvard said I was good enough. Harvard has a 98% five-year graduation rate. Come on, let's just start right now.” That is so weird in our society for someone who gets into Harvard to say, “I don't want to go to college at all, and show up with this odd offer.” Goldman very reasonably could react with, “Yeah, well, he got into Harvard, but this guy's a freak. We're worried about it.” So I think it's basically the same problem that you're talking about. 
+
+Dwarkesh Patel
+
+Couldn't Goldman say, “Okay, well, maybe you don't want to hire him full-time out, but, let's see if we can give him an internship?” In fact, internships are very common. 
+
+Bryan Caplan
+
+Yes. Although again, you want to give the internships to people that are checking all the boxes. The person who is doing the weird thing, you're nervous about him. Now, by the way, I've multiple times been on panels where there's some business leader, and he'll say, “In the business world today, we don't care about credentials. We only care about hard demonstrable skills.” Then I always ask the same question: how many uncredentialed people have you personally hired for high-skilled jobs? “Well, we haven't done any, but I read in the Wall Street Journal,” Aha, you're acting as if you've got some firsthand experience. You're just repeating what you read in the freaking newspaper, which writes stories about stuff that is atypical. Of course, you don't write a story about something everybody knows about because that's familiar to people. You go and dredge up some weird platypus and then show everybody and say, huh, platypuses are taking over the ecosystem. 
+
+Dwarkesh Patel
+
+Didn’t this happen to your podcast with Andreessen, by the way? 
+
+Bryan Caplan
+
+That would be plausible that it would happen. He said, “We only hire on demonstrable skills,” and I asked him who he’s hired without credentials. Then what did he say? 
+
+Dwarkesh Patel
+
+I don't remember. I don't know if you asked him directly, but that was his claim. I don't know if you followed up that way.
+
+Bryan Caplan
+
+Here's a good way of thinking about it in Computer Science. I have heard that top firms like Google sometimes hire contest winners. But when I ask people there, how many standardly credentialed employees do you have in your programming and how many contest winners without credentials? The results are, yeah, you have three contest winners and thousands of regular credential workers. So basically, you have to walk on water to get hired by these firms without having the regular credentials. 
+
+Surprising Immigration Victories
+
+Dwarkesh Patel
+
+You recently traveled to Eastern Europe in the aftermath of the Ukraine war. 
+
+Bryan Caplan
+
+I took my 12-year-old son there too. A lot of people were saying, “You're crazy. What are you doing? Why would you go there?” I was super glad that I did; it was an incredibly exciting trip. What happened actually was that my book was translated into three Eastern European languages, Polish, Hungarian, and Czech, and then I also spoke in Slovakia, where I had gotten a few different versions but Slovakians said, “Yeah, we can read Czech. Totally no problem. It's basically the same language.” I got to give talks in all four of those countries. 
+
+Poland was especially exciting because you could see the pro-Ukrainian anti-Russian enthusiasm in the streets. I was by the train station in Krakow, and there was just a Polish guy just screaming, “Fuck Putin, glory to Ukraine!” And I was saying, is that guy drunk? He's not drunk. He's just a Polish person speaking his mind here. When you went to the train stations, they were packed with refugees. What I did not realize was that the refugees were in fantastic spirits because of the warm welcome of the Polish people; it was  so strong that the people there were actually feeling good about the situation. Look at their faces– just imagine the stress of fleeing a war zone with your kids. That's what was going on. I also got to learn some amazing things when I was there. Since I am the author of Open Borders, you can definitely predict that I would say, “Oh, well, letting in a lot of refugees won't be a big deal,” but Poland increased its population by 10% in a month, and the country looked fine. No one there was complaining, and I could see why. 
+
+Look, this is not ideology. This is me walking around and looking at stuff. Poland was able to go and do this. Why? Because where there's a will, there's a way. There can be a thousand refugees from a country you don't like. You put it on the news, and people say, oh, we just couldn't possibly absorb them. We're at our absolute breaking point. This is terrible. On the other hand, you can have millions of refugees come into your country, and if you like them and sympathize with them, then it's all hunky dory, and it's fine. Polish policy was also excellent. Ukrainians are allowed to work the day they show up. Normally what you do to refugees is say, “Well, you can come here because you'll be dead if you stay in your own country, but we don't want you getting a job,” because producing and contributing to society, as we all know, is a bad thing for human beings to do. Much better than we just keep you as a semi-prisoner on welfare for a few years. That sounds like a much better thing to do and is normal. 
+
+Poland was doing the best thing where the day you show up, you can get a job there. You're totally legal to work. So this is a path toward having them become productive members of society. I mean, just to emphasize how amazing what they're doing in Poland is, this would be like the US took 30 million refugees in a month, 33 million refugees in a month. Americans freak out over 10,000. So you just realize how phony and bogus the complaints are. It really is just a matter of believing and seeing. If you think that refugees are bad and immigrants are bad, you will see bad things happening. On the other hand, if you're supportive and have a can-do attitude, then you'll say, “Hey, this is completely doable.”
+
+Dwarkesh Patel
+
+I guess you're skeptical that Americans will have a can-do attitude about it. 
+
+Bryan Caplan
+
+The can-do attitude mostly just comes down to: Are you going to get out of the way and let them do their thing? That's the real problem, right? It's not an argument against accepting them and letting them work. It's an argument that we're not going to do it and we'll do the wrong thing. 
+
+Dwarkesh Patel
+
+In the Myth of the Rational Voter, you point out that a lot of times, what liberal economists do is they'll defend some policy based on the optimal implementation of it. But then, in effect, it’d be like arcane environmental regulations. I wonder if it's similar here.
+
+Bryan Caplan
+
+Well, that's why in Open Borders, I defend immigration as it really is. I don't go and say that we have to do a bunch of other things first. I say that it's fantastic right here, right now, in the real world. Of course, I do have that chapter on keyhole solutions where I try to meet people who disagree halfway. But really, what I learned in Poland is that my view of what's doable has expanded quite a bit. Previously, I think I would have said that maybe you can take in two or three percent repopulation a month without looking really bad. I'm also the kind of person who will say the train station is going to be full of human misery but still way better than trapping people in a war zone. I'm that kind of person. I'm someone who always asks, “Compared to what?”.
+
+If someone’s here crying with their children in a train station, it's probably because back home, they would have been crying over a dead body instead. This is still a big improvement, and this is still actually what we should be doing. But in Poland, I didn't have to make any hard arguments. I could just walk through the train stations full of refugees, and they're happy,  the kids are playing, and they’ve got their puppies, and there are dog feeding stations. It's like, “Wow, I don't have to go and convince myself through logic that this is the best thing that could happen or the least bad thing that can happen. I can just walk around and see people are happy and are adjusting to a new life.”
+
+Dwarkesh Patel
+
+How should decolonization have been done to increase the odds of a competent and free-market government? 
+
+Bryan Caplan
+
+You’re also avoiding a total bloodbath. Let's not forget that. 
+
+Dwarkesh Patel
+
+So what do you think? Are you of the opinion that it had to be done, or was it inevitable at some point? How could it have been done so that it had the optimal outcome?
+
+Bryan Caplan
+
+First of all, with really high credibility, this is where you say, “Look, here's the timetable. We are going to be partitioning India over the course of 20 years. We are staying there.” Even tying your hand saying, “Look, we are issuing a pile of government securities where you have to pay us money unless we go and just give up in the middle of the game.” Basically, you've got to pre-commit stating your goal: Our goal is going to be a peaceful, free rich India. We have a plan for how we're going to do this, and we're going to stick to it, and we are ready to lose a whole lot of our soldiers in order to do this, and then we are going to go and find people that we are going to very gradually transition power to. They have to be reasonable people. If these are people that are inciting pogroms, we are going to get rid of them. We are not going to tolerate that kind of thing here. This is going to be an orderly transition where all of her majesty's subjects can anticipate survival and a future where they are in peace. 
+
+Now, again, probably a lot of people don't realize how badly the partition of India was botched in decolonization. The chaos makes it hard to get accurate numbers, but there are a lot of people saying that millions of people died in pogroms in the end. So as some of you say, “Oh, maybe it was only 500 or 1000.” That was a complete disaster. It came down to the British saying they were never going to leave until they did (really quickly). That's not what you do. 
+
+Dwarkesh Patel
+
+What made the denazification and the US occupation of Japan successful?
+
+Bryan Caplan
+
+Because they started off by completely crushing their enemies. [laughs] The key thing is that in those occupations, there were two things that they were pushing: democracy and human rights. They pushed for human rights a lot more than democracy.  So basically, they said, “Yes, we're going to have elections.” As long as you are completely committed to the denazification of Germany, you can be elected, and you can have a little bit of power. Then we're going to very slowly devolve power on you while it remains completely clear that you have no Nazi sympathies, and none of this stuff is going to come back. So that is basically what happened: there was a complete crushing of what existed before, and then a rebuilding where democracy is a low priority. 
+
+Is democracy yielding good results? Then we can turn the democracy dial up a little bit. The same thing happened in Japan. Really bad war criminals wind up getting sentences that are quite light overall. If I remember correctly, under a thousand German war criminals got executed by the US. Just think about how many probably Otto have gotten executed. A hundred thousand, maybe. So people who really had blood on their hands, people who ordered the deaths of innocent people when they could have just not done it without. 
+
+There's a famous book called Hitler's Willing Executioners, saying that this was not primarily people murdering innocent people under duress where there's a gun at your head saying you shoot another person. What the author looked at was what happened to Germans who refused to participate, and hardly any of them did. It's called Hitler's willing executioners. Hardly any ethnic Germans refused to cooperate, even soldiers were punished. People who didn’t cooperate in the genocide were punished. Rather than saying, “Oh, well, you know, we're going to have to transfer you then if you won't go and murder innocent people, what a jerk you're being.” That's the kind of thing that should have been done. Here is the way that I think about it. You want to do it from a position of strength. You don't wait before the fanatics have the upper hand and there's blood in the streets and then say, Oh gee, what do we do now? You want to jump the gun when things are peaceful. This is where you say we have now, in this time of complete peace and harmony, worked out a plan for decolonization, and here's how it's going to work. 
+
+You never want to let it make it look like your hand is being forced. You never want to let fanatics and bloodthirsty people have their status raised by standing up to you successfully. You want it to all be happening over their heads so that they just look like losers and crazy people, and then you find some people that want to work for a decent, peaceful society. Of course, there are people who are not complete mushheads like Gandhi. Just to stick my neck out, Gandhi was an apostle of nonviolence. Good for him, but he was also someone who was so dominated by wishful thinking and just trying to pretend like a pogrom shouldn’t be expected after the transition (the pogroms were reasonably expected). It was a lot of pie-in-the-sky nonsense that he preached. He himself is not a mass murderer. He's just a very, touchy-feely person who should be nowhere near any important decision. He might have been a good therapist, something like that. He was someone who had a lot of sympathy for other people, but he was not a reasonable person.
+
+Dwarkesh Patel
+
+That's really interesting because in your book on political demagoguery, you make the point that if we were to judge political leaders by normal moral standards, we would think they're monsters. The interesting thing with the Gandhi example is that maybe the people who are moral heroes in an ordinary context would make the worst politicians. Do you think there's any correlation between how moral somebody is as a human and how moral the government they lead is?
+
+Bryan Caplan
+
+They’re definitely not the worst people. The very worst people are people who come to power self-consciously and want to commit mass murder. Those are the worst. Now, if you have a very conventional moral view where the only thing that you judge people by is how caring they are, then yeah, I think those people make bad leaders. If you have an effective altruism point of view, however, where it's not just feeling a lot of caring emotions, but being very committed to thinking clearly about the best way to get good results, then I'll say those people are more heroic people in my view. Those people, I think actually, if any of them ever got power, would generally be good leaders. Again, EAs need some experience too, but basically, that is the right profile for a good leader: someone who is very caring, but at the same time very logical. 
+
+Dwarkesh Patel
+
+Is there a correlation between conventional virtues like honesty and being kind towards strangers and being good in an effective altruist sense? Or are those just completely unrelated? 
+
+Bryan Caplan
+
+Let's see. If it’s the sort of kindness towards strangers you meet firsthand, like being willing to feed a homeless guy, then yeah, sure. My guess is that most effective altruists are people who would like to give to homeless people, but just realize that it's not a good use of money. They sort of have to suppress their desire to give to the homeless. Now about the honesty one: this is one where a lot of politicians say that you have to be dishonest to get things done. I would say that there's this whole literature on credibility saying, “No, what you really want is to be honest and in a very credible way such that when you say I'm going to do something in 20 years, people believe you.” Again, I think that's a lot of what you would have needed for effective decolonization. It would be to have people there of ironclad honesty. When they say, “Look, I am not leaving just because you look like there are terrorist attacks, I'm willing to give up 100,000 British soldiers to be able to carry our attacks before we walk out.” When I say it, I mean it, and I think that is actually an important trait for leadership.
+
+Here's the interesting thing. I don't think Tyler will in any way see this as a negative. On one hand, he does like to impishly say, “Oh, well, you have to be dishonest to get things done,” and so on, yet his leadership style is ultra-honest, and it's based upon everyone believing that something was going to be good for them. Afterward, they come away saying, “Wow, that was real leadership.” People leave the deal years later feeling like things worked out. Traits like integrity and honesty; while we can easily come up with hypotheticals where they're bad in a leader, I think the real thing is in the old saying “underpromise and overdeliver,” right? Don't promise more than you're really willing to do and then try to exceed expectations. That, I would say, is a trait of a leader, but I'd say that's not dishonesty. If someone promises something and that they’ll do more for you, people say liar! So you can say “No, it's not a lie. I wasn't a liar. I did what I said, and I also did more.”
+
+The Most Successful Revolution
+
+Dwarkesh Patel
+
+Now, I know, in general, you're not a fan of revolution, but if you had to choose: What is the best revolution, the most justified, or the one that had the best effects?
+
+Bryan Caplan
+
+So this is one where there's the cheesy thing of picking something that I don't really consider revolution and then saying other people do. So the collapse of communism in Eastern Europe, you could call it a revolution. I don't think it really was because it was just way too peaceful to count. If you'll count that, then that is very likely the best example of a revolution. But again, what you really want is a bloodbath. In terms of wars, the Korean Wars had the best record; it basically saved two-thirds of a country and turned out great. We sort of have a reasonable counterfactual for how awful it would have been in North Korea. But again, North Korean propaganda might claim it was a revolution, but that’s a civil war, not a revolution in terms of what would be the best example. Of course, a lot of people want to do the American Revolution, but I'm not a fan of that. 
+
+You could argue that Britain abolished the slave trade earlier, but one interesting argument I've heard recently, not about this particular, but generally, is that the argument that the end of slavery was a lot more contingent; there really wasn't a strong reason for thinking that slavery had to end then. As you told me, it was pretty profitable at the time. So if you think it was just the combination of  a bunch of random things at the time, one of which was the American Revolution, which led to the end of slavery, then that's not a strong argument. 
+
+Bryan Caplan
+
+My view is that it was this British-based anti-slavery movement that was really key, which then spread to the colonies. It probably would have spread stronger and furthermore. The British have a much better record of getting rid of slavery peacefully. It would have cost so much more to do it in the US because there were so many slaves. So it's complicated. I'm still trying to come back to the question about the best revolutions. The other things you have are more coups than revolutions. The coup against the mother Muslim Brotherhood was not great, but still, it’s better than letting those fanatics take over. So let's see… There's the glorious revolution! My understanding is that it really was a real revolution and that people at the time tried to portray it as totally peaceful, but it actually really was not. The first Russian revolution against the Tsar in February, the one that replaced the Tsar with the first democratic government of Russia probably have worked out okay, if it hadn't been for Lenin. It didn't work out, but it had potential. 
+
+Dwarkesh Patel
+
+How contingent do you think history is overall? Let's say that Lenin wasn't shipped back to Russia in World War One. Does the communist takeover not happen? Or was that kind of baked into the cake?
+
+Bryan Caplan
+
+I know the details really well for this question. I’ll bet that there’s a 99% chance that without Lenin, even with all the other Bolsheviks, it wouldn't have happened. Because I actually know the facts. So if you read Richard Pipes’ book about the Russian Revolution, the rest of the Bolshevik Party was planning on taking part of the provisional government. Then Lenin shows up and reads the riot act, and he has so much intellectual status.  I don't know what he had, but the whole group was against him. He was reading the riot act, and they all said, Yes sir, ‘’Lenin, we're ready for ready for revolution.’ Without Lenin, that would just not have happened. You could say, “Well, maybe some years later, something similar would have happened.” If you know the facts, the whole revolution was based upon a tiny number of fanatics seizing power because they had 2000 guys following orders in a country where no one else was following orders. If you just waited a little while, whatever other forces would have rebuilt, and there would have been no hope for this tiny minority of lunatics to take over. So overall, I am a big believer in contingency.
+
+Of course, it does vary. Were things like economic growth going to happen one way or another starting in 1800? That, I think, was not so contingent if it didn't happen in Britain, because there were just too many things going on. There were a bunch of different scientific breakthroughs with obvious economic applications. There are a bunch of countries where they have a business class that's interested in making more money and trying these ideas out. I think that was something that you can say was quite inevitable. On the other hand, for almost anything involving major wars, I’d say almost all major wars could be avoided by one side giving in.
+
+Dwarkesh Patel
+
+The worry, then, is that this inadvertently creates a greater list of grievances for the next war. 
+
+Bryan Caplan
+
+Yeah, well, that's what the hawks on both sides are always saying. Sometimes they're right. Sometimes they're wrong. They're wrong about half the time. That's basically an argument that is true sometimes but is not at all reliable. Again, often what happens when you give in is people say, “Oh, well, I thought these people were completely unreasonable and that we could never make a deal with them, but it turns out they're not so bad. So we can now de-escalate and get back to peace.” That happens, too. Then people say, “You couldn't do that with Hitler.” Yeah, I know you couldn't do that with Hitler! Hitler was terrible. Just to say the most controversial thing on this podcast. Hitler was not a person that you could negotiate with any long-term success. But hardly any world leaders are Hitler; almost all of them actually can be negotiated with. Often what they want is so trivial because politics is so based upon demagoguery, which means that small symbolic concessions are often all they need to go and thump their chests and say, “Oh, I am a great leader.” I think about how Indonesia, for 30 years, refused to give up East Timor. It's one insignificant half of one insignificant island. But for all these decades, they're thumping their chests and saying, “We couldn't possibly do that. No, that will lead to total collapse.” It's endless nonsense. “All right, fine. We'll give it away. We'll give it away.” Now it wasn't good for East Timor, the whole thing was a disaster, but it still probably is pretty bad. 
+
+But there really is the case, as everybody knows in real life, that many conflicts can be avoided by giving another person what they want. If you say that “They'll just escalate their demands infinitely,” there are a few people like that. However, most people do not infinitely escalate their demands. Instead, most people will either say, “Oh, you gave me what I wanted, good! End of story.” Or maybe they'll go and periodically tax you with another demand, which is annoying but is still much better than losing a friend or a contact.
+
+Dwarkesh Patel
+
+Given the irrationality and demagoguery in the political system. Why is it the case that the society we live in is relatively free, peaceful, and prosperous? I mean, if the average person is a National Socialist (aka. Nazi)? 
+
+Bryan Caplan
+
+I said moderate National Socialist Dwarkesh. That's what I said. So there are a few things going on. The first thing is just to remember, “Usually, we don't have this.” The norm is not peaceful and prosperous societies throughout human history. The norm is impoverished and war-prone societies. Always keep that in mind if you're saying, “Well, gee, but things are okay now.” I often think of this as the ‘Look out the window test’ as in, “Hey, Dwarkesh, is it on fire out there?” We're not going to turn the camera, but I think that listeners will believe that it is not on fire.
+
+Dwarkesh Patel
+
+How else do you think we're getting this nice lighting? [laughs] Yeah, it's not on fire. So there's that, but still, there is the interesting question: what's going on with the exceptions? 
+
+Bryan Caplan
+
+So one is I think that rich, prosperous people and societies generally have less crazy electorates. The political ideology of the society is just not as terrible as in other places. Well, it seems pretty bad, but there are still not many people saying that we want to go and murder half the population. When you go to other societies, there are actually people like that.  A friend of mine was in India, and he actually saw a pro ‘Nuke Pakistan’ rally. I assume this is not normal in India. Have you ever seen a pro ‘Nuke Pakistan’ rally?
+
+Dwarkesh Patel
+
+No, but the nationalists can get pretty crazy over there with the celebrating.
+
+Bryan Caplan
+
+Yes, but NUKE Pakistan. Preemptively nuke a nuclear power. What do you think is going to happen? We don’t have that kind of just true fanatical sociopathic bloodthirsty, horrible stuff. It's common in many societies, but it seems to be quite reduced in better-functioning societies. So that's one thing. In these better-functioning societies, people's political views are not terrible; if you propose something awful, even normal people will say, “No, I don't think it’s such a good idea to go and murder all the billionaires. Maybe we can tax them at 90%, but murder them? That's too far.” Whereas in most societies, you say that stuff, and they cackle with glee. “Let's strangle the last billionaire in the intestines of the last right-wing talk show radio host. Hahaha.” That is more of the human attitude… just think about how kids are. The way that the kids are shows us what adults are feeling, but hiding. Kids get angry, and they want blood. So more effective societies are ones where people are suppressing these atavistic desires to really just turn society into a total blood bath. So there's that. 
+
+I do think public opinion obviously matters a lot in democracies. Even in most dictatorships, public opinion matters a lot. Dictators demagogue, right? They try to go and win people over normally. It's easier because the people that would have been their rivals are dead or imprisoned or terrified. So that sort of lets you weaponize the demagoguery by saying, “I'm the only one that gets to say I'm anointed by God.” So there's that kind of thing, but even dictators generally want to be liked by their population. It makes ruling easier. Then you only have to terrify 10% of the population into obedience instead of 90%. Having a better leadership class probably matters too. There's probably a high correlation between the quality of leaders and the quality of the public, but not in every case. So that's another thing to look for. Something else is also just having constructive interest groups.
+
+For example, I have a pet theory. I'm working on a book on housing regulation. My pet theory is that if we're not from lobbying from developers, basically zero things would be built in America because building things has almost no demagogic appeal. There's almost no one who emotionally gets a tear in their eye when they see a skyscraper go up or a new housing development. It’s very rare to be enthused about building stuff. Yet we need places to live. We need places to work. We need places to shop. On the other hand, there's a bunch of angry people whenever we try to build something, we call them nimbies who have an endless series of complaints. Traffic, parking, quality, the character of the neighborhood, pollution, and on and on, they make every possible complaint. So I think the main reason anything gets built is that there are developers who probably do not really sincerely believe that they're heroes, but just come and say, “Hey, well, we can make our money building stuff. We provide jobs and income through the community; let us build stuff. Please, please, please, please, please, please, please.” That is, I think, the main reason why. So all of you have constructive interest groups (economists mostly talk about interest groups as being bad), but lobbying has very positive effects overall for housing and for immigration. I think a lot of the main reason why we have as much immigration as we do is that there are a bunch of corporations pushing for it. 
+
+Dwarkesh Patel
+
+As far as developers go, why is it the case that they're not more powerful than they are? 
+
+Bryan Caplan
+
+I mean, they're typically like Mancur Olson’s concentrated interest, right? Because Mancer was mostly wrong.
+
+Dwarkesh Patel
+
+Oh, really? Say more. 
+
+Bryan Caplan
+
+Public opinion is much more important for policy than interest groups. Contrary to what Mancer Olson said, if you really look at what interest groups do normally, they're trying to work in the fine print. Interest groups do not go and try to pass some overall changes in US tax law. They say, “Look, that's going to be determined by public opinion. That's not the kind of thing I can affect. Maybe I can go and get a sentence change somewhere on page 1037 of the tax code. Perhaps I could get that.” So I say that most of the policies we have are ones that are supported by the general public, and you really have to look at details to see cases where interest groups are getting something that is actually unpopular with the public. So even with things as seemingly straightforward as farm subsidies, economists say, “Oh well, obviously most people don't want to go and pay those, but farmers get it.” Yeah, think again. We look at public opinion, and farm subsidies are actually very popular. If you ask people that are not in farm states, why do you want farm subsidies? Usually, they just give very pro-social reasons like, I want to make sure there's enough food. So you say, “Well, that's stupid. We only subsidize a handful of agricultural products, but they're all available” But that's already one step deeper than most voters ever have done or ever will do. 
+
+Dwarkesh Patel
+
+You know, Charles Mann, the author of The Wizard and the Prophet? 
+
+Bryan Caplan
+
+Yeah.
+
+Dwarkesh Patel
+
+I had him on recently, and we actually talked about this because he's concerned about water and food shortages. Especially when they're used in inefficient ways where they give it to cattle instead of consuming it directly. So I pointed out, “Isn't there an obvious free market solution? The prices will rise if you're using it in an inefficient way, and then it'll just go to people who need it the most.” His claim was that, ideally, this would be the case, but the reality is that if there's something that is physically necessary for people to survive, there's just not going to be a political will to put in actual pricing regulations for water usage, for example, which would solve a lot of water shortage problems. 
+
+Bryan Caplan
+
+Yeah. It seems like a silly argument because we don't have to go and raise the price of water up to the level where a few people die of thirst. You could go and multiply the price by a factor of 10 or 100, and people will still be drinking all the water that they want. They'll just be taking quicker showers, or farming will be happening in different parts of the country… that kind of thing.
+
+Dwarkesh Patel
+
+Yeah. But some of the problems include how in some regions in China where they have done this, the cost of water is––
+
+Bryan Caplan
+
+Okay, I was thinking about the US. 
+
+Dwarkesh Patel
+
+––a significant fraction of their income. 
+
+Bryan Caplan
+
+Even there though, can it really be that there's somewhere in China so poor that the main use of water is for drinking? Or are these farmers?
+
+Dwarkesh Patel
+
+No, no. These are actual urban residents and a quarter or a tenth of their monthly income just goes towards paying for the water.
+
+Bryan Caplan
+
+But that's different from drinking water, right? No matter how poor you are, normally, only a very tiny fraction of the water that you use is drunk. Most of it would be for bathing or for washing clothes, a little bit for cooking, and probably even more for cooking than for actual drinking. I'm from California. I remember being a kid and being told, “Only three minutes in the shower. Come on, chop-chop!”
+
+Dwarkesh Patel
+
+Even in India, yeah. That's also a thing. Hanania had an essay recently where the titled was, Why I care more about pronouns than genocide.
+
+Bryan Caplan
+
+He writes good titles, I’ll give him that. [laughs]
+
+Dwarkesh Patel
+
+He talks about the irrational system of one part of his mind that cares about things that are objectively less important if you actually thought about them rationally. One of those things is pronouns in comparison to genocide. What is your irrational system’s equivalent of one thing that you recognize is not that important in the grand scheme of things, but just bothers you to no end?
+
+Bryan Caplan
+
+People often say, “Well, you shouldn't be talking to that guy. He's a terrible person. He said certain things,” and I'll say, “Yeah, but he was really nice to me.” [laughs] So, on the positive level, someone having good manners and being friendly with me goes a really long way. I mean, honestly, this isn't something that I'm trying to overcome. The thing I'm trying to overcome is being really friendly to people who are not friendly to me. So yeah, the main thing is when people are just very personally rude and unpleasant. I still think intellectually that the best thing to do is to turn the other cheek and try to, if not win them over, to at least win observers over with how much more reasonable and fair I am. But my instinctive reaction is just to yell back at them. I will say that that instinctive reaction just gets weaker and weaker over time because I am someone who is so uncomfortable with anger. Part of it is, it's not really my personality, but a lot of it is just the feeling of if I ever got angry, I just don't know where I would draw the line. I'm worried I would completely flip out. So I'm too concerned. If I started yelling at this person, I probably wouldn't just give him one or two cutting insults. I'd probably be screaming at him like a lunatic. So probably I better just keep on the sunny side of life and not even try to get angry because I'm just not good at it. 
+
+Dwarkesh Patel
+
+You know that line from the Avengers where Captain America asks the Hulk... 
+
+Bryan Caplan
+
+Oh yeah, yeah. Actually, I do. Yes. “I'm always angry.”
+
+Dwarkesh Patel
+
+Right.
+
+Bryan Caplan
+
+I'm not always angry, not even close. But I mean, honestly, I'll say there's almost only one thing that really makes me angry, and that's people being angry. So I do have secondary anger, but I have very little primary anger. 
+
+Anarcho-Capitalism is the Ultimate Government 
+
+Dwarkesh Patel
+
+What kind of government would you implement if you had a zero discount rate? So if you're a strong longtermist?
+
+Bryan Caplan
+
+So since this is The Lunar Society, I'll stick my neck out for anarcho-capitalism and say that this is really the best system if we can figure out a way of doing it. There's no government like no government. I realize I may be completely blowing up all of my credibility, but you can just go and Google what I have to say about it. People sometimes ask, “Bryan, are you an anarchist?” And I'll say, “Well, not the crazy kind.” What I mean by this is I'm not someone who thinks that if you just pressed a button and got rid of the government, things will be good. I think it'd be a total disaster. Rather, what I think is that there is another equilibrium that is totally doable if people realize that it's totally doable. This equilibrium is one where we actually have competing police, competing legal systems, and competing court systems. It's one where if I had an hour, I could not convince anyone that disagrees. But I believe if you gave me an hour, I can convince you that it's not crazy. Which is what I actually do whenever I talk about this stuff. I say, “Look, I have a really radical idea. I couldn't possibly convince a reasonable person of it in an hour, so I'm not going to try. What I'm going to try to do is convince you in an hour that this view, though you still will think it's wrong, is not crazy.”
+
+We don't have an hour to talk about it, but I think that this is the best alternative, especially for the long term. If we could get to this equilibrium, it's the best equilibrium to be in. It's one where it basically once and for all solves a whole lot of problems with international war. It diffuses nationalism. It's something that does a lot to take care of a lot of root causes of human problems. It is one where basically it dethrones demagogues, right? But there's always a place for people like that. They'll be running cults. They'll be involved in religion. They'll be pundits. But this will be a world where there's no longer any government you can get your hands on to go and cause horrible problems for the world. So it's one where the demagogues will sort of have lost their main line of employment and will have to get, if not exactly a real job, then at least a job that doesn't involve mass murder. 
+
+Billionaires Deserve their Wealth
+
+Dwarkesh Patel
+
+Scott Alexander had a post last night making the point that he's in favor of more taxes on billionaires because even though Jeff Bezos has created a lot of consumer surplus and he certainly hasn't absorbed all of it, it's not the case that the rewards have to be that high to get Amazon built. Somebody would have ended up building Amazon anyways, even if the rewards were slightly lower. So Jeff Bezos himself is not that counterfactually responsible for Amazon. What do you make of that argument?
+
+Bryan Caplan
+
+So two things. One is in economics, we have something called tournament theory, and this says that it can be extremely socially valuable to go and have seemingly unreasonably large rewards for people that do something useful because it doesn't just incentivize the winner, it incentivizes all the potential winners. So billionaires are not just an inspiration to each other. It's not just, “Oh, I can get to be a billionaire, I'll do this thing and make the money.” It is something that actually fosters a whole culture of entrepreneurship. I mean, again, we've been hanging out in Austin all over there. There's a whole bunch of people who are never going to be billionaires, Dwarkesh. I've told people, “Will Dwarkesh ever be a billionaire? Probably not, but like 2%. Dwarkesh is just a mover and a shaker!” Where in India was your family from? 
+
+Dwarkesh Patel
+
+Gujarat.
+
+Bryan Caplan
+
+Is that a big city? Is it a small town, or what even was it? 
+
+Dwarkesh Patel
+
+Yeah, it was a big city. 
+
+Bryan Caplan
+
+Okay. So you probably would have gone to IIT or something like that. But imagine if…
+
+Dwarkesh Patel
+
+I don't know if I could have made it to IIT.
+
+Bryan Caplan
+
+Imagine if your family was out in some rural village, and it's the Indira Gandhi era, right? You don't hear about dot com billionaires or anything. In terms of inspiring a generation, I think the billionaires are inspiring a generation of movers and shakers. If they are, and if their earnings were greatly taxed, I think this would really put a dent in it. I think anytime people speak ill of them, that's putting a dent in it. If you want billionaires to make less money, praise them to the skies so that more people enter, and it drives down the rewards for doing what they do. So this tournament theory does make a lot of sense. This is a story about, “Why do you pay the CEO so much more than all the next level down? Is he really that much better than the second-best guy?” Look, this isn't just incentivizing the CEO; it's incentivizing everyone who's there. Who could plausibly tell themselves, “Maybe one day me.” So there's that. The other thing is actually going back to the historical contingency. I think business history is less historically contingent, but we actually do have a lot of evidence that the quality of entrepreneurship and management varies a lot from country to country, which I think does actually mean that for the really big businesses. It's not totally clear that it would have happened anyway.
+
+Now, if you broaden it and just ask, “Well, would eCommerce have happened?” Yes, eCommerce would have happened. Would there be one store that was bigger than the others? Yeah, but is it possible that the second-best thing to Amazon would have been 1/10th as good? That actually is not crazy. I don't know. But to go and just say, “We know that that's not true,” seems pretty dogmatic to me. Again, what’s also striking is what is the second best thing to Amazon. You can say it's a natural monopoly, not true in any other retail that I know of.
+
+So people talk about Alibaba, and I tried looking at that one. Isn’t this Chinese? Shouldn't they be catering to their market? It's the English language version of the site. Shouldn't they be trying to make me happy? So that is a case where it doesn't seem like it makes any economic sense; it's a natural monopoly based upon past experience. Think about cars. We got the big three (Germany, Japan, US). Why aren't there three things like Amazon? Maybe it really is the case that no one but Jeff Bezos knew how to do it, especially when you realize part of knowing how to do something is knowing how to assemble a team. It's so easy to say, “You didn't do it, and it was your team that did it.” I made my team. That's what a leader does! They take people that are good in themselves, and they fuse them together, and they make them great, and maybe it’s self-serving, but it's plausible. 
+
+Dwarkesh Patel
+
+That makes a lot of sense. Well, Bryan, I want to thank you for giving me so much of your time. I especially want to thank you for being the first guest on my podcast. We've gone full circle with the third episode, but it would not have been possible at all without you. 
+
+Bryan Caplan Totally awesome. And yes, so the books that we've been talking about are both available on Amazon. So there is How Evil Are Politicians?: Essays on Demagoguery. Then there is Don't Be a Feminist, Essays on Genuine Justice. By the time you get the podcast, both books will be available. They're really cheap, only 12 bucks, and I have not raised the price despite inflation! I've been thinking about why not and the economic theory behind that. The eBook is just $9.99. These books are both collections of my very best essays from 2005 to 2022, but Don't Be a Feminist has a totally all-new lead essay, one that, for years, I was too nervous to write. Then as I watched my daughter growing up, I felt something along the lines of “No, I've got to write this essay. I'm going to do it for her.” The actual first essay is called Don't Be a Feminist, A Letter to My Daughter. That is how I frame it. This is not an angry essay. As I said, I'm not an angry person. I'm not mad at feminists. Rather, I want to especially help my daughter, but anyone who's in the same boat as her, I would be thrilled to go and help them as well.
+
+Bryan Caplan
+
+So like I said, this is not a typical lawyerly book where all I do is try to come up with as many arguments in my favor as I can and ignore everything that goes against me. This is one where I'm really trying to grapple with the truth. I can honestly say this: my dream is not to upset any reader. In my dream world, everyone on earth would read my stuff, and everyone would be happy after reading it. Everyone would be smiling. Everyone would be feeling grateful. Look, I haven't really won until I have turned every enemy into a friend. That may seem quixotic, but that is what I am trying to do. That's what's on my mind. Of course, you've got to first admit that there's disagreement before you can begin trying to change someone's mind and make them feel good about it, but that really is my dream. 
+
+Dwarkesh Patel
+
+Anybody who has read Bryan’s books or met him can confirm that the books and the arguments in them are very good, and they also obviously come from a place of kindness and understanding about the other person's position. 
+
+Bryan Caplan
+
+Yeah. We all have problems, Dwarkesh. We are, we are all imperfect, flawed human beings, but we must rise above it. 
+
+Dwarkesh Patel
+
+I highly recommend the books. Bryan, thanks so much for being on the Lunar Society. 
+
+Bryan Caplan
+
+Thanks for coming out here. Now, this is the first time that I've actually had you right in my office during an interview. So as great as Dwarkesh is over zoom, he's even better in real life. All people must try to meet Dwarkesh, he’s a cool guy, a really positive person. Thank you, buddy. 
+
+Dwarkesh Patel
+
+Thank you, Bryan. 
+

@@ -1,0 +1,1465 @@
+Did Caplan Change On Education?
+
+Tyler Cowen   
+
+Ask Bryan about early and late Caplan. In which ways are they not consistent? That's a kind of friendly jab.
+
+Dwarkesh Patel   
+
+Okay, interesting. 
+
+Tyler Cowen   
+
+Garrett Jones has tweeted about this in the past. In The Myth of the Rational Voter, education is so wonderful. It no longer seems to be true, but it was true from the data Bryan took from. Bryan doesn't think education really teaches you much. 
+
+Dwarkesh Patel 
+
+So then why is it making you want a free market?
+
+Tyler Cowen  
+
+It once did, even though it doesn't now, and if it doesn't now, it may teach them bad things. But it's teaching them something.
+
+Dwarkesh Patel   
+
+I have asked him this. He thinks that education doesn't teach them anything; therefore, that woke-ism can’t be a result of colleges. I asked him, “okay, at some point, these were ideas in colleges, but now they’re in the broader world. What do you think happened? Why did it transition together?” I don't think he had a good answer to that.
+
+Tyler Cowen   
+
+Yeah, you can put this in the podcast if you want. I like the free podcast talk often better than the podcast. [laughs]
+
+Dwarkesh Patel   
+
+Okay. Well yeah, we can just start rolling. Today, it is my great pleasure to speak to Tyler Cowen about his new book, “Talent, How to Find Energizers, Creatives, and Winners Across the World.” Tyler, welcome (once again) to The Lunar Society. 
+
+Tyler Cowen   
+
+Happy to be here, thank you!
+
+Travel vs. History
+
+Dwarkesh Patel 1:51  
+
+Okay, excellent. I'll get into talent in just a second, but I've got a few questions for you first. So in terms of novelty and wonder, do you think travelling to the past would be a fundamentally different experience from travelling to different countries today? Or is it kind of in the same category?
+
+Tyler Cowen   
+
+You need to be protected against disease and have some access to the languages, and obviously, your smartphone is not going to work, right? So if you adjust for those differences, I think it would be a lot like travelling today except there'd be bigger surprises because no one else has gone to the past. Older people were there in a sense, but if you go back to ancient Athens, or the peak of the Roman Empire, you’d be the first traveller. 
+
+Dwarkesh Patel   
+
+So do you think the experience of reading a history book is somewhat substitutable for actually travelling to a place? 
+
+Tyler Cowen   
+
+Not at all! I think we understand the past very very poorly. If you’ve travelled appropriately in contemporary times, it should make you more skeptical about history because you'll realize how little you can learn about the current places just by reading about them. So it's like Travel versus History, and the historians lose.
+
+Dwarkesh Patel   
+
+Oh, interesting. So I'm curious, how does travelling a lot change your perspective when you read a work of history? In what ways does it do so? Are you skeptical of it to an extent that you weren't before, and what do you think historians are probably getting wrong? 
+
+Tyler Cowen   
+
+It may not be a concrete way, but first you ask: was the person there? If it's a biography, did the author personally know the subject of the biography? That becomes an extremely important question. I was just in India for the sixth time, I hardly pretend to understand India, whatever that possibly might mean, but before I went at all, I'd read a few hundred books about India, and it’s not like I got nothing out of them, but in some sense, I knew nothing about India. Now that I’ve visited, the other things I read make more sense, including the history.
+
+Do Institutions Become Left Wing Over Time?
+
+Dwarkesh Patel   
+
+Okay, interesting. So you've asked this question to many of your guests, and I don't think any of them have had a good answer. So let me just ask you: what do you think is the explanation behind Conquest’s Second Law? Why does any institution that is not explicitly right-wing become left-wing over time?
+
+Tyler Cowen   
+
+Well, first of all, I'm not sure that Conquest’s Second Law is true. So you have something like the World Bank which was sort of centrist state-ist in the 1960s, and by the 1990s became fairly neoliberal. Now, about what's left-wing/right-wing, it's global, it's complicated, but it's not a simple case of Conquest’s Second Law holding. I do think that for a big part of the latter post-war era, some version of Conquest’s Law does mostly hold for the United States. But once you see that it’s not universal, you're just asking: well, why have parts? Why has the American intelligentsia shifted to the left? So that there's political science literature on educational polarization? [laughs] I wouldn't say it's a settled question, but it's not a huge mystery like “how Republicans act wackier than Democrats are” for example. The issues realign in particular ways. I believe that’s why Conquest’s Law locally is mostly holding.
+
+Dwarkesh Patel   
+
+Oh, interesting. So you don't think there's anything special about the intellectual life that tends to make people left-wing, and this issue is particular to our current moment?
+
+Tyler Cowen    
+
+I think by choosing the words “left-wing” you're begging the question. There's a lot of historical areas where what is left-wing is not even well defined, so in that sense, Conquests Law can't even hold there. I once had a debate with Marc Andreessen about this–– I think Mark tends to see things that are left-wing/right-wing as somewhat universal historical categories, and I very much do not. In medieval times, what's left wing and what's right wing? Even in 17th century England, there were particular groups who on particular issues were very left-wing or right-wing. It seems to me to be very unsatisfying, and there's a lot of fluidity in how these axes play out over real issues.
+
+Dwarkesh Patel   
+
+Interesting. So maybe then it’s what is considered “left” at the time that tends to be the thing that ends up winning. At least, that’s how it looks like looking back on it. That's how we categorize things. Something insightful I heard is that “if the left keeps winning, then just redefine what the left is.” So if you think of prohibition at the time, it was a left-wing cause, but now, the opposite of prohibition is left-wing because we just changed what the left is.
+
+Tyler Cowen    
+
+Exactly. Take the French Revolution: they're the historical equivalent of nonprofits versus 1830s restoration. Was everything moving to the left, between Robespierre and 1830? I don't pretend to know, but it just sure doesn't seem that way. So again, there seem to be a lot of cases where Conquest’s Law is not so economical.
+
+Dwarkesh Patel   
+
+Napoleon is a great example of this where we’re not sure whether he’s the most left-wing figure in history or the most right-wing figure in history.
+
+Tyler Cowen 6:00
+
+Maybe he’s both somehow.
+
+What Does Talent Correlate With?
+
+Dwarkesh Patel 
+
+How much of talent or the lack thereof is a moral judgment for you? Just to give some context, when I think that somebody is not that intelligent, for me, that doesn't seem like a moral judgment. That just seems like a lottery. When I say that somebody's not hard working, that seems like more of a moral judgment. So on that spectrum, where would you say talent lies?
+
+Tyler Cowen   
+
+I don't know. My default is that most people aren't that ambitious. I'm fine with that. It actually creates some opportunities for the ambitious–– there might be an optimal degree of ambition. Well, short of everyone being sort of maximally ambitious. So I don't go around pissed off at unambitious people, judging them in some moralizing way. I think a lot of me is on autopilot when it comes to morally judging people from a distance. I don't wake up in the morning and get pissed off at someone in the Middle East doing whatever, even though I might think it was wrong.
+
+Dwarkesh Patel   
+
+So when you read the biographies of great people, often you see there's a bit of an emotional neglect and abuse when they're kids. Why do you think this is such a common trope?
+
+Tyler Cowen   
+
+I would love to see the data, but I'm not convinced that it's more common than with other people. Famous people, especially those who have biographies, on average are from earlier times, and in earlier times, children were treated worse. So it could be correlated without being causal. Now, maybe there's this notion that you need to have something to prove. Maybe you only feel you need to prove something if you’re Napoleon and you're short, and you weren't always treated well. That's possible and I don't rule it out. But you look at Bill Gates and Mark Zuckerberg without pretending to know what their childhoods were like.  It sure sounds like they were upper middle class kids treated very well, at least from a distance. For example, the Collison's had great parents and they did well.
+
+Dwarkesh Patel   
+
+It could just be that the examples involving emotional neglect stuck out in my mind in particular.  
+
+Tyler Cowen   
+
+Yeah. So I'd really like to see the data. I think it's an important and very good question. It seems to me, maybe one could investigate it, but I've never seen an actual result.
+
+Dwarkesh Patel   
+
+Is there something you've learned about talent spotting through writing the book that you wish wasn't so? Maybe you found it disturbing, or you found it disappointing in some way. Is there something that is a correlate for talent that you wish wasn't? 
+
+Tyler Cowen   
+
+I don't know. Again, I think I'm relatively accepting of a lot of these realities, but the thing that disappoints me a bit is how geographically clustered talent is. I don't mean where it was born, and I don't mean ethnically. I just mean where it ends up. So if you get an application, say from rural Italy where maybe living standards are perfectly fine–– there's good weather, there's olive oil, there's pasta. But the application just probably not that good. Certainly, Italians have had enough amazing achievements over the millennia, but right now, the people there who are actually up to something are going to move to London or New York or somewhere. So I find that a bit depressing. It's not really about the people. 
+
+Dwarkesh Patel   
+
+When you do find a cluster of talent, to what extent can that be explained by a cyclical view of what's happening in the region? In the sense of the “hard times create strong men” theory? I mean at some point, Italy had a Renaissance, so maybe things got complacent over time.
+
+Tyler Cowen   
+
+Again, maybe that's true for Italy, but most of the talent clusters have been such for a long time, like London and New York. It's not cyclical. They've just had a ton of talent for a very long time. They still do, and later on, they still will. Maybe not literally forever, but it seems like an enduring effect.
+
+Dwarkesh Patel   
+
+But what if they leave? For example, the Central European Jews couldn’t stay where they were anymore and had to leave.
+
+Tyler Cowen   
+
+Obviously, I think war can destroy almost anything. So German scientific talent took a big whack, German cultural talent too. I mean, Hungarian Jews and mathematics-–I don't know big of a trend it still is, but it's certainly nothing close to what it once was.
+
+Dwarkesh Patel   
+
+Okay. I was worried that if you realize that some particular region has a lot of talent right now, then that might be a one-time gain. You realize that India, Toronto or Nigeria or something have a lot of talent, but the culture doesn't persist in some sort of extended way. 
+
+Tyler Cowen   
+
+That might be true for where talent comes from, but where it goes just seems to show more persistence. People will almost certainly be going to London for centuries. Is London producing a lot of talent? That's less clear. That may be much more cyclical. In the 17th century, London was amazing, right? London today? I would say I don't know. But it's not obvious that it’s coming close to its previous glories. So the current status of India I think, will be temporary, but temporary for a long time. It's just a very big place. It has a lot of centres and there are things it has going for it like not taking prosperity for granted. But it will have all of these for quite a while–– India's still pretty poor.
+
+Dwarkesh Patel   
+
+What do you think is the difference between actual places where clusters of talent congregate and places where that are just a source of that talent? What makes a place a sink rather than a source of talent?
+
+Tyler Cowen   
+
+I think finding a place where people end up going is more or less obvious. You need money, you need a big city, you need some kind of common trade or linguistic connection. So New York and London are what they are for obvious reasons, right? Path dependence history, the story of making it in the Big Apple and so on. But origins and where people come from are areas that I think theory is very bad at understanding. Why did the Renaissance blossom in Florence and Venice, and not in Milan? If you're going back earlier, it wasn't obvious that it would be those places. I've done a lot of reading to try to figure this out, but I find that I've gotten remarkably not far on the question.
+
+Dwarkesh Patel   
+
+The particular examples you mentioned today–– like New York, San Francisco, London, these places today are kind of high stakes, because if you want to move there, it's expensive. Do you think that this is because they've been so talented despite this fact, or because you need some sort of exclusion in order to be a haven of talent?
+
+Tyler Cowen   
+
+Well, I think this is a problem for San Francisco. It may be a more temporary cluster than it ought to have been. Since it's a pretty recent cluster, it can’t count on the same kind of historical path dependence that New York and Manhattan have. But a lot of New York still is not that expensive. Look at the people who work and live there! They're not all rich, to say the least. And that is an important part of why New York is still New York. With London, it's much harder, but it seems to me that London is a sink for somewhat established talent––which is fine, right? However, in that regard, it’s much inferior to New York.
+
+Humility, Mental Illness, Caffeine, and Suits 
+
+Dwarkesh Patel   
+
+Okay, I want to play a game of overrated and underrated with you, but we're going to do it with certain traits or certain kinds of personalities that might come in when you're interviewing people.
+
+Tyler Cowen   
+
+Okay, it's probably all going to be indeterminate, but go on.
+
+Dwarkesh Patel   
+
+Right. So somebody comes in, and they're very humble.
+
+Tyler Cowen   
+
+Immediately I'm suspicious. I figure most people who are going to make something of themselves are arrogant. If they're willing to show it, there's a certain bravery or openness in that. I don't rule out the humble person doing great. A lot of people who do great are humble, but I just get a wee bit like, “what's up with you? You're not really humble, are you?”
+
+Dwarkesh Patel   
+
+Maybe humility is a way of avoiding confrontation–– if you don't have the competence to actually show that you can be great. 
+
+Tyler Cowen   
+
+It might be efficient for them to avoid confrontation, but I just start thinking that I don't know the real story. When I see a bit of arrogance, I'm less likely to think that it may, in a way, be feigned. But the feigning of arrogance in itself is a kind of arrogance. So in that sense, I'm still getting the genuine thing. 
+
+Dwarkesh Patel   
+
+So what is the difference? Let's say a 15-year-old who is kind of arrogant versus a 50-year-old who is kind of arrogant, and the latter has accomplishments already while the first one doesn't. Is there a difference in how you perceive humility or the lack thereof?
+
+Tyler Cowen   
+
+Oh, sure. With the 50-year-old, you want to see what they have done, and you're much more likely to think the 50 year old should feign humility than the 15-year-old. Because that's the high-status thing to do–– it’s to feign humility. If they can't do that, you figure, “Here's one thing they're bad at. What else are they bad at?” Whereas with the 15-year-old, maybe they have a chip on their shoulder and they can't quite hold it all in. Oh, that's great and fine. Let's see what you're gonna do.
+
+Dwarkesh Patel   
+
+How arrogant can you be? There are many 15 year olds who are really good at math, and they have ambitions like “I want to solve P ≠ NP” or “I want to build an AGI” or something. Is there some level where you just clearly don't understand what's going on since you think you can do something like that? Or is arrogance always a plus?
+
+Tyler Cowen   
+
+I haven't seen that level of arrogance yet. If a 15-year-old said to me, “in three years, I'm going to invent a perpetual motion machine,”  I would think “No, now you're just crazy.” But no one's ever said that to me. There’s this famous Mark Zuckerberg story where he went into the VC meeting at Sequoia wearing his pajamas and he told Sequoia not to give him money. He was 18 at a minimum, that's pretty arrogant behavior and we should be fine with that. We know how the story ends. So it's really hard to be too arrogant. But once you say this, because of the second order effect, you start thinking: “Well, are they just being arrogant as an act?” And then in the “act sense”, yes, they can be too arrogant.
+
+Dwarkesh Patel   
+
+Isn't the backstory there that Mark was friends with Sean Parker and then Sean Parker had beef with Sequoia…
+
+Tyler Cowen   
+
+There's something like that. I wouldn't want to say off the top of my head exactly what, but there is a backstory.
+
+Dwarkesh Patel   
+
+Okay. Somebody comes in professionally dressed when they don't need to. They've got a crisp clean shirt. They've got a nice wash. 
+
+Tyler Cowen 
+
+How old are they?
+
+Dwarkesh Patel 
+
+20.
+
+Tyler Cowen 
+
+They’re too conformist. Again, with some jobs, conformity is great, but I get a little suspicious, at least for what I'm looking for. Though I wouldn't rule them out for a lot of things–– it’s a plus, right?
+
+Dwarkesh Patel   
+
+Is there a point though, where you're in some way being conformist by dressing up in a polo shirt? Like if you're in San Francisco right now, it seems like the conformist thing is not to wear a suit to an interview if you're trying to be a software engineer.
+
+Tyler Cowen   
+
+Yeah, there might be situations where it's so weird, so over the top, so conformist, that it's actually totally non-conformist. Like “I don't know anyone who's a conformist like you are!” Maybe it's not being a conformist, or just being some kind of nut, that makes you interested again.
+
+Dwarkesh Patel   
+
+An overall sense that you get from the person that they're really content, almost like Buddha came in for an interview. A sense of wellbeing.
+
+Tyler Cowen   
+
+It's gonna depend on context, I don't think I'd hold it against someone, but I wouldn't take it at face value. You figure they're antsy in some way, you hope. You'll see it with more time, I would just think.
+
+Dwarkesh Patel   
+
+Somebody who uses a lot of nootropics. They're constantly using caffeine, but maybe on the side (multiple times a week), they're also using Adderall, Modafinil, and other kinds of nootropics.
+
+Tyler Cowen   
+
+I don't personally like it, but I've never seen evidence that it's negatively correlated with success, so I would try to put it out of my mind. I sort of personally get a queasy feeling like “Do you really know what you're doing. Is all this stuff good for you? Why do you need this?” That's my actual reaction, but again, at the intellectual level, it does seem to work for some people, or at least not screw them up too much.
+
+Dwarkesh Patel   
+
+You don't drink caffeine, correct? 
+
+Tyler Cowen  
+
+Zero.
+
+Dwarkesh Patel 
+
+Why?
+
+Tyler Cowen 
+
+I don't like it. It might be bad for you. 
+
+Dwarkesh Patel 
+
+Oh really, you think so? 
+
+Tyler Cowen 
+
+People get addicted to it.
+
+Dwarkesh Patel    
+
+You're not worried it might make you less productive over the long term? It's more about you just don't want to be addicted to something?
+
+Tyler Cowen   
+
+Well, since I don't know it well, I'm not sure what my worries are. But the status quo regime seems to work. I observe a lot of people who end up addicted to coffee, coke, soda, stuff we know is bad for you. So I think: “What's the problem I need to solve? Why do it?”
+
+Dwarkesh Patel   
+
+What if they have a history of mental illness like depression or anxiety? Not that mental illnesses are good, but at the current margins, do you think that maybe they're punished too heavily? Or maybe that people don't take them seriously enough that they actually have a bigger signal than the people are considering?
+
+Tyler Cowen   
+
+I don't know. I mean, both could be true, right? So there's definitely positive correlations between that stuff and artistic creativity. Whether or not it’s causal is harder to say, but it correlates. So you certainly should take the person seriously. But would they be the best Starbucks cashier? I don't know.
+
+How does Education Affect Talent?
+
+Dwarkesh Patel   
+
+Yeah. In another podcast, you've pointed out that some of the most talented people you see who are neglected are 15 to 17 year olds. How does this impact how you think? Let's say you were in charge of a high school, you're the principal of a high school, and you know that there's 2000 students there. A few of them have to be geniuses, right? How is the high school run by Tyler Cowen? Especially for the very smartest people there? 
+
+Tyler Cowen   
+
+Less homework! I would work harder to hire better teachers, pay them more, and fire the bad ones if I'm allowed to do that. Those are no-brainers, but mainly less homework and I’d have more people come in who are potential role models. Someone like me! I was invited once to Flint Hill High School in Oakton, it's right nearby. I went in, I wasn't paid. I just figured “I'll do this.” It seems to me a lot of high schools don't even try. They could get a bunch of people to come in for free to just say “I'm an economist, here's what being an economist is like” for 45 minutes. Is that so much worse than the BS the teacher has to spew? Of course not. So I would just do more things like that.
+
+Dwarkesh Patel   
+
+I want to understand the difference between these three options. The first is: somebody like you actually gives an in-person lecture saying “this is what life is like”. The second is zoom, you could use zoom to do that. The third is that it's not live in any way whatsoever. You're just kind of like maybe showing a video of the person. 
+
+Tyler Cowen   
+
+I'm a big believer in vividness. So Zoom is better than nothing. A lot of people are at a distance, but I think you'll get more and better responses by inviting local people to do it live. And there's plenty of local people, where most of the good schools are.
+
+Dwarkesh Patel   
+
+Are you tempted to just give these really smart 15-year-olds a hall pass to the library all day and some WiFi access, and then just leave them alone? Or do you think that they need some sort of structure?
+
+Tyler Cowen   
+
+I think they need some structure, but you have to let them rebel against it and do their own thing. Zero structure strikes me as great for a few of them, but even for the super talented ones, it's not perfect. They need exposure to things, and they need some teachers as role models. So you want them to have some structure.
+
+Dwarkesh Patel   
+
+If you read old books about education, there's a strong emphasis on moral instruction. Do you think that needs to be an important part of education? 
+
+Tyler Cowen   
+
+I'd like to see more data. But I suspect the best moral instruction is the teachers actually being good people. I think that works. But again, I'd like to see the data. But somehow getting up and lecturing them about the seven virtues or something. That seems to me to be a waste of time, and maybe even counterproductive.
+
+Dwarkesh Patel   
+
+Now, the way I read your book about talent, it also seems like a critique of Bryan’s book, The Case Against Education.
+
+Tyler Cowen   
+
+Ofcourse it is. Bryan describes me as the guy who's always torturing him, and in a sense, he's right.
+
+Dwarkesh Patel   
+
+Well, I guess more specifically, it seems that Bryan's book relies on the argument that you need a costly signal to show that you have talent, or you have intelligence, conscientiousness, and other traits. But if you can just learn that from a 1500 word essay and a zoom call, then maybe college is not about the signal.
+
+Tyler Cowen   
+
+In that sense, I'm not sure it's a good critique of Bryan. So for most people in the middle of the distribution, I don't think you can learn what I learned from Top 5 Emergent Ventures winners through an application and a half-hour zoom call. But that said, I think the talent book shows you my old saying: context is that which is scarce. And you're always testing people for their understanding of context. Most people need a fair amount of higher education to acquire that context, even if they don't remember the detailed content of their classes. So I think Bryan overlooks how much people actually learn when they go to school.
+
+Dwarkesh Patel   
+
+How would you go about measuring the amount of context of somebody who went to college? Is there something you can point to that says, “Oh, clearly they're getting some context, otherwise, they wouldn’t be able to do this”?
+
+Tyler Cowen   
+
+I think if you meet enough people who didn't go to college, you'll see the difference, on average. Stressing the word average. Now there are papers measuring positive returns to higher education. I don't think they all show it’s due to context, but I am persuaded by most of Brian's arguments that you don't remember the details of what you learned in class. Oh, you learn this about astronomy and Kepler's laws and opportunity costs, etc. but people can't reproduce that two or three years later. It seems pretty clear we know that. However, they do learn a lot of context and how to deal with different personality types.
+
+Dwarkesh Patel   
+
+Would you falsify this claim, though, that you are getting a lot of context? Is it just something that you had to qualitatively evaluate? What would have to be true in the world for you to conclude that the opposite is true? 
+
+Tyler Cowen   
+
+Well, if you could show people remembered a lot of the facts they learned, and those facts were important for their jobs, neither of which I think is true. But in principle, they're demonstrable, then you would be much more skeptical about the context being the thing that mattered. But as it stands now, that's the residual. And it's probably what matters.
+
+Dwarkesh Patel   
+
+Right. So I thought that Bryan shared in the book that actually people don't even remember many of the basic facts that they learned in school.
+
+Tyler Cowen   
+
+Ofcourse they don't. But that's not the main thing they learn. They learn some vision of how the world works, how they fit into it, that they ought to have higher aspirations, that they can join the upper middle class, that they're supposed to have a particular kind of job. Here are the kinds of jerks you're going to meet along the way! Here's some sense of how dating markets work! Maybe you're in a fraternity, maybe you do a sport and so on. That's what you learned. 
+
+Dwarkesh Patel   
+
+How did you spot Bryan?
+
+Tyler Cowen   
+
+He was in high school when I met him, and it was some kind of HS event. I think he made a point of seeking me out. And I immediately thought, “Well this guy is going to be something like, gotta keep track of this guy. Right away.”
+
+Dwarkesh Patel   
+
+Can you say more - what happened?
+
+Tyler Cowen   
+
+His level of enthusiasm, his ability to speak with respect to detail. He was just kind of bursting with everything. It was immediately evident, as it still is. Bryan has changed less than almost anyone else I know over what is now.. he could tell you how many years but it’s been a whole bunch of decades.
+
+Dwarkesh Patel   
+
+Interesting. So if that's the case, then it would have been interesting to meet somebody who is like Bryan, but a 19 year old.
+
+Tyler Cowen   
+
+Yeah, and I did. I was right. 
+
+Talent Scouting
+
+Dwarkesh Patel   
+
+To what extent do the best talent scouts inevitably suffer from Goodhart’s Law? Has something like this happened to you where your approval gets turned into a credential? So a whole bunch of non-earnest people start applying, you get a whole bunch of adverse selection, and then it becomes hard for you to run your program.
+
+Tyler Cowen   
+
+It is not yet hard to run the program. If I needed to, I would just shut down applications. I've seen a modest uptick in bad applications, but it takes so little time to decide they're no good, or just not a good fit for us that it's not a problem. So the endorsement does get credentialized. Mostly, that's a good thing, right? Like you help the people you pick. And then you see what happens next and you keep on innovating as you need to.
+
+Dwarkesh Patel   
+
+You say in the book that the super talented are best at spotting other super talented individuals. And there aren't many of the super talented talent spotters to go around. So this sounds like you’re saying that if you're not super talented, much of the book will maybe not do you a bunch of good. Results be weary should be maybe on the title. How much of talent spotting can be done by people who aren't themselves super talented?
+
+Tyler Cowen   
+
+Well, I'd want to see the context of what I wrote. But I'm well aware of the fact that in basketball, most of the greatest general managers were not great players. Someone like Jerry West, right? I'd say Pat Riley was not. So again, that's something you could study. But I don't generally think that the best talent scouts are themselves super talented.
+
+Dwarkesh Patel   
+
+Then what is the skill in particular that they have that if it's not the particular thing that they're working on?
+
+Tyler Cowen   
+
+Some intangible kind of intuition, where they feel the right thing in the people they meet. We try to teach people that intuition, the same way you might teach art or music appreciation. But it's not a science. It's not paint-by-numbers.
+
+Dwarkesh Patel   
+
+Even with all the advice in the book, and even with the stuff that isn't in the book that is just your inarticulable knowledge about how to spot talent, all your intuitions… How much of the variance in somebody's “True Potential” is just fundamentally unpredictable? If it's just like too chaotic of a thing to actually get your grips on. To what extent are we going to truly be able to spot talent?
+
+Tyler Cowen   
+
+I think it will always be an art. If you look at the success rates of VCs, it depends on what you count as the pool they're drawing from, but their overall rate of picking winners is not that impressive. And they're super high stakes. They're super smart. So I think it will mostly remain an art and not a science. People say, “Oh, genomics this, genomics that”. We'll see, but somehow I don't think that will change this.
+
+Dwarkesh Patel   
+
+You don't think getting a polygenic risk score of drive, for example, is going to be a thing that happens?
+
+Tyler Cowen   
+
+Maybe future genomics will be incredibly different from what we have now. Maybe. But it's not around the corner.
+
+Dwarkesh Patel   
+
+Yeah. Maybe the sample size is just so low and somebody is like “How are you even gonna collect that data? How are you gonna get the correlates of who the super talented people are?”
+
+Tyler Cowen   
+
+That, plus how genomic data interact with each other. You can apply machine learning and so on, but it just seems quite murky.
+
+Dwarkesh Patel   
+
+If the best people get spotted earlier, and you can tell who is a 10x engineer in a company and who is only a 1x engineer, or a 0.5x engineer, doesn't that mean that, in a way that inequality will get worse? Because now the 10x engineer knows that they're 10x, and everybody else knows that they're 10x, they're not going to be willing to cross subsidize and your other employees are going to be wanting to get paid proportionate to their skill.
+
+Tyler Cowen   
+
+Well, they might be paid more, but they'll also innovate more, right? So they'll create more benefits for people who are doing nothing. My intuition is that overall, inequality of wellbeing will go down. But you can't say that's true apriori. Inequality of income might also go up.
+
+Dwarkesh Patel   
+
+And then will the slack in the system go away for people who are not top performers? Like you can tell now, if we're getting better.
+
+Tyler Cowen   
+
+This has happened already in contemporary America. As I wrote, “Average is over.” Not due to super sophisticated talent spotting. Sometimes, it’s simply the fact that in a lot of service sectors, you can measure output reasonably directly––like did you finish the computer program? Did it work? That has made it harder for people to get paid things they don't deserve.
+
+Dwarkesh Patel   
+
+I wonder if this leads to adverse selection in the areas where you can't measure how well somebody is doing. So the people who are kind of lazy and bums, they'll just go into places where output can't be measured. So these industries will just be overflowing with the people who don't want to work.
+
+Tyler Cowen   
+
+Absolutely. And then the people who are talented in the sectors, maybe they'll leave and start their own companies and earn through equity, and no one is really ever measuring their labor power. Still, what they're doing is working and they're making more from it.
+
+Dwarkesh Patel   
+
+If talent is partly heritable, then the better you get at spotting talent, over time, will the social mobility in society go down?
+
+Tyler Cowen   
+
+Depends how you measure social mobility. Is it relative to the previous generation? Most talent spotters don't know a lot about parents, like I don't know anything about your parents at all! The other aspect of spotting talent is hoping the talent you mobilize does great things for people not doing anything at all. That's the kind of automatic social mobility they get. But if you're measuring quintiles across generations, the intuition could go either way.
+
+Dwarkesh Patel   
+
+But this goes back to wondering whether this is a one time gain or not. Maybe initially they can help the people who are around them. Somebody in Brazil, they help people around them. But once you’ve found them, they're gonna go to those clusters you talked about, and they're gonna be helping the people with San Francisco who don't need help. So is this a one time game then?
+
+Tyler Cowen   
+
+Many people from India seem to give back to India in a very consistent way. People from Russia don't seem to do that. That may relate to the fact that Russia is in terrible shape, and India has a brighter future. So it will depend. But I certainly think there are ways of arranging things where people give back a lot.
+
+Dwarkesh Patel   
+
+Let's talk about Emergent Ventures. Sure. So I wonder: if the goal of Emergent Ventures is to raise aspirations, does that still work given the fact that you have to accept some people but reject other people? In Bayesian terms, the updates up have to equal the updates down? In some sense, you're almost transferring a vision edge from the excellent to the truly great. You see what I'm saying?
+
+Tyler Cowen   
+
+Well, you might discourage the people you turn away. But if they're really going to do something, they should take that as a challenge. And many do! Like “Oh, I was rejected by Harvard, I had to go to UChicago, but I decided, I'm going to show those bastards.” I think we talked about that a few minutes ago. So if I just crushed the spirits of those who are rejected, I don't feel too bad about that. They should probably be in some role anyway where they're just working for someone.
+
+Dwarkesh Patel   
+
+But let me ask you the converse of that which is, if you do accept somebody, are you worried that if one of the things that drives people is getting rejected, and then wanting to prove that you will reject them wrong, are you worried that by accepting somebody when they're 15, you're killing that thing? The part of them that wants to get some kind of approval?
+
+Tyler Cowen   
+
+Plenty of other people will still reject them right? Not everyone accepts them every step of the way. Maybe they're just awesome. LeBron James is basketball history and past a certain point, it just seems everyone wanted him for a bunch of decades now. I think deliberately with a lot of candidates, you shouldn't encourage them too much. I make a point of chewing out a lot of people just to light a fire under them, like “what you're doing. It's not gonna work.” So I'm all for that selectively.
+
+Dwarkesh Patel   
+
+Why do you think that so many of the people who have led Emergent Ventures are interested in Effective Altruism?
+
+Tyler Cowen   
+
+There is a moment right now for Effective Altruism, where it is the thing. Some of it is political polarization, the main parties are so stupid and offensive, those energies will go somewhere. Some of that in 1970 maybe went to libertarianism. Libertarianism has been out there for too long. It doesn't seem to address a lot of current problems, like climate change or pandemics very well. So where should the energy go? The Rationality community gets some of it and that's related to EA, as I'm sure you know. The tech startup community gets some of it. That's great! It seems to be working pretty well to me. Like I'm not an EA person. But maybe they deserve a lot of it.
+
+Dwarkesh Patel   
+
+But you don't think it's persistent. You think it comes and goes?
+
+Tyler Cowen   
+
+I think it will come and go. But I think EA will not vanish. Like libertarianism, it will continue for quite a long time.
+
+Dwarkesh Patel   
+
+Is there any movement that has attracted young people? That has been persistent over time? Or did they all fade? 
+
+Tyler Cowen   
+
+Christianity. Judaism. Islam. They're pretty persistent. [laughs]
+
+Dwarkesh Patel   
+
+So to the extent that being more religious makes you more persistent, can we view the criticism of EA saying that it's kind of like a religion as a plus?
+
+Tyler Cowen   
+
+Ofcourse, yeah! I think it's somewhat like a religion. To me, that's a plus, we need more religions. I wish more of the religions we needed were just flat-out religions. But in the meantime, EA will do,
+
+Money, Deceit, and Emergent Ventures
+
+Dwarkesh Patel   
+
+Are there times when somebody asks you for a grant and you view that as a negative signal? Let's say they're especially when well off: they’re a former Google engineer, they wanna start a new project, and they're asking you for a grant. Do you worry that maybe they're too risk averse? Do you want them to put their own capital into it? Or do you think that maybe they were too conformist because they needed your approval before they went ahead?
+
+Tyler Cowen   
+
+Things like this have happened. And I asked people flat out, “Why do you want this grant from me?” And it is a forcing question in the sense that if their answer isn't good, I won't give it to them. Even though they might have a good level of talent, good ideas, whatever, they have to be able to answer that question in a credible way. Some can, some can't.
+
+Dwarkesh Patel   
+
+I remember that the President of the University of Chicago many years back said that if you rejected the entire class of freshmen that are coming in and accepted the next 1500 that they had to reject that year, then there'll be no difference in the quality of the admits.
+
+Tyler Cowen   
+
+I would think UChicago is the one school where that's not true. I agree that it's true for most schools.
+
+Dwarkesh Patel   
+
+Do you think that's also true of Emergent Ventures?
+
+Tyler Cowen   
+
+No. Not at all.
+
+Dwarkesh Patel   
+
+How good is a marginal reject?
+
+Tyler Cowen   
+
+Not good. It’s a remarkably bimodal distribution as I perceive it, and maybe I'm wrong. But there aren't that many cases where I'm agonizing and if I'm agonizing I figure it probably should be a no.
+
+Dwarkesh Patel   
+
+I guess that makes it even tougher if you do get rejected. Because it wasn't like, “oh, you weren't a right fit for the job,” or “you almost made the cut.” It's like, “No, we're actually just assessing your potential and not some sort of fit for the job.” Not only were you just not on the edge of potential, but you were also way on the other edge of the curve.
+
+Tyler Cowen   
+
+But a lot of these rejected people and projects, I don't think they're spilling tears over it. Like you get an application. Someone's in Akron, Ohio, and they want to start a nonprofit dog shelter. They saw EV on the list of things you can apply to. They apply to a lot of things and maybe never get funding. It's like people who enter contests or something, they apply to EV. Nothing against non-profit dog shelters, but that's kind of a no, right? I genuinely don't know their response, but I don't think they walk away from the experience with some deeper model of what they should infer from the EV decision.
+
+Dwarkesh Patel   
+
+How much does the money part of Emergent Ventures matter? If you just didn't give them the money?
+
+Tyler Cowen   
+
+There's a whole bunch of proposals that really need the money for capital costs, and then it matters a lot. For a lot of them, the money per se doesn't matter.
+
+Dwarkesh Patel   
+
+Right, then. So what is the function of return for that? Do you like 10x the money, or do you add .1x the money for some of these things? Do you think they add up to seemingly different results? 
+
+Tyler Cowen   
+
+I think a lot of foundations give out too many large grants and not enough small grants. I hope I'm at an optimum. But again, I don't have data to tell you. I do think about this a lot, and I think small grants are underrated.
+
+Dwarkesh Patel   
+
+Why are women often better at detecting deceit?
+
+Tyler Cowen   
+
+I would assume for biological and evolutionary reasons that there are all these men trying to deceive them, right? The cost of a pregnancy is higher for a woman than for a man on average, by quite a bit. So women will develop defense mechanisms that men maybe don't have as much.
+
+Dwarkesh Patel   
+
+One thing I heard from somebody I was brainstorming these questions with–– she just said that maybe it's because women just discuss personal matters more. And so therefore, they have a greater library.
+
+Tyler Cowen   
+
+Well, that's certainly true. But that's subordinate to my explanation, I’d say. There are definitely a lot of intermediate steps. Things women do more of that help them be insightful.
+
+Building Writing Stamina
+
+Dwarkesh Patel   
+
+Why is writing skill so important to you?
+
+Tyler Cowen   
+
+Well, one thing is that I'm good at judging it. Across scales, I'm very bad at judging, so there's nothing on the EV application testing for your lacrosse skill. But look, writing is a form of thinking. And public intellectuals are one of the things I want to support. Some of the companies I admire are ones with writing cultures like Amazon or Stripe. So writing it is! I'm a good reader. So you're going to be asked to write.
+
+Dwarkesh Patel   
+
+Do you think it's a general fact that writing correlates with just general competence? 
+
+Tyler Cowen   
+
+I do, but especially the areas that I'm funding. It’s strongly related. Whether it's true for everything is harder to say.
+
+Dwarkesh Patel   
+
+Can stamina be increased?
+
+Tyler Cowen   
+
+Of course. It's one of the easier things to increase. I don't think you can become superhuman in your energy and stamina if you're not born that way. But I think almost everyone could increase by 30% to 50%, some notable amount. 
+
+Dwarkesh Patel   
+
+Okay, that's interesting.
+
+Tyler Cowen   
+
+Put aside maybe people with disabilities or something but definitely when it comes to people in regular circumstances.
+
+Dwarkesh Patel   
+
+Okay. I think it's interesting because in the blog post from Robin Hanson about stamina, I think his point of view was that this is just something that's inherent to people.
+
+Tyler Cowen   
+
+Well, I don't think that's totally false. The people who have superhuman stamina are born that way. But there are plenty of origins. I mean, take physical stamina. You don't think people can train more and run for longer? Of course they can. It's totally proven. So it would be weird if this rule held for all these organs but not your brain. That seems quite implausible. Especially for someone like Robin, where your brain is just this other organ that you're gonna download or upload or goodness knows what with it. He’s a physicalist if there ever was one.
+
+Dwarkesh Patel   
+
+Have you read Haruki Murakami's book on running?
+
+Tyler Cowen   
+
+No, I've been meaning to. I'm not sure how interesting I'll find it. I will someday. I like his stuff a lot.
+
+Dwarkesh Patel   
+
+But what I found really interesting about it was just how linked building physical stamina is for him to building up the stamina to write a lot.
+
+Tyler Cowen   
+
+Magnus Carlsen would say the same with chess. Being in reasonable physical shape is important for your mental stamina, which is another kind of simple proof that you can boost your mental stamina.
+
+When Does Intelligence Start to Matter?
+
+Dwarkesh Patel   
+
+After reading the book, I was inclined to think that intelligence matters more than I previously thought. Not less. You say in the book that intelligence has convex returns and that it matters especially for areas like inventors. Then you also say that if you look at some of the most important things in society, something like what Larry and Sergey did, they're basically inventors, right? So in many of the most important things in society, intelligence matters more because of the increasing returns. It seems like with Emergent Ventures, you're trying to pick the people who are at the tail. You're not looking for a barista at Starbucks. So it seems like you should care about intelligence more, given the evidence there. 
+
+Tyler Cowen   
+
+More than who does? I feel what the book presents is, in fact, my view. So kind of by definition, I agree with that view. But yes, there's a way of reading it where intelligence really matters a lot. But it's only for a relatively small number of jobs.
+
+Dwarkesh Patel   
+
+Maybe you just started off with a really high priori on intelligence, and that's why you downgraded?
+
+Tyler Cowen   
+
+There are a lot of jobs that I actually hire for in actual life, where smarts are not the main thing I look for.
+
+Dwarkesh Patel   
+
+Does the convexity of returns on intelligence suggest that maybe the multiplicative model is wrong? Because if the multiplicative model is right, you would expect to see decreasing returns and putting your stats on one skill. You'd want to diversify more, right?
+
+Tyler Cowen   
+
+I think the convexity of returns to intelligence is embedded in a multiplicative model, where the IQ returns only cash out for people good at all these other things. For a lot of geniuses, they just can't get out of bed in the morning, and you're stuck, and you should write them off.
+
+Dwarkesh Patel   
+
+So you cite the data that Sweden collects from everybody that enters the military there. The CEOs are apparently not especially smart. But one thing I found interesting in that same data was that Swedish soccer players are pretty smart. The better a soccer player is, the smarter they are. You've interviewed professional basketball players turned public intellectuals on your podcast. They sound extremely smart to me. What is going on there? Why, anecdotally, and with some limited amounts of evidence, does it seem that professional athletes are smarter than you would expect?
+
+Tyler Cowen   
+
+I'm a big fan of the view that top-level athletic performance is super cognitively intense and that most top athletes are really extraordinarily smart. I don't just mean smart on the court (though, obviously that), but smart more broadly. This is underrated. I think Michelle Dawson was the one who talked me into this, but absolutely, I'm with you all the way.
+
+Dwarkesh Patel   
+
+Do you think this is just mutational load or––
+
+Tyler Cowen   
+
+You actually have to be really smart to figure out things like how to lead a team, how to improve yourself, how to practice, how to outsmart the opposition, all these other things. Maybe it’s not the only way to get there, but it is very G loaded. You certainly see some super talented athletes who just go bust. Or they may destroy themselves with drugs: there are plenty of tales like that, and you don't have to look hard. 
+
+Dwarkesh Patel   
+
+Are there other areas where you wouldn't expect it to be G loaded but it actually is?
+
+Tyler Cowen   
+
+Probably, but there's so many! I just don't know, but sports is something in my life I followed. So I definitely have opinions about it. They seem incredibly smart to me when they're interviewed. They're not always articulate, and they’re sort of talking themselves into biased exposure. But I heard Michael Jordan in the 90s, and I thought, “That guy's really smart.” So I think he is! Look at Charles Barkley. He's amazing, right? There's hardly anyone I'd rather listen to, even about talent, than Charles Barkley. It's really interesting. He's not that tall, you can't say, “oh, he succeeded. Because he's seven foot two,” he was maybe six foot four tops. And they called him the Round Mound of Rebound. And how did he do that? He was smart. He figured out where the ball was going. The weaknesses of his opponents, he had to nudge them the right way, and so on. Brilliant guy.
+
+Dwarkesh Patel   
+
+What I find really remarkable is that (not just with athletes, but in many other professions), if you interview somebody who is at the top of that field, they come off really really smart! For example, YouTubers and even sex workers.
+
+Tyler Cowen   
+
+So whoever is like the top gardener, I expect I would be super impressed by them.
+
+Spotting Talent (Counter)signals
+
+Dwarkesh Patel   
+
+Right. Now all your books are in some way about talent, right? Let me read you the following passage from An Economist Gets Lunch, and I want you to tell me how we can apply this insight to talent. “At a fancy fancy restaurant, the menu is well thought out. The time and attention of the kitchen are scarce. An item won't be on the menu unless there's a good reason for its presence. If it sounds bad, it probably tastes especially good?”
+
+Tyler Cowen   
+
+That's counter-signaling, right? So anything that is very weird, they will keep on the menu because it has a devoted set of people who keep on ordering it and appreciate it. That's part of the talent of being a chef, you can come up with such things. 
+
+Dwarkesh Patel   
+
+How do we apply this to talent? 
+
+Tyler Cowen   
+
+Well, with restaurants, you have selection pressure where you're only going to ones that have cleared certain hurdles. So this is true for talent only for talents who are established. If you see a persistent NBA player who's a very poor free throw shooter like Shaquille O'Neal was, you can more or less assume they're really good at something else. But for people who are not established, there's not the same selection pressure so there's not an analogous inference you can draw.
+
+Dwarkesh Patel   
+
+So if I show up to an Emergent Ventures conference, and I meet somebody, and they don't seem especially impressive with the first impression, then I should believe their work is especially impressive. 
+
+Tyler Cowen 
+
+Yes, absolutely, yes. 
+
+Dwarkesh Patel   
+
+Okay, so my understanding of your book Creative Destruction is that maybe on average, cultural diversity will go down. But in special niches, the diversity and ingenuity will go up. Can I apply the same insight to talent? Maybe two random college grads will have similar skill sets over time, but if you look at people on the tails, will their skills and knowledge become even more specialized and even more diverse?
+
+Tyler Cowen   
+
+There are a lot of different presuppositions in your question. So first, is cultural diversity going up or down? That I think is multi-dimensional. Say different cities in different countries will be more like each other over time.. that said, the genres they produce don't have to become more similar. They're more similar in the sense that you can get sushi in each one. But novel cuisine in Dhaka and Senegal might be taking a very different path from novel cuisine in Tokyo, Japan. So what happens with cultural diversity.. I think the most reliable generalization is that it tends to come out of larger units. Small groups and tribes and linguistic groups get absorbed. Those people don't stop being creative and other venues, but there are fewer unique isolated cultures, and much more thickly diverse urban creativity. That would be the main generalization I would put forward. So if you wanted to apply that generalization to talent, I think in a funny way, we come back to my earlier point: talent just tends to be geographically extremely well clustered. That's not the question you asked, but it's how I would reconfigure the pieces of it.
+
+Dwarkesh Patel   
+
+Interesting. What do you suggest about finding talent in a globalized world? In particular, if it's cheaper to find talent because of the internet, does that mean that you should be selecting more mediocre candidates?
+
+Tyler Cowen   
+
+I think it means you should be more bullish on immigrants from Africa. It's relatively hard to get out of Africa to the United States in most cases. That's a sign the person put in a lot of effort and ability. Maybe an easy country to come here from would be Canada, all other things equal. Again, I'd want this to be measured. The people who come from countries that are hard to come from like India, actually, the numbers are fairly high, but the roots are mostly pretty gated.
+
+Dwarkesh Patel   
+
+Is part of the reason that talent is hard to spot and find today that we have an aging population?  So then we would have more capital, more jobs, more mentorship available for young people coming up, than there are young people.
+
+Tyler Cowen   
+
+I don't think we're really into demographic decline yet. Not in the United States. Maybe in Japan, that would be true. But it seems to me, especially with the internet, there’s more 15-year-old talent today than ever before, by a lot, not just by little. You see this in chess, right? Where we can measure performance very well. There’s a lot more young talent from many different places, including the US. So, aging hasn't mattered yet. Maybe for a few places, but not here.
+
+Dwarkesh Patel   
+
+What do you think will change in talent spotting as society becomes older?
+
+Tyler Cowen   
+
+It depends on what you mean by society. I think the US, unless it totally screws up on immigration, will always have a very seriously good flow of young people that we don't ever have to enter the aging equilibrium the way Japan probably already has. So I don't know what will change. Then there's work from a distance, there's hiring from a distance, funding from a distance. As you know, there's EV India, and we do that at a distance. So I don't think we're ever going to enter that world..
+
+Dwarkesh Patel   
+
+But then what does it look like for Japan? Is part of the reason that Japanese cultures and companies are arranged the way they are and do the recruitment the way they do linked to their demographics? 
+
+Tyler Cowen   
+
+That strikes me as a plausible reason. I don't think I know enough to say, but it wouldn't surprise me if that turned out to be the case.
+
+Dwarkesh Patel   
+
+To what extent do you need a sort of “great man ethos” in your culture in order to empower the top talent? Like if you have too much political and moral egalitarianism, you're not going to give great people the real incentive and drive to strive to be great.
+
+Tyler Cowen   
+
+You’ve got to say “great man or great woman ethos”, or some other all-purpose word we wish to use. I worry much less about woke ideology than a lot of people I know. It's not my thing, but it's something young people can rebel against. If that keeps you down, I'm not so impressed by you. I think it's fine. Let the woke reign, people can work around them.
+
+Dwarkesh Patel   
+
+But overall, if you have a culture or like Europe, do you think that has any impact on––
+
+Tyler Cowen   
+
+Europe has not woken up in a lot of ways, right? Europe is very chauvinist and conservative in the literal sense, and often quite old fashioned depending on what you're talking about. But Europe, I would say, is much less woke than the United States. I wouldn't say that's their main problem, but you can't say, “oh, they don't innovate because they're too woke”, like hang out with some 63 year old Danish guys and see how woke you think they are once everyone's had a few drinks.
+
+Dwarkesh Patel   
+
+My question wasn't about wokeism. I just meant in general, if you have an egalitarian society.
+
+Tyler Cowen   
+
+I think of Europe as less egalitarian. I think they have bad cultural norms for innovation. They're culturally so non-egalitarian. Again, it depends where but Paris would be the extreme. There, everyone is classified right? By status, and how you need to wear your sweater the right way, and this and that. Now, how innovative is Paris? Actually, maybe more than people think. But I still think they have too few dimensions of status competition. That's a general problem in most of Europe–– too few dimensions of status competition, not enough room for the proverbial village idiot.
+
+Dwarkesh Patel   
+
+Interesting. You say in the book, that questions tend to degrade over time if you don't replace them. I find it interesting that Y Combinator has kept the same questions since they were started in 2005. And of course, your co-author was a partner at Y Combinator. Do you think that works for Y Combinator or do you think they're probably making a mistake?
+
+Tyler Cowen   
+
+I genuinely don't know. There are people who will tell you that Y Combinator, while still successful, has become more like a scalable business school and less like attracting all the top weirdos who do amazing things. Again, I'd want to see data before asserting that myself, but you certainly hear it a lot. So it could be that Y Combinator is a bit stale. But still in a good sense. Like Harvard is stale, right? It dates from the 17th century. But it's still amazing. MIT is stale. Maybe Y Combinator has become more like those groups.
+
+Dwarkesh Patel   
+
+Do you think that will happen to Emergent Ventures eventually?
+
+Tyler Cowen   
+
+I don't think so because it has a number of unique features built in from the front. So a very small number of evaluators too. It might grow a little bit, but it's not going to grow that much. I'm not paid to do it, so that really limits how much it's going to scale. There's not a staff that has to be carried where you're captured by the staff, there is no staff. There's a bit of free riding on staff who do other things, but there's no sense of if the program goes away, all my buddies on staff get laid off. No. So it's kind of pop up, and low cost of exit. Whenever that time comes.
+
+Dwarkesh Patel   
+
+Do you personally have questions that you haven't put in the book or elsewhere because you want them to be fresh? For asking somebody who's applying to her for the grant? 
+
+Tyler Cowen   
+
+Well, I didn't when we wrote the book. So we put everything in there that we were thinking of, but over time, we've developed more. I don't generally give them out during interviews, because you have to keep some stock. So yeah, there's been more since then, but we weren't holding back at the time.
+
+Dwarkesh Patel 
+
+It’s like a comedy routine. You gotta write a new one each year.
+
+Tyler Cowen 
+
+That's right. But when your shows are on the air, you do give your best jokes, right?
+
+Will Reading Cowen’s Book Help You Win Emergent Ventures?
+
+Dwarkesh Patel 
+
+Let’s say someone applying to emergent ventures reads your book. Are they any better off? Or are they perhaps worse off because maybe they become misleading or have a partial view into what's required of them?
+
+Tyler Cowen   
+
+I hope they're not better off in a way, but probably they are. I hope they use it to understand their own talent better and present it in a better way. Not just to try to manipulate the system. But most people aren't actually that good at manipulating that kind of system so I'm not too worried.
+
+Dwarkesh Patel   
+
+In a sense, if they can manipulate the system, that's a positive signal of some kind.
+
+Tyler Cowen   
+
+Like, if you could fool me –– hey, what else have you got to say, you know? [laughs]
+
+Dwarkesh Patel   
+
+Are you worried that when young people will encounter you now, they're going to think of you as sort of a talent judge and a good one at that so they're maybe going to be more self aware than whether––
+
+Tyler Cowen   
+
+Yes. I worry about the effect of this on me. Maybe a lot of my interactions become less genuine, or people are too self conscious, or too stilted or something.
+
+Dwarkesh Patel   
+
+Is there something you can do about that? Or is that just baked in the gig?
+
+Tyler Cowen   
+
+I don't know, if you do your best to try to act genuine, whatever that means, maybe you can avoid it a bit or delay it at least a bit. But a lot of it I don't think you can avoid. In part, you're just cashing in. I'm 60 and I don't think I'll still be doing this when I'm 80. So if I have like 18 years of cashing in, maybe it's what I should be doing.
+
+Identifying talent early
+
+Dwarkesh Patel   
+
+To what extent are the principles of finding talent timeless? If you're looking for let's say, a general for the French Revolution, how much of this does the advice change? Are the basic principles the same over time?
+
+Tyler Cowen   
+
+Well, one of the key principles is context. You need to focus on how the sector is different. But if you're doing that, then I think at the meta level the principles broadly stay the same.
+
+Dwarkesh Patel   
+
+You have a really interesting book about autism and systematizers. You think Napoleon was autistic?
+
+Tyler Cowen   
+
+I've read several biographies of him and haven’t come away with that impression, but you can't rule it out. Who are the biographers? Now it gets back to our question of: How valuable is history? Did the biographers ever meet Napoleon? Well, some of them did, but those people had such weak.. other intellectual categories. The modern biography is written by Andrew Roberts, or whoever you think is good, I don't know. So how can I know?
+
+Dwarkesh Patel   
+
+Right? Again, the issue is that the details that stick in my mind from reading the biography are the ones that make him seem autistic, right?
+
+Tyler Cowen   
+
+Yes. There's a tendency in biographies to storify things, and that's dangerous too. 
+
+Dwarkesh Patel   
+
+How general across a pool is talent or just competence of any kind? If you look at somebody like Peter Thiel–– investor, great executive, great thinker even, certainly Napoleon, and I think it was some mathematician either Lagrangian or Laplace, who said that he (Napoleon) could have been a mathematician if he wanted to. I don't know if that's true, but it does seem that the top achievers in one field seem to be able to move across fields and be top achievers in other fields. Is that a pattern that you see as well? 
+
+Tyler Cowen   
+
+Maybe somewhat, but I don't think you can be top at anything–– or even most things. A lot of these are very successful people in other areas might just be near millionaires. Maybe they ran a car dealership and earned $3 million in 1966. Which was a pretty good life back then. But it's not like what they have ended up being.
+
+Dwarkesh Patel   
+
+You quote Sam Altman in the book, and I thought it was really interesting. He says, “The successful founders I funded believe that they are eventually certain to be successful.” To what extent is this self-belief the result or the cause of being talented?
+
+Tyler Cowen   
+
+Maybe it's both, but keep in mind the context for Sam. He’s talking about companies and startups, and startups succeed at such a low rate that the success is really on selecting for people with quite a bit of overconfidence. In other sectors, you won't in general find that same level of overconfidence. So you have to be careful. I agree with Sam, but he's talking about one set of things, not everything.
+
+Dwarkesh Patel   
+
+Is that not true of other fields? If you're looking for a public intellectual, you're partially hoping for the outcome that they become remembered or their ideas have a lot of influence. That's also a rare thing to be able to do.
+
+Tyler Cowen   
+
+I think more people stumble into it, for instance. There's more people who know early on that they can do it, but not for Sam-like reasons of overconfidence. They kind of know it because they can, and there are enough early tests. So I still think it's different. And there's more stumbling into it by accident.
+
+Dwarkesh Patel   
+
+Which better describes your intellectual journey? Like were you in some sense a little overconfident in your 20s?
+
+Tyler Cowen   
+
+There's an interesting break in my life that relates to stumbling into things. I grew up with no internet so I thought I would do quite well. In that sense, I was overconfident, but I had no notion that I would have large numbers of people listening to me. I just didn't think about the internet! So in that sense, I totally stumbled into the particular way in which I ended up doing well. But I was still, at a younger age, overconfident. 
+
+Dwarkesh Patel   
+
+That’s interesting. I wanted to backtest some of your methods of finding talent, but for certain people. So we just talked about Haruki Murakami; let's use him as an example. In his 30s, I believe he was running a bar. The novelist Haruki Murakami is just running a bar, right? It doesn't have to be him in particular, but just generally think of like a 30-year-old–– you go to Japan, you go to a bar, you start talking to the bartender who also happens to be in the place. What would the conversation look like? How would you identify that this person could be a great novelist or anything?
+
+Tyler Cowen   
+
+I think my chance of identifying great novelists is very low. And it's one reason why it's not something I try to do.
+
+Dwarkesh Patel   
+
+Interesting. Well, why is that?
+
+Tyler Cowen   
+
+You see, when I look at biographies, there seem to be so many instances of people who don't show obvious signs of promise early on. Maybe if I knew more about such people, I could develop markers. It's possible, right? Like my chance of being good at that is probably way above average, but I definitely don't think I'd be good at it now.
+
+Dwarkesh Patel   
+
+Interesting. And what do you think makes novelists so hard to predict?
+
+Tyler Cowen   
+
+They can blossom much later, and very often, they do. A very high percentage of them are women whose earlier lives are interrupted–– often by children, but not only that, this gets back to the late bloomers thing. There's also something quite discreet about a novel–– until a person has done it, it's hard to tell how good they are. Or say a great nonfiction book: with Taleb or Pinke or whoever, you could read their earlier blog posts and just flat out see, “oh, they're really smart, maybe they could write a great book.” I wouldn't say anyone could do that, but most people we know could do that. I can spot them earlier. But with a novel, I can't.
+
+Dwarkesh Patel   
+
+Do you think that's also true? It sounds very similar to a startup founder. Even with regards to the time horizon, you haven't really done anything that's like it before. The time horizon would be maybe like 5 to 10 years? Maybe it'll take shorter, but––
+
+Tyler Cowen   
+
+There are more intermediate benchmarks with startups. Just how good a job do they do trying to raise their first round? There's a lot you can watch. It's not indicative of product-fit to the market and a bunch of other things. But you see a lot early on. How good is the pitch deck? Again, there are some great things that had terrible pitches, but I think you see way more early signs. Maybe novelists show early signs that I don't know about. So again, I'm suggesting that maybe I could learn, but right now, I'm totally at peace with that one. Joseph Conrad, was I going to get that? Herman Melville? I don't think so.
+
+Dwarkesh Patel   
+
+Interesting. Okay, well, let's backtest with another––
+
+Tyler Cowen   
+
+Like, “Hey Joe, you're from Poland, and you're gonna write in English?” Come on you know, get real.
+
+Dwarkesh Patel   
+
+Scott Aaronson, as you know, is a famous complexity theorist, computer scientist, and he was actually my former professor. He wrote in a blog post about standardized tests “I was a 15 year old with perfect SATs and a published research paper, but not only was I young and immature with spotty grades and weird academic trajectory, I had no sports, no music, no diverse leadership experiences. I was a narrow linear A to B thinker who lacked depth and emotional intelligence. The exact opposite of what Harvard and Princeton were looking for in every way.” Now, what would happen to Scott Aaronson if he at that time had applied to Emergent Ventures? 
+
+Tyler Cowen   
+
+I’ve never met Scott, but odds are very strong that we’d fund him. From the sound of it. Again, I don't know him at all.
+
+Dwarkesh Patel   
+
+But the narrow linear thinker––
+
+Tyler Cowen   
+
+I don't know what that means. A lot of people misdescribe themselves. They say things like, “Oh, if you ask me those questions, I would suck.” And they're wrong. They wouldn't suck. I know they don't. And I suspect Scott's self-description is a bit off. But I think he would do very well at Emergent Ventures..
+
+Existential Risks and the Longterm
+
+Dwarkesh Patel   
+
+Yeah, I agree. Let's talk about Effective Altruism. You have expressed skepticism to the idea that you can use longtermism to say that existential risks matter more than everything else because we should be optimizing for the branch of the decision tree where we survive for millions of years. Can you say more of why you're skeptical of that kind of reasoning?
+
+Tyler Cowen   
+
+Well, I'd like to express my skepticism a little more clearly. I think existential risk matters much more than almost anyone thinks. In this sense I'm with the EA people, but I do think they overvalue it a bit. I would just say I don't think there are many good things we can do to limit existential risks that are very different from looking for mortality and growing GDP, supporting science, trotting down a pretty familiar list of things that don't all have to be that long-term. In that sense, I think they flip out about it a bit too much and have all these super-specific hypotheses. But we should invest in good things now. I do favor an Asteroid Protection Program, by the way.
+
+Dwarkesh Patel   
+
+To the extent that there was a trade off, in that hypothetical, would you put the same weight on extra work that they do? Or do you just differ with them on how you actually go about solving essential risks?
+
+Tyler Cowen   
+
+Probably more the latter. I think they're not epistemically modest enough when it comes to existential risk. They think they have all these petite very particular hypotheses about AGI and we've got to prevent this. That's where I really differ from them. I think their ability to limit that risk, however great or small, might basically be zero. That if AGI is a risk, it's the worst set of procedures that will do you in and you can't regulate those very well at all. Putting everyone at your favorite tech company through this training about alignment… I'm not against doing that. But like, come on! You know, if it's gonna happen, it's like handling pandemic materials. It's the sloppiest people you've got to worry about, and they are not sitting in on your class on AGI in alignment.
+
+Dwarkesh Patel   
+
+Yes. Although it isn't surprising to the extent that companies in the US that (maybe) care more than other other entities about alignment are actually the first currently. Like Open AI for instance.
+
+Tyler Cowen   
+
+Yes but it won't matter. Because if that view is the correct one, and I don't think it is, the more screwed up successors will just come 10 years later. And you know, Skynet goes live.. but 10 years later.
+
+Dwarkesh Patel   
+
+I'm curious, why is the possibility of humanity surviving for a very long time, not something that is a strong part of your worldview–– given that you’re a long termist.
+
+Tyler Cowen   
+
+I think the chance of there being a major war with nuclear weapons or whatever comes next. While very low in any given year, you just have the clock tick, and that chance adds up. We're not going to be here for another 100,000 years. It’s a simple argument, but I'm not a pessimist about any given year at all.
+
+Dwarkesh Patel   
+
+Right, but if the odds are like sufficiently above zero, then do you just not buy the argument that anything above zero is just huge? And that we should be optimizing for that?
+
+Tyler Cowen   
+
+I'm all for efforts to make nuclear weapons safer. But it's hard to know exactly what to do. Like what do we do in Ukraine now? Should we be more tough, less tough? There's different arguments, but they're not that different from just the normal foreign policy arguments. There's not some special branch of EA longtermism that tells you what to do in Ukraine. Those people, if anything, tend to be kind of underinvested in historical and cultural forms of knowledge. So I just don't think you buy that much extra stuff by calling yourself worried about existential risk. It's plenty of people in the US foreign policy establishment who think about all this stuff. Until recently, most of them had never heard of EA. Maybe even still. It doesn't change the debate much.
+
+Dwarkesh Patel   
+
+I'm sure you've heard these arguments, but it seems with nuclear war, it's hard to imagine how it could kill every single person on the planet. 
+
+Tyler Cowen   
+
+It probably won’t. But we’ll be permanently set back kind of forever. And in the meantime, we can't build asteroid protection or whatever else. It’ll just be like medieval living standards: super small population, feudal governance, lots of violence, rape. There's no reason to think like, oh, read a copy of the Constitution in and 400 years, we're back on track. That's crazy wrong.
+
+Dwarkesh Patel   
+
+We did emerge from feudalism, right? So if it happened once, isn't that example enough? 
+
+Tyler Cowen   
+
+We don’t know! There’s like–– hundreds of thousands of years of human history where we seem to make diddly squat progress. We don't know why. But don't assume that just because it happened once that means you always rebuild. I don't think it does.
+
+Dwarkesh Patel   
+
+Right. If it's not just the idea of everything being laid in space, what would it take for our descendants to be able to recover industrial civilization? 
+
+Tyler Cowen   
+
+I don't think we have good theories of that at all. I would just say we had a lot of semi-independent operating parts of the world, circa 1500. And not that many of them made much progress.
+
+Dwarkesh Patel   
+
+Right. I mean, I think of you as an optimist––at least by temperament. But this seems like one of the more pessimistic things I've heard overall, anywhere, because of the idea that not only will human civilization be decimated almost surely, but that they will never be able to recover. 
+
+Tyler Cowen   
+
+I wouldn't say never, you know, never say never. But there's no reason to assume you just bounce back–– I would say we don't know. Other problems will come upon us: nuclear winter or crop failures, climate change. It just seems very daunting to me. And like the overall history of mammalian species is not that optimistic. The fact that sex exists is biologically very pessimistic. I mean, I don't think of myself as a pessimist, but you can call it that.
+
+Dwarkesh Patel   
+
+Can you explain that quote? “The fact that sex exists is biologically very pessimistic.”
+
+Tyler Cowen   
+
+Anything that stands still gets destroyed by parasites or destroyed by something. So you've got to randomize and change what you are through sex. That's like the clearly winning model for at least larger things. That's a sign nothing survives for that long. So the existence of sex is the most pessimistic thing there is, I find that ironic. So I'm not the pessimist, sex is.
+
+Dwarkesh Patel   
+
+Let's say I take your argument that economic growth is very important. Does that imply anything in particular about what somebody should do with their life? Or is it basically just an argument about policy?
+
+Tyler Cowen   
+
+It can guide your life a bit. So to think just more carefully: How do you fit in? Maybe you could do something important. Maybe you could have higher aspirations. For most people, that won't matter. But again, certainly some people could do much more. I do my best to try to help that along.
+
+Dwarkesh Patel   
+
+Right. It doesn't have to do with the fact that we don't know much about what causes economic growth? Or is it just that you could never offer concrete advice about what you could do to increase economic growth?
+
+Tyler Cowen   
+
+I give concrete advice to people all the time with a grain of salt. I'll tell people, “I think you should go to this school, not that school.” That's concrete advice. I don't think we know so little about growth. We certainly know a lot about how to wreck growth, right? So we know enough.
+
+Dwarkesh Patel   
+
+Right, but not enough to create something like 80,000 hours for progress. What do you think? 
+
+Tyler Cowen   
+
+You mean an institution? I mean there's an Institute for progress..
+
+Dwarkesh Patel   
+
+No. 80,000 hours has a list, “here's the things you should consider doing with your career,” 
+
+Tyler Cowen   
+
+That’s not the right way to think about it. You want to sit down with the person, understand the entire context, see what they could do, see if there's a way you could or should bend up the curve. But a list now… that's a little to EA static maximization for me. If you focus more on learning about cultures, history, you're not going to come up with some list as the way to approach that.
+
+Dwarkesh Patel   
+
+What are culture and history going to show you?
+
+Tyler Cowen   
+
+They show how complex things are, and the people who made very significant contributions show how complex the inputs were into that. Or even people who did very terrible things like Napoleon–– understanding Napoleon, where he came from, the ideas he had, it’s super complicated. I don't really get the list version. Here's the list for baby Napoleon: like don't invade Russia or whatever. It just seems to miss the point.
+
+Cultivating Young Talent
+
+Dwarkesh Patel   
+
+If a young person were to read a bunch of biographies, not as early career advice, but just generally as trying to better understand how they can be more effective, do you think that would teach them that things are more complex than they thought? Would that give them any practical benefit?
+
+Tyler Cowen   
+
+I think both! Napoleon is a good person to read biographies of. When I was young, sports and chess players were my grist. And I feel I learned a lot from that. I don't know that it was any big lesson, but it’s just how you saw all these histories of people persevering and self-improving. That's worth a lot. So I don't think it's a waste of time at all. I think it's probably essential. I don't know if you have to read biographies, like if you just follow sports careers, that might be enough. But that's kind of like reading a biography, right? YouTube can also do it! I don't like to fixate on the biography, they seem in a way, inefficiently long.
+
+Dwarkesh Patel   
+
+Is it like somebody having a blog and you following along with their blog on a weekly or daily basis?
+
+Tyler Cowen   
+
+Absolutely. That’s reading a biography. I've been blogging for almost 20 years, and I hope there's some lesson in the constancy of that for people.
+
+Dwarkesh Patel   
+
+I was struck while reading your book that some of the advice you offer for how to ask good questions in hiring is actually great advice for also how to ask good questions in a podcast. Like you keep the conversation flow going to get them interested in talking about something that they're very interested in.
+
+Tyler Cowen   
+
+Don't worry about changing the subject, Just get them on something where they're involved and excited. 
+
+Dwarkesh Patel   
+
+So to what extent was just informed by having a podcast?
+
+Tyler Cowen   
+
+Oh, quite a bit. You can think of podcasts in the sense like interviews. They're kind of very judgmental, like, “How worthy are you?” Right? People are afraid more and more.
+
+Dwarkesh Patel   
+
+You have a quite mellow personality, and I'm similar in that way. Do you think that has any sort of intellectual consequence in the sense that if you could experience like this, the exuberant highs or the incapacitating lows, you would be maybe less modest or moderate about your views about longtermism and economic growth? Like you’d be the type to want to get everyone into the galaxy?
+
+Tyler Cowen   
+
+I might be more creative, but I think I would be more wrong.
+
+Dwarkesh Patel   
+
+Interesting. On that trade off, where should one be if they're trying to reason about important topics? Should you just try to increase the variance so you can get to the important things?
+
+Tyler Cowen   
+
+Again, I think it’s context specific. You want to understand where a person is, understand they were probably born that way and that you can only budge them so much, regardless of wherever you might think they should be. Just try to marginally improve how they're dealing with the flow coming their way. I prefer to work with people's strengths and boost their strengths, rather than have a list set out of how to reform them. I think it's a way more productive way to do things. It's lower conflict, and as a coach or mentor or co-worker, it's way less stressful for you. Because you're being very positive with them, and it's sincere, so you'll just do more of it. If you're hitting them over the head, “Why don't wake up at 7am in the morning,” and maybe they should, but it's like come on, you have something better to do than that. They can figure that out for themselves. Tell them something else that they can actually find useful.
+
+The Lifespans of Public Intellectuals
+
+Dwarkesh Patel   
+
+When you interviewed Andrew Sullivan, one of the things he said was that the reason he decided to write about gay rights was that he got HIV, and he realized he might not have that long to live. Yeah. Ofcourse, we see the consequence of that in society today. If you find out you only have five years to live, what is the book you would write and what is the argument you would make?
+
+Tyler Cowen   
+
+Five years from now? I think I would do more Emergent Ventures. I would finish the book I'm working on, and I might consider a sequel to Talent depending on Daniel's plans. But my marginal thing is I don't feel like writing more books. Though, I will write more books.
+
+Dwarkesh Patel   
+
+So like, it's like in your late career that you think the most important thing is institution building and talent spotting.
+
+Tyler Cowen   
+
+Yes, at this point. I've written like 16-17 books. So it's not like I haven't had my say.
+
+Dwarkesh Patel    
+
+One thing about top performers in many fields is that they have intricate philosophies and worldviews. Like, you know, Peter Thiel obviously with the religion stuff, but even like somebody like George Soros, with the theory of reflexivity, to what extent do you think that these are very important in their success? Maybe if you just have somebody who has plus four-standard-deviations in verbal intelligence, one of the things they'll do other than be very successful is to just create intricate worldviews?
+
+Tyler Cowen   
+
+With all the people I know who are like that, such as Peter, I feel that it was important for their success. Soros? I don't know. But since all the people I do know, it seems to matter. My intuition is that it matters a lot more broadly. Like, you need a unique way of looking at the world.
+
+Dwarkesh Patel   
+
+Is that a correlate in the sense that it jolts you out of complacency? 
+
+Tyler Cowen   
+
+And it protects you from other people's idiocy. Your mimetic desires get channelled away from a lot of other things that might even be good overall, but they would distract you.
+
+Dwarkesh Patel   
+
+Right. But maybe the actual theory itself is not the edge.
+
+Tyler Cowen   
+
+Correct. Now sometimes it is the edge. There’s the famous story of how Peter knew Rene Girard and saw Facebook would be a big thing, right? It's probably true. But it doesn't have to be the edge, I would say.
+
+Dwarkesh Patel   
+
+Yeah. So one thing I found really interesting in your book, What Price Fame was you had this interesting discussion where you cite your former adviser, Thomas Schelling, about how certain celebrities can make themselves focal points in the culture. I'm curious about how we can apply this to public intellectuals. In recent years, we've seen a lot of public intellectuals become a focal point in the cultural war or in just general discussions. So in some sense, this has happened to you as well, right? Where we've seen this with many of your podcast guests: Jordan Peterson, Christopher Hitchens, Sam Harris––how do public intellectuals make themselves focal points? 
+
+Tyler Cowen   
+
+Well, by doing something noteworthy, right? It can be an idea, but it can also be a form of performance art, and maybe performance art has become more important. I think my own vocality has more to do with performance art than with any specific idea I have. I think very carefully about how to stay somewhat focal for a long period of time. So it's quite unusual that I've mostly increased my vocality for over 20 years now. It's much more common that people come and go and decline. I work quite hard not to do that. A lot of the IDW people: very clear peaks, which now lie in the past, and I suspect will have fairly rapid declines. Well I don't want that to happen to me. I want to be in the thick of things, just for selfish reasons.
+
+Dwarkesh Patel   
+
+What do you think is the explanation for why they peak so early?
+
+Tyler Cowen   
+
+I don't know if early is the word. Jordan Peterson was at it for a long time. But they made extreme bets on very particular ideas, and maybe different people will disagree about those ideas. But I think a lot of them are losing ideas, even if they might be correct in some ways. I've done much less to bet on a single idea. You can say it’s kind of market-based economics. But it's not so radical. Like we're still in a capitalistic society. I have enough to say about new issues that come along all the time. I’ll be taking a mostly pro-capitalist point of view. Like it's just not that obsolete; maybe it's not peak fashion now, but it's fine to be doing that.
+
+Dwarkesh Patel   
+
+They were overleveraged in the GOP margin cult.
+
+Tyler Cowen   
+
+I'm not making a big bet on Ivermectin is one way to put it.
+
+Risk Aversion in Academia
+
+Dwarkesh Patel   
+
+Why doesn't tenure make academics less risk averse?
+
+Tyler Cowen   
+
+I've thought about this quite a bit. I think the selection filters are very strong. They're very pro-conformity. People care a lot about their peers and think of them. You're selecting conformists to begin with, and so you're just literally not trained in how to take risks. It's not always that easy, right? So let's say you're like F*** this tenure. They get up and take a risk. What do you say that the demand curve slope upwards? [laughs] It's just not that easy.
+
+Dwarkesh Patel   
+
+Is there something that would be analogous to a course on risk that makes more people more risk-taking? 
+
+Tyler Cowen   
+
+I would say at Mercatus, we have a lot of students come through here, and we do try to teach them all in different ways about how to take more career risk. I think we've been remarkably successful at that. 
+
+Dwarkesh Patel 
+
+What is being taught that makes it more risky?
+
+Tyler Cowen   
+
+Well, first of all, they observe what we all do. And they just learn by example. If they want advice, like how to run a podcast, how to write a blog, how to try to work for someone on the Senate Banking Committee, we have people who've done that, and we'll put them in touch. So we don't have “a class.” But there's a very serious, focused effort that anyone with any interest in learning how to do things and take more risk can get that here, for free.
+
+Dwarkesh Patel   
+
+How malleable is risk aversion?
+
+Tyler Cowen   
+
+I think a lot of the students we produce have done unusual things. Certainly relative to other programs. It could be better, of course, but us leading by example is the number one way we teach them.
+
+Dwarkesh Patel   
+
+You had an interesting post in 2011 where you're talking about which public intellectuals have been the most influential. One thing I noticed from the list was that the people you said who were most influential were people who were advocating for one very specific narrow policy chain their entire careers.
+
+Tyler Cowen   
+
+A lot of those people fade. Now the two I cited: Andrew Sullivan and Peter Singer have not faded. It's a risky strategy. I would get bored too quickly doing that.
+
+Dwarkesh Patel   
+
+Okay, I was just about to ask: is there a reason why you haven't adopted a strategy yourself? 
+
+Tyler Cowen   
+
+That's the way in which I am risk averse. I don't have a single issue. Like for Andrew it was gay marriage, and great, he won. That's amazing. I'm all for it. But in part one, because it is the thing he cared about most. And I don't have a comparable thing like that. The closest thing that I have is like, “here's my way of thinking I'm going to show it to you.” And I have done that pretty monomaniacally. And I think I've been somewhat successful.
+
+Dwarkesh Patel   
+
+Does this imply that the most interesting intellectuals will never be the most influential? Because to be influential, you have to focus on just one thing? 
+
+Tyler Cowen   
+
+On average, that’s true. So John Stuart Mill was super interesting, and he wrote about many, many things and he had some influence. But was there a single thing where he saw it through and made it happen? I don't know. Or Richard Cobden, not too interesting as a deep economic thinker, but free trade against the Corn Laws–– he and John Bright made that happen. I would say they were correct, but it's not that interesting to read them.
+
+Dwarkesh Patel   
+
+Do you think some people just change people's worldviews in general? They might not have impacted any one person all that much, no one’s going to become evangelists because they read this person, but they could be impactful towards the broader cultural change in a way that's hard to measure? Do you think these people are especially influential over the long term? 
+
+Tyler Cowen   
+
+I don't know, I hope there's some influence there, but it's very hard to say. Hard to measure.
+
+Dwarkesh Patel   
+
+Much of the blogosphere or the legendary parts of it were started in 2000s to 2010s–– people like you, Paul Graham, and Scott Alexander. Do you think that people starting blogs today are just LARPing the new moment you had at the time, or do you think that this is actually a format that can survive the test of time?
+
+Tyler Cowen   
+
+I think it will survive. So we have early bloggers, Samuel Pepys, James Boswell, they've survived, right? It's good material. That's the 17th and 18th centuries. So why can’t it survive today when technology makes it easier and more readily preserved? Just the notion that you write and someone reads seems to be extremely robust.
+
+Dwarkesh Patel   
+
+Right. So you write on the internet on a regular basis? 
+
+Tyler Cowen   
+
+Why not? So many writers like writing on a regular basis, and it has some practical advantages so I'd be very surprised if that went away. Now, at this moment, you could say substack is bigger than blogs, it's a bit different. But it's broadly a similar thing.
+
+Dwarkesh Patel   
+
+Well, what do you see as the differences between a substack and a blog?
+
+Tyler Cowen   
+
+Substack posts tend to be longer. With a lot of blogs, you're very much the editor and not just content-creator. You're sometimes an editor in substack, but much less. So something like what instapundit has done. I don't think there's really a substack version of that, for better or worse. You don't need one; it's done on blogs. He's mostly been an editor. A lot of Marginal Revolution is just me as editor, or sometimes Alex as editor.
+
+Dwarkesh Patel   
+
+Are you worried that the same format and look of substack will make people also intellectually less creative?
+
+Tyler Cowen   
+
+I think substack encourages posts that are too long, too whiny, and too self reflective, and too obsessed with a relatively small number of recurring topics. So do I worry? Yes but are there enough mechanisms in the whole thing for self-correction? Obviously, there's competition, readers get sick of stuff that's not great, it cycles through whatever, it'll be fine.
+
+Is Stagnation Inevitable?
+
+Dwarkesh Patel   
+
+Is the reason that we've been seeing a decline in research productivity explained by the buildup of scientific bureaucracy? If it's been consistent over decades, we just have slowly deteriorating research productivity that the only explanation can be that we just pick the low-hanging fruits.
+
+Tyler Cowen   
+
+I think that's a reason. But I don't think it's the most fundamental reason. In this sense, maybe like Patrick Collison would see it as more important than I do. I think exhausting the literal low hanging fruits at the technological level is the main reason. With those, you can replenish them with new breakthrough general purpose technologies. But that takes a long time. I see that as the main reason, and the ongoing bureaucratization of science–– I fully accept and want to reform and want to change. But it's not literally my number one reason for stagnation.
+
+Dwarkesh Patel   
+
+Right. Is it just like a sine wave where you'll just have periods of easy-grab innovations and then harder-grab? Or is there something particular about this stagnation period?
+
+Tyler Cowen   
+
+I don't know what the function looks like. It just seems to me that today, we have enough diverse sources of ideas, enough wealth, enough different universities, research labs, that it ought not to go too badly. There's an awful lot of conformity, but it doesn't seem that absolute or extreme. With something like mRNA work, right. AI is making a lot of progress, fusion is being talked about in a serious way. It doesn't seem that grim to me.
+
+Dwarkesh Patel   
+
+What I find interesting is that you are an optimist in the short term, given this uncertainty, but in the long term, given the uncertainty about the future of human civilization, you're a pessimist.
+
+Tyler Cowen   
+
+It’s the same view. The more “progress” advances, the easier it is to destroy things. The chance of an accident can be small, and I think it is small. But again, bad things happen. It’s easier to destroy than create.
+
+Dwarkesh Patel   
+
+Right. Do you have an emotional reaction to the idea that the human story is almost certain to end? Do you think we only have 700 years of this left?
+
+Tyler Cowen   
+
+I don't know what I can do about it. I try actually to do something about it so I have a reaction. But I'm aware of the extreme fallibility embedded in all such projections. I'm like, let's just wake up this morning, and let's do some stuff now. And like, I'm going to do it. I hope there's a payoff under all these different scenarios.
+
+Dwarkesh Patel   
+
+Yeah. Do you think that as state capacity just continues to decline—
+
+Tyler Cowen   
+
+I don't know that it's declining. It feels like it is. But it's a bit like being in the longest line at the supermarket, you notice it more. The US State has done a bunch of things well. If you look at the war against terror, I don't know who or what gets the credit, but compared to what we expected right after 9/11, it’s gone okay. Operation warp speed went amazingly well. Just the local DMV works way better than it used to. So it's a very complex picture when it comes to state capacity. It's not flat out in decline, I would say.
+
+Dwarkesh Patel   
+
+So what is the explanation for why it gets better over time? There's a public choice theory explanation for why it might get worse, but to the extent that certain parts of it are getting better over time..
+
+Tyler Cowen   
+
+The explanation I have is so stupid, I'm embarrassed to present it. You have some people in the system who want to make it better, and they make it better. It’s not very sophisticated. I don't know a deep way of tracing it to differential incentive structures. It’s just demand.
+
+Dwarkesh Patel   
+
+Okay. So are you optimistic about libertarianism in the long term, if saved capacity continues to get better?
+
+Tyler Cowen   
+
+I don't think we'll ever have libertarian societies. I think there's quite a good chance we will get more good reforms than bad ones, so capitalism, democracy, and broadly classical liberal values will advance. That's optimistic. I think there's quite a good chance for that.
+
+Dwarkesh Patel   
+
+Is there any difference between you and Fukuyama’s view of the end of history? That there’s nothing more compelling than capitalist liberal democracy?
+
+Tyler Cowen   
+
+Well, he's changed his view a number of times. You can read the original Fukuyama as being quite pessimistic, there's something about demand for esteem and self-respect that the end of history doesn't satisfy so that unravels. Then there's the Fukuyama view that the rest of history is all about how we’ll manipulate biology–– which seems to be significant. Maybe he overstated it, but I don't dismiss it at all. Then it's like all these other Fukuyama restatements since then that makes me dizzy. I just asked a simple question: are you long the market or short the market? I'm long the market. I don't know what he is. Very few people are short so I hope he's long the market too. This is one of my favorite forcing questions. Are you long the market? Are you short the market? People spew so much bullshit, and it's all tribalism, so when you ask them “Are you short the market?”, they say something like “Oh, well, I haven't bought anything lately.” It's like they become morons when you ask them this question. They should just say, “those are my tribalist sympathies, I'm neurotic and really stressed.” What I do is pretty optimistic, of course.
+
+Dwarkesh Patel   
+
+But the general fact that people are more neurotic, it seems like Fukuyama is right in the sense that, the last man in liberal democracy will be a neurotic mess. I think that's how somebody could characterize American politics at least. So is he right in a way that humans are not satisfied by liberal democracies?
+
+Tyler Cowen   
+
+I don't think people are satisfied by anything. He's right. I'm not sure it's a special problem for a liberal democracy, probably less. There are other ways to anesthetize yourself.
+
+Dwarkesh Patel   
+
+So there's no form of government or like no structure of society where people are just like, generally a mess.
+
+Tyler Cowen   
+
+I haven't seen it. Yeah, like, when would that have been? Maybe right after you went to war, there's some kind of giddiness and desire to build for the future. But it can't last that long.
+
+What are Podcasts for? 
+
+Dwarkesh Patel   
+
+I'm curious why you continue to read. One of the reasons you say that reading is fast for you is because you know many of the things that are already in books. So then why continue doing it, if you already know many of the things that are in there?
+
+Tyler Cowen   
+
+Well, it's often frustrating, but I do try to read in new areas. I very much prefer travelling to reading as a way of learning things. But I can't always travel. At the margin, I would rather travel more and read less. Absolutely.
+
+Dwarkesh Patel   
+
+Okay. Let me ask a meta question. What do you think podcasts are for? What is happening?
+
+Tyler Cowen   
+
+To anaesthetize people? To feel they're learning something? To put them to sleep. So they can exercise and not feel like idiots. Occasionally to learn something. To keep themselves entertained while doing busy work of some kind.
+
+Dwarkesh Patel   
+
+Is this the same as the anesthetizing? [laughs]
+
+Tyler Cowen   
+
+You want to feel you're imbibing the most important ideas, and there are very costly, tough ways to do that. For example: to actually work on one of those problems as a researcher. But most people can't do that (through no fault of their own). Even if they’re academics, maybe they just can't do it. So one of the next best things is to listen to someone to at least pretend that they've done it. And it's okay, it's a substitute. Like, why not? What are you supposed to do? Watch TV?
+
+Dwarkesh Patel   
+
+Okay, but is your own podcast a complement to actual intellectual inquiry?
+
+Tyler Cowen   
+
+I don't assume that it is. I think of it as a very high-class form of entertainment. More than anything, right, which I like to be clear. I don't feel bad about that.
+
+Dwarkesh Patel   
+
+Yeah, but I do wonder if the substitute would have actually been real engagement or if it would have just been just pure entertainment.
+
+Tyler Cowen   
+
+It will probably be a lesser podcast, I guess. 
+
+Dwarkesh Patel   
+
+Yeah. Well, on that note, Tyler, this was a lot of fun. I do want to thank you, especially because you were my fourth guest on the podcast, and it was great having you on early; it was a huge help in terms of growing the podcast.
+
+Tyler Cowen   
+
+Happy to be on it again. Yeah, thank you for coming by.
