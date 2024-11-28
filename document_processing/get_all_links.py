@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from typing import List
 
 URL = "https://www.dwarkeshpatel.com/podcast"
-csv_file_path = "links.csv"
+csv_file_path = "artifacts/links.csv"
 
 def get_all_links() -> List:
     LINKS = []
