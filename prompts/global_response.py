@@ -22,7 +22,7 @@ def get_global_response(query: str, supporting_docs: List[str]) -> str:
                 "content": prompt,
             }
         ],
-        model="llama-3.2-90b-text-preview",
+        model="llama-3.1-70b-versatile",
     )
 
     return chat_completion.choices[0].message.content

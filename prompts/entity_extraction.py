@@ -63,7 +63,7 @@ def get_entities(text):
                 "content": text,
             }
         ],
-        model="llama-3.2-90b-text-preview",
+        model="llama-3.1-70b-versatile",
         response_format={"type": "json_object"}
     )
     
