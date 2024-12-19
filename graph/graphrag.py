@@ -16,6 +16,21 @@ from document_processing import merge_chunks
 from prompts import get_entities, get_global_response, get_community_summary, glean_text
 
 class Graphrag:
+    """
+    Graphrag is a class designed to process text chunks, create a graph representation of entities and relationships,
+    detect communities within the graph, visualize the graph, store the findings in a vector database for
+    similarity search and search over the findings.
+
+    Attributes:
+        Graph (nx.Graph): The base graph representing entities and relationships.
+        community_nodes (List[str]): List of community nodes detected in the graph.
+        community_summary (Optional[str]): Summary of the community findings.
+        community_factual_findings (List[str]): List of factual findings for each community.
+        vector_db (FAISS): Vector database for storing embeddings.
+        embeddings (HuggingFaceEmbeddings): Embeddings model for vectorizing text.
+        relationships_no_gleaning (int): Number of relationships without gleaning.
+        relationships_with_gleaning (int): Number of relationships with gleaning.
+    """
     # base graph
     Graph: nx.Graph
 
@@ -33,8 +48,16 @@ class Graphrag:
     relationships_with_gleaning: int = 0
 
     def __init__(self, local: bool = False) -> None:
+        """
+        Initializes the Graphrag class. If `local` is False, it processes text chunks, creates a graph,
+        detects communities, visualizes the graph, and stores the findings in a vector database.
+        
+        If `local` is True, it loads the vector database from the local dir.
+
+        Args:
+            local (bool): Flag to indicate whether to load from local dir.
+        """
         if not local:
-            # TODO: Iterate through all the docs, call merge chunks and save to text_chunks
             self.text_chunks = merge_chunks(0)
 
             self.create_graph()
@@ -53,6 +76,12 @@ class Graphrag:
             self.load_index_from_local()
 
     def create_graph(self) -> None:
+        """
+        Creates a graph from the text chunks by extracting entities and relationships,
+        adding nodes and edges to the graph, and gleaning additional relationships.
+        
+        See https://arxiv.org/pdf/2404.16130 or https://israel-adewuyi.github.io/blog/2024/replicating-graphrag/ for what gleaning means 
+        """
         Graph = nx.Graph()
 
         for idx, chunk in enumerate(self.text_chunks):
@@ -98,6 +127,9 @@ class Graphrag:
         pass
 
     def detect_communities(self) -> None:
+        """
+        Community detection using the Leiden algorithm.
+        """
         communities = []
         index = 0
         for component in nx.connected_components(self.Graph):
@@ -111,13 +143,13 @@ class Graphrag:
                         communities.append(list(community))
                 except Exception as e:
                     print(f"Error processing community {index}: {e}")
-            # else:
-            #     communities.append(list(subgraph.nodes))
             index += 1
-        # print("Communities from detect_communities:", communities)
         self.community_nodes = communities
 
     def visualize_graph(self) -> None:
+        """
+        Visualizes the graph using Pyvis, with nodes colored and sized based on their type and degree.
+        """
         color_map = COLOR_MAP
         # Get the degree of each node
         degrees = dict(self.Graph.degree())
@@ -167,6 +199,9 @@ class Graphrag:
         net.show("network.html")
 
     def get_community_summaries(self) -> None:
+        """
+        Generates summaries for each detected community and stores the factual findings.
+        """
         assert self.community_summary is None, "Graph summaries filled already"
 
         with open("findings.txt", 'w', encoding='utf-8') as file:
@@ -183,6 +218,17 @@ class Graphrag:
         print("--- Completed community summary generation")
 
     def get_node_info(self, idx: int) -> List:
+        """
+        Retrieves information about the nodes in a specific community.
+        
+        The format of the node information is (node, node_description)
+
+        Args:
+            idx (int): Index of the community.
+
+        Returns:
+            List: List of information about all nodes in the community.
+        """
         nodes_context = []
 
         sub_nodes = self.community_nodes[idx]
@@ -196,12 +242,24 @@ class Graphrag:
         return nodes_context
     
     def load_index_from_local(self) -> None:
+        
         self.embeddings = HuggingFaceEmbeddings(model_name='sentence-transformers/all-mpnet-base-v2')
         self.vector_db = FAISS.load_local("faiss_index", 
                                           embeddings=self.embeddings,
                                           allow_dangerous_deserialization=True)
 
     def get_edge_info(self, idx: int) -> List:
+        """
+        Retrieves information about the edges in a specific community.
+        
+        The format of the edge information is (edge_node1, edge_node2, relationship between both edge nodes)
+
+        Args:
+            idx (int): Index of the community.
+
+        Returns:
+            List: List of information about all edges in the community.
+        """
         edges_context = []
 
         sub_nodes = self.community_nodes[idx]
@@ -223,6 +281,9 @@ class Graphrag:
         return documents, uuids
     
     def vectorize_and_store(self) -> None:
+        """
+        Vectorizes the community findings and stores them in the vector database.
+        """
         self.embeddings = HuggingFaceEmbeddings(model_name='sentence-transformers/all-mpnet-base-v2')
 
         index = faiss.IndexFlatIP(len(self.embeddings.embed_query("hello world")))
@@ -245,14 +306,31 @@ class Graphrag:
         print('--- Completed vectorization')
 
     def query_similarity(self, query: str) -> str:
+        """
+        Performs a similarity search on the vector database and returns the response.
+
+        Args:
+            query (str): The query string.
+
+        Returns:
+            str: The response to the query.
+        """
+        # 10 is hardcoded as the number of docs to return
         docs1 = self.vector_db.similarity_search_with_score(query, k=10)
 
         supporting_docs = [(item[0].page_content, item[1]) for item in docs1]
 
-        # for item in supporting_docs:
-        #     print(item, end='\n')
-
         return self.answer_query(query=query, supporting_docs=supporting_docs)
 
     def answer_query(self, query: str, supporting_docs: List[str]) -> str:
+        """
+        Initiate an LLM call to summarize the documents retrieved, in context of the query.
+
+        Args:
+            query (str): The query string.
+            supporting_docs (List[str]): List of supporting documents.
+
+        Returns:
+            str: The response to the query.
+        """
         return get_global_response(query=query, supporting_docs=supporting_docs)
