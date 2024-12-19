@@ -6,8 +6,6 @@ from pydantic import BaseModel
 from typing import List
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-# Import Graphrag class
-# from graph import Graphrag 
 
 from graph import graphrag
 

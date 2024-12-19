@@ -26,21 +26,3 @@ def process_queries():
             st.write(results)
         else:
             st.error(f"Error: {response.status_code} - {response.text}")
-
-    # if st.button("Submit"):
-    #     if query:
-    #         # Prepare the request payload
-    #         payload = {"query": query}
-
-    #         # Make a POST request to the FastAPI endpoint
-    #         response = requests.post(FASTAPI_URL, json=payload)
-
-    #         if response.status_code == 200:
-    #             # Parse the response JSON
-    #             results = response.json().get("results", [])
-    #             st.subheader("Response:")
-    #             st.write(results)
-    #         else:
-    #             st.error(f"Error: {response.status_code} - {response.text}")
-    #     else:
-    #         st.warning("Please enter a query.")
