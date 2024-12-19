@@ -39,12 +39,21 @@ class Response(BaseModel):
 
 @retry(wait=wait_random_exponential(min=10, max=60), stop=stop_after_attempt(6))
 def glean_text(entities: List, relationships: List):
+    """
+    Gleans (Request from the LLM for) additional entities and relationships from the given entities and relationships.
+
+    Args:
+        entities (List): A list of entities to be gleaned.
+        relationships (List): A list of relationships to be gleaned.
+
+    Returns:
+        Tuple[List[Entity], List[Relationship]]: A tuple containing a list of gleaned entities and a list of gleaned relationships.
+    """
     entity_types = ENTITIES
 
     system_prompt = GLEANING_PROMPT.format(entity_types=entity_types)
     query = f"Here are the entities {entities} \n Here are the relationships {relationships}"
 
-    # print(query)
     chat_completion = client.chat.completions.create(
         messages=[
             {
