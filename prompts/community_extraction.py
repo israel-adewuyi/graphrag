@@ -29,6 +29,16 @@ class Report(BaseModel):
 
 @retry(wait=wait_random_exponential(min=10, max=60), stop=stop_after_attempt(6))
 def get_community_summary(entity_info: List[str], relationship_info: List[str]):
+    """
+    Generates a summary for a community based on entity and relationship information using an LLM.
+    
+    Args:
+        entity_info (List[str]): List of strings containing information about entities.
+        relationship_info (List[str]): List of strings containing information about relationships.
+
+    Returns:
+        Report: A Report object, validated with Pydantic containing the summarized community information.
+    """
     query = ["Entity\n"] + entity_info + ["Relationships\n"] + relationship_info
 
     prompt = COMMUNITY_REPORT_SUMMARIZATION_PROMPT.format(input_text=query)
@@ -44,6 +54,13 @@ def get_community_summary(entity_info: List[str], relationship_info: List[str]):
 
 
 def query_LLM(query: str):
+    """
+    Query a language model with the prompt and community details and returns the response.
+
+    Args:
+        query (str): The input query string.
+
+    """
     chat_completion = client.chat.completions.create(
         messages=[
             {

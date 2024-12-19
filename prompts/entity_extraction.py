@@ -7,8 +7,6 @@ from pydantic import BaseModel, ValidationError
 from dotenv import load_dotenv
 from typing import List, Optional
 from .templates.entity_extraction_prompt import GRAPH_EXTRACTION_JSON_PROMPT
-# TODO: just for testing, should delete
-from .entity_types_extraction import get_entity_types
 from config import ENTITIES
 
 from tenacity import (
@@ -49,6 +47,16 @@ class Response(BaseModel):
 
 @retry(wait=wait_random_exponential(min=10, max=60), stop=stop_after_attempt(6))
 def get_entities(text):
+    """
+    Extracts entities and relationships from any given text chunk with an LLM.
+
+    Args:
+        text (str): The input text from which entities and relationships are to be extracted.
+
+    Returns:
+        Tuple[List[Entity], List[Relationship]]: A tuple containing a list of extracted entities and a list of extracted relationships.
+
+    """
     entity_types = ENTITIES
 
     system_prompt = GRAPH_EXTRACTION_JSON_PROMPT.format(entity_types=entity_types)
@@ -69,7 +77,7 @@ def get_entities(text):
     
     try:
         response = Response.model_validate_json(chat_completion.choices[0].message.content)
-        # print(response.entities, response.relationships)
+        
         return response.entities, response.relationships
     except ValidationError as e:
         print("Error in parsing entity and relationship information. Retrying now ....")
